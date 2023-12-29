@@ -22,7 +22,6 @@ The training data consisted of diverse mRNA sequences and corresponding siRNA mo
 | dataset                                                      | siRNA number | cell  line              | additional  info                          |
 | ------------------------------------------------------------ | ------------ | ----------------------- | ----------------------------------------- |
 | [Huesken](https://www.nature.com/articles/nbt1118)           | 2431         | H1299                   | Human  NCI-H1299 cells obtained from ATCC |
-| [Shabalina](https://europepmc.org/article/PMC/1431570)       | 653          | HEK293,  T24, HeLa      | Summary  data                             |
 | [Reynolds](https://www.nature.com/articles/nbt936)           | 240          | HEK293                  | HEK293  or HEK293-Luc cells               |
 | [Vickers](https://www.jbc.org/article/S0021-9258(19)32641-9/fulltext) | 76           | T24                     | ATCC,  Manassas,  VA                      |
 | [Haborth](https://www.liebertpub.com/doi/10.1089/108729003321629638) | 44           | HeLa                    |                                           |
