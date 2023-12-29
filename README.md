@@ -75,9 +75,9 @@ python script/main.py --datasets ['Hu','Sha'] --output_dir output_dir --new_mode
 
 ## Results
 
-<img src="figures/Figure2.png" width = "360" height = "360" alt="merge_AUPRC" align=center />
+<img src="figures/Figure2.png" width = "720" height = "360" alt="merge_AUPRC" align=center />
 
-<img src="figures/Figure3.png" width = "360" height = "360" alt="merge_AUPRC" align=center />
+<img src="figures/Figure3.png" width = "720" height = "360" alt="merge_AUPRC" align=center />
 
 ## Limitations
 
