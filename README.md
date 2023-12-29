@@ -34,7 +34,7 @@ The training data consisted of diverse mRNA sequences and corresponding siRNA mo
 
 ## Model
 
-![OligoFormer_architecture](src/OligoFormer_architecture.png)
+![OligoFormer_architecture](figures/Figure1.pdf)
 
 ## Training
 
