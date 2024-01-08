@@ -26,7 +26,27 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 
 ## Installation
 
-### Dependency
+### RNA-FM embedding
+
+Download the repository and create the environment.
+```
+git clone https://github.com/ml4bio/RNA-FM.git
+cd ./RNA-FM
+conda env create -f environment.yml
+conda activate RNA-FM
+cd ./redevelop
+```
+
+Download pre-trained models from [this gdrive link](https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J?usp=share_link) and place the pth files into the `pretrained` folder.
+
+Embedding Extraction.
+```
+python launch/predict.py --config="pretrained/extract_embedding.yml" \
+--data_path="./data/examples/example.fasta" --save_dir="./resuts" \
+--save_frequency 1 --save_embeddings
+```
+
+### OligoFormer inference
 
 ```bash
 git clone https://github.com/byl18/OligoFormer.git #Clone the OligoFormer repository from GitHub
