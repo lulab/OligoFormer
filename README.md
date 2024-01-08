@@ -2,9 +2,7 @@
 
 ## Overview
 
-Gene silencing through RNA interference (RNAi) has emerged as a powerful tool for studying gene function and developing therapeutics[1]. Small interfering RNA (siRNA) molecules play a crucial role in RNAi by targeting specific mRNA sequences for degradation. Identifying highly efficient siRNA molecules is essential for successful gene silencing experiments and therapeutic applications.
-
-OligoFormer is built on the transformer architecture[2], a state-of-the-art deep learning model that has revolutionized various natural language processing tasks. By adapting the transformer model for siRNA design, OligoFormer can effectively capture sequence features and learn complex patterns associated with siRNA efficacy.
+Gene silencing through RNA interference (RNAi) has emerged as a powerful tool for studying gene function and developing therapeutics[1]. Small interfering RNA (siRNA) molecules play a crucial role in RNAi by targeting specific mRNA sequences for degradation. Identifying highly efficient siRNA molecules is essential for successful gene silencing experiments and therapeutic applications. Built on the transformer architecture[2],  OligoFormer can capture multi-dimensional features and learn complex patterns of siRNA-mRNA interactions for siRNA efficacy prediction.
 
 ## Features
 
