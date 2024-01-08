@@ -28,16 +28,13 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 
 ### OligoFormer environment
 
-```bash
-git clone https://github.com/byl18/OligoFormer.git #Clone the OligoFormer repository from GitHub
-pip install -r requirements.txt #Install the required dependencies
-```
-
 Download the repository and create the environment of RNA-FM.
 
 ```bash
+#Clone the OligoFormer repository from GitHub
 git clone https://github.com/lulab/OligoFormer.git
 cd ./OligoFormer
+#Install the required dependencies
 conda env create -n oligoformer -f environment.yml
 ```
 
