@@ -1,21 +1,12 @@
 # OligoFormer
 
-## Overview
+[![python >3.7.16](https://img.shields.io/badge/python-3.7.16-brightgreen)](https://www.python.org/) 
 
 Gene silencing through RNA interference (RNAi) has emerged as a powerful tool for studying gene function and developing therapeutics[1]. Small interfering RNA (siRNA) molecules play a crucial role in RNAi by targeting specific mRNA sequences for degradation. Identifying highly efficient siRNA molecules is essential for successful gene silencing experiments and therapeutic applications. Built on the transformer architecture[2],  OligoFormer can capture multi-dimensional features and learn complex patterns of siRNA-mRNA interactions for siRNA efficacy prediction.
 
-## Features
-
-- **siRNA Design**: OligoFormer uses the input mRNA sequence and generates candidate siRNA molecules with complementary sequences.
-- **siRNA Efficacy Prediction**: OligoFormer predicts the efficacy of each candidate siRNA molecule for targeting the given mRNA sequence.
-- **RBP & ic-Shape incorporation**: OligoFormer combines information of RBP and ic-Shape from POSTAR3[3].
-- **High Performance**: OligoFormer achieves state-of-the-art performance in siRNA efficacy prediction, providing accurate and reliable results.
-
 ## Datasets
 
-OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally measured efficacy by Huesken et al[4]. The model was trained using supervised learning, where the objective was to minimize the discrepancy between predicted efficacy and the actual experimental efficacy.
-
-The training data consisted of diverse mRNA sequences and corresponding siRNA molecules with known efficacies. Care was taken to ensure the dataset's quality and to remove any biases that might affect the model's generalization ability.
+OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally measured efficacy by Huesken et al[4]. The training data consisted of diverse mRNA sequences and corresponding siRNA molecules with known efficacies.
 
 | dataset                                                      | siRNA number | cell  line              | additional  info                          |
 | ------------------------------------------------------------ | ------------ | ----------------------- | ----------------------------------------- |
@@ -33,22 +24,22 @@ The training data consisted of diverse mRNA sequences and corresponding siRNA mo
 
 ![OligoFormer_architecture](figures/Figure1.png)
 
-## Training
+## Installation
 
-OligoFormer can be used through a programming interface or a command-line interface (CLI). Follow the instructions below to set up and utilize the model.
-
-### Prerequisites
-
-- Python 3.7
-- Tensorflow 2.0 or higher
-- Transformers library
-
-### Installation
+### Dependency
 
 ```bash
 git clone https://github.com/byl18/OligoFormer.git #Clone the OligoFormer repository from GitHub
 pip install -r requirements.txt #Install the required dependencies
 ```
+
+1.Clone the repo
+
+```git clone https://github.com/lulab/OligoFormer.git```
+
+2.Create conda environment
+
+```conda env create --name oligoformer --file=environment.yml```
 
 ### Usage
 
@@ -70,20 +61,11 @@ python script/main.py --datasets ['Hu','Sha'] --output_dir output_dir --new_mode
 
 
 
-## Results
-
-<img src="figures/Figure2.png" width = "960" height = "300" alt="merge_AUPRC" align=center />
-
-<img src="figures/Figure3.png" width = "860" height = "300" alt="merge_AUPRC" align=center />
-
 ## Limitations
 
 - The size of training dataset is limited and more siRNA datasets may improve this model further.
 - Different datasets have strong batch effects due to different experimental conditions. So it may not perform optimally on mRNA sequences that significantly differ from the training data.
 
-## Conclusion
-
-OligoFormer is a transformer-based model designed to identify highly efficient siRNA molecules for gene silencing experiments. By leveraging the power of deep learning and natural language processing techniques, OligoFormer provides accurate siRNA design and efficacy prediction capabilities. It is a valuable tool for researchers and scientists working in the field of gene expression modulation and therapeutics. For more details, refer to the [OligoFormer GitHub repository](https://github.com/byl18/OligoFormer).
 
 ## References
 
