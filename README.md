@@ -26,65 +26,71 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 
 ## Installation
 
-### RNA-FM embedding
-
-Download the repository and create the environment.
-```
-git clone https://github.com/ml4bio/RNA-FM.git
-cd ./RNA-FM
-conda env create -f environment.yml
-conda activate RNA-FM
-cd ./redevelop
-```
-
-Download pre-trained models from [this gdrive link](https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J?usp=share_link) and place the pth files into the `pretrained` folder.
-
-Embedding Extraction.
-```
-python launch/predict.py --config="pretrained/extract_embedding.yml" \
---data_path="./data/examples/example.fasta" --save_dir="./resuts" \
---save_frequency 1 --save_embeddings
-```
-
-### OligoFormer inference
+### OligoFormer environment
 
 ```bash
 git clone https://github.com/byl18/OligoFormer.git #Clone the OligoFormer repository from GitHub
 pip install -r requirements.txt #Install the required dependencies
 ```
 
-1.Clone the repo
+Download the repository and create the environment of RNA-FM.
 
-```git clone https://github.com/lulab/OligoFormer.git```
+```git clone https://github.com/lulab/OligoFormer.git
+cd ./OligoFormer
+conda env create -n oligoformer -f environment.yml```
 
-2.Create conda environment
+### RNA-FM environment
 
-```conda env create --name oligoformer --file=environment.yml```
-
-### Usage
-
-```python
-# unrealized
-import OligoFormer #Import the OligoFormer module
-model = OligoFormer.Model() #Initialize the OligoFormer model
-mRNA_sequence = "AUGCUACGAUUGCGACUUUGU"
-candidate_siRNAs = model.design_siRNA(mRNA_sequence) #Design siRNA molecules
-efficacies = model.predict_efficacy(candidate_siRNAs) #Predict siRNA efficacy
-best_siRNA = max(candidate_siRNAs, key=efficacies.get) #Retrieve the siRNA with the highest predicted efficacy
+Download the repository and create the environment of RNA-FM.
+```
+git clone https://github.com/ml4bio/RNA-FM.git
+cd ./RNA-FM
+conda env create --name RNA-FM -f environment.yml
 ```
 
-OligoFormer also provides a CLI for easy access to siRNA design and efficacy prediction. Here's an example of how to use it:
+Download pre-trained models from [this gdrive link](https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J?usp=share_link) and place the pth files into the `pretrained` folder.
 
-```bash
-python script/main.py --datasets ['Hu','Sha'] --output_dir output_dir --new_model True --batch_size 512 --epoch 300 --weight_decay 0.9999 --early_stopping 10 #default params
+
+
+## Usage
+
+
+### 1.Activate the created conda environment
+
+```source activate Pathformer```
+
+### 2.Model training
+
+```
+the following command take ~30 min on a V100 GPU
+python script/main.py --datasets \['Hu','new'\] --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 100 --early_stopping 30
+```
+
+### 3.Model inference
+```
+python script/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
 ```
 
 
+- Example output
 
-## Limitations
+```text
+pos	sense	siRNA	efficacy
+0	ACUAUAGGUUCAAUUUAAU	AUUAAAUUGAACCUAUAGU	0.6066808700561523
+1	CUAUAGGUUCAAUUUAAUU	AAUUAAAUUGAACCUAUAG	0.6078619360923767
+2	UAUAGGUUCAAUUUAAUUU	AAAUUAAAUUGAACCUAUA	0.5091484785079956
+3	AUAGGUUCAAUUUAAUUUG	CAAAUUAAAUUGAACCUAU	0.464710533618927
+4	UAGGUUCAAUUUAAUUUGC	GCAAAUUAAAUUGAACCUA	0.3692018389701843
+5	AGGUUCAAUUUAAUUUGCG	CGCAAAUUAAAUUGAACCU	0.4196236729621887
+6	GGUUCAAUUUAAUUUGCGA	UCGCAAAUUAAAUUGAACC	0.6593177318572998
+7	GUUCAAUUUAAUUUGCGAA	UUCGCAAAUUAAAUUGAAC	0.6429812908172607
+8	UUCAAUUUAAUUUGCGAAA	UUUCGCAAAUUAAAUUGAA	0.6031132340431213
 
-- The size of training dataset is limited and more siRNA datasets may improve this model further.
-- Different datasets have strong batch effects due to different experimental conditions. So it may not perform optimally on mRNA sequences that significantly differ from the training data.
+# pos: start position of siRNA at mRNA
+# sense: sense strand sequence, complimentary to siRNA
+# siRNA: siRNA sequence
+# efficacy: The predicted efficacy of siRNA
+```
 
 
 ## References
