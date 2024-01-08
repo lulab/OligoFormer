@@ -35,9 +35,11 @@ pip install -r requirements.txt #Install the required dependencies
 
 Download the repository and create the environment of RNA-FM.
 
-```git clone https://github.com/lulab/OligoFormer.git
+```bash
+git clone https://github.com/lulab/OligoFormer.git
 cd ./OligoFormer
-conda env create -n oligoformer -f environment.yml```
+conda env create -n oligoformer -f environment.yml
+```
 
 ### RNA-FM environment
 
