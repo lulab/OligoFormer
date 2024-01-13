@@ -62,7 +62,7 @@ Download pre-trained models from [this gdrive link](https://drive.google.com/dri
 
 ```
 #The following command take ~30 min on a V100 GPU
-python script/main.py --datasets \['Hu','new'\] --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 100 --early_stopping 30
+python script/main.py --datasets ['Hu','new'] --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 100 --early_stopping 30
 ```
 
 ### 3.Model inference
