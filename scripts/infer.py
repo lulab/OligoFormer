@@ -130,7 +130,7 @@ def infer(Args):
 	os.environ['PYTHONHASHSEED']=str(Args.seed)
 	np.random.seed(Args.seed)
 	best_model = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers).to(device)
-	best_model.load_state_dict(torch.load("best_model/best_model.pth"))
+	best_model.load_state_dict(torch.load("model/best_model.pth"))
 	print('-----------------Start inferring!-----------------')
 	if Args.infer == 1:
 		with open(Args.infer_fasta) as fa:
