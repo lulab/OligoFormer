@@ -56,7 +56,7 @@ Download pre-trained models from [this gdrive link](https://drive.google.com/dri
 
 ### 1.Activate the created conda environment
 
-```source activate Pathformer```
+```source activate oligoformer```
 
 ### 2.Model training
 
