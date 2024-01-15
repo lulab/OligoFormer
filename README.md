@@ -53,6 +53,7 @@ Download pre-trained models from [this gdrive link](https://drive.google.com/dri
 
 ## Usage
 
+You should have at least an NVIDIA GPU and a driver on your system to run the training or inference.
 
 ### 1.Activate the created conda environment
 
