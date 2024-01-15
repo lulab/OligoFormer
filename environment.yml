@@ -1,4 +1,4 @@
-name: of
+name: oligoformer
 channels:
   - pytorch
   - conda-forge
