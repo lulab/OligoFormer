@@ -168,7 +168,7 @@ def run(Args):
 	random.seed(Args.seed)
 	os.environ['PYTHONHASHSEED']=str(Args.seed)
 	np.random.seed(Args.seed)
-	train_df = pd.read_csv(Args.path + Args.datasets[0] + '_ss.csv', dtype=str)
+	train_df = pd.read_csv(Args.path + Args.datasets[0] + '.csv', dtype=str)
 	# train_df,valid_df = train_test_split(train_df,test_size=0.2,shuffle=True,random_state=42)
 	# train_df = train_df.reset_index(drop=True)
 	# valid_df = valid_df.reset_index(drop=True)
