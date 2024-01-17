@@ -254,7 +254,7 @@ class Oligo(nn.Module):
             nn.Softmax()
         )
         self.flatten = nn.Flatten()
-    def forward(self, siRNA, mRNA, siRNA_FM, mRNA_FM,td): # siRNA_ss,ss
+    def forward(self, siRNA, mRNA, siRNA_FM, mRNA_FM,td):
         siRNA, siRNA_attention = self.siRNA_encoder(siRNA)
         mRNA, mRNA_attention = self.mRNA_encoder(mRNA)
         siRNA_FM = self.siRNA_avgpool(siRNA_FM)
@@ -266,11 +266,7 @@ class Oligo(nn.Module):
         siRNA_FM = self.flatten(siRNA_FM)
         mRNA_FM = self.flatten(mRNA_FM)
         td = self.flatten(td)
-        #siRNA_ss = self.flatten(siRNA_ss)
-        #ss = self.flatten(ss.unsqueeze(-1))
-        merge = torch.cat([siRNA,mRNA,siRNA_FM,mRNA_FM,td],dim = -1) # 4864 + 256 + 1siRNA_ss,ss
-        #merge = torch.cat([siRNA,mRNA],dim = -1) # 4864 = 1216 + 3648
-        #merge = torch.cat([siRNA_FM,mRNA_FM],dim = -1) # 256
+        merge = torch.cat([siRNA,mRNA,siRNA_FM,mRNA_FM,td],dim = -1) 
         x = self.classifier(merge)
         return x,siRNA_attention,mRNA_attention
 
