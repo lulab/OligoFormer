@@ -179,7 +179,7 @@ def run(Args):
 			'num_workers': 0,
 			'drop_last': False}
 	if not os.path.exists('./data/RNAFM'):
-		os.system('bash scripts/RNA-FM-feature.sh')
+		os.system('bash scripts/RNA-FM-features.sh')
 	train_ds = DataLoader(data_process_loader(train_df.index.values, train_df.label.values,train_df.y.values, train_df, Args.datasets[0]), **params)
 	valid_ds = DataLoader(data_process_loader(valid_df.index.values, valid_df.label.values,valid_df.y.values, valid_df, Args.datasets[1]),**params)
 	test_ds = DataLoader(data_process_loader(test_df.index.values, test_df.label.values,test_df.y.values, test_df, Args.datasets[1]), **params)
