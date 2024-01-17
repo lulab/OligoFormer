@@ -12,7 +12,6 @@ import torch.optim as optim
 from loader import data_process_loader
 from torch.utils.data import DataLoader
 from model import Oligo,Oligo2,Oligo3
-from early import Oligo_early
 from sklearn.model_selection import (train_test_split, GridSearchCV)
 from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score, roc_auc_score, average_precision_score,roc_curve,auc,precision_recall_curve,matthews_corrcoef
 from metrics import  sensitivity, specificity
