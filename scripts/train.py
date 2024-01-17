@@ -182,10 +182,8 @@ def run(Args):
 	valid_ds = DataLoader(data_process_loader(valid_df.index.values, valid_df.label.values,valid_df.y.values, valid_df, Args.datasets[1]),**params)
 	test_ds = DataLoader(data_process_loader(test_df.index.values, test_df.label.values,test_df.y.values, test_df, Args.datasets[1]), **params)
 	OFmodel = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers).to(device)
-	tmp = torch.load("model/best_model.pth")
-	tmp['classifier.0.weight'] = OFmodel.classifier.state_dict()['0.weight']
-	tmp['classifier.0.bias'] = OFmodel.classifier.state_dict()['0.bias']
-	OFmodel.load_state_dict(tmp)
+	# tmp = torch.load("model/best_model.pth")
+	# OFmodel.load_state_dict(tmp)
 	criterion = nn.MSELoss() #nn.BCELoss() # nn.CrossEntropyLoss() # nn.BCEWithLogitsLoss(pos_weight=torch.tensor(1)) #
 	best_AUC = 0.0
 	best_loss = 1e10
