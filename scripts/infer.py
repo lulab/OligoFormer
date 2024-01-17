@@ -132,7 +132,7 @@ def infer(Args):
 	best_model = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers).to(device)
 	best_model.load_state_dict(torch.load("model/best_model.pth"))
 	if not os.path.exists('./result'):
-		os.mkdirs('./result')
+		os.mkdir('./result')
 	print('-----------------Start inferring!-----------------')
 	if Args.infer == 1:
 		with open(Args.infer_fasta) as fa:
@@ -159,7 +159,7 @@ def infer(Args):
 			_infer_df['mRNA'] = _cRNA
 			_infer_df = calculate_td(_infer_df)
 			if not os.path.exists('./data/infer'):
-				os.mkdirs('./data/infer')
+				os.mkdir('./data/infer')
 			os.system('rm -rf ./data/infer/' + _name)
 			os.system('mkdir ./data/infer/' + _name)
 			for i in range(_infer_df.shape[0]):
@@ -216,7 +216,7 @@ def infer(Args):
 		_infer_df['mRNA'] = _cRNA
 		_infer_df = calculate_td(_infer_df)
 		if not os.path.exists('./data/infer'):
-			os.mkdirs('./data/infer')
+			os.mkdir('./data/infer')
 		os.system('rm -rf ./data/infer/' + _name)
 		os.system('mkdir ./data/infer/' + _name)
 		for i in range(_infer_df.shape[0]):
