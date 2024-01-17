@@ -172,8 +172,8 @@ def run(Args):
 	# train_df,valid_df = train_test_split(train_df,test_size=0.2,shuffle=True,random_state=42)
 	# train_df = train_df.reset_index(drop=True)
 	# valid_df = valid_df.reset_index(drop=True)
-	valid_df = pd.read_csv(Args.path + Args.datasets[1] + '_ss.csv',  dtype=str)
-	test_df = pd.read_csv(Args.path + Args.datasets[1] + '_ss.csv', dtype=str)
+	valid_df = pd.read_csv(Args.path + Args.datasets[1] + '.csv',  dtype=str)
+	test_df = pd.read_csv(Args.path + Args.datasets[1] + '.csv', dtype=str)
 	params = {'batch_size': Args.batch_size,
 			'shuffle': True,
 			'num_workers': 0,
