@@ -63,12 +63,12 @@ You should have at least an NVIDIA GPU and a driver on your system to run the tr
 
 ```
 #The following command take ~30 min on a V100 GPU
-python script/main.py --datasets ['Hu','new'] --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 100 --early_stopping 30
+python scripts/main.py --datasets ['Hu','new'] --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 100 --early_stopping 30
 ```
 
 ### 3.Model inference
 ```
-python script/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
 ```
 
 
