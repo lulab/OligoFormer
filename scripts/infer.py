@@ -165,7 +165,7 @@ def infer(Args):
 				with open('./data/infer/' + _name + '/mRNA.fa','a') as f:
 					f.write('>RNA' + str(i) + '\n')
 					f.write(_infer_df['mRNA'][i] + '\n')
-			os.system('sh scripts/RNA-FM.sh ../../data/infer/' + _name)
+			os.system('bash scripts/RNA-FM.sh ../../data/infer/' + _name)
 			params = {'batch_size': 1,
 				'shuffle': False,
 				'num_workers': 0,
@@ -220,7 +220,7 @@ def infer(Args):
 			with open('./data/infer/' + _name + '/mRNA.fa','a') as f:
 				f.write('>RNA' + str(i) + '\n')
 				f.write(_infer_df['mRNA'][i] + '\n')
-		os.system('sh scripts/RNA-FM.sh ../../data/infer/' + _name)
+		os.system('bash scripts/RNA-FM.sh ../../data/infer/' + _name)
 		params = {'batch_size': 1,
 			'shuffle': False,
 			'num_workers': 0,
