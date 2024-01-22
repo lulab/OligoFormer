@@ -104,12 +104,12 @@ class data_process_loader_infer(data.Dataset):
     def __getitem__(self, index):
         index = self.df_index[index]
         # siRNA
-        siRNA_seq = self.df.iloc[index]['siRNA']
+        siRNA_seq = self.df.iloc[index]['siRNA'].replace('T','U')
         siRNA_seq = [*siRNA_seq]
         siRNA_seq = sequence_OneHot(siRNA_seq)
         siRNA = np.expand_dims(siRNA_seq, axis=2).transpose([2, 1, 0])
         # mRNA
-        mRNA_seq = self.df.iloc[index]['mRNA']
+        mRNA_seq = self.df.iloc[index]['mRNA'].replace('T','U')
         mRNA_seq = [*mRNA_seq]
         mRNA_seq = sequence_OneHot(mRNA_seq)
         mRNA = np.expand_dims(mRNA_seq, axis=2).transpose([2, 1, 0])
