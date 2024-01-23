@@ -103,10 +103,13 @@ pos sense siRNA efficacy
 cpan Statistics::Lite
 cpan Bio::TreeIO
 # You also need install Vienarna package and export the PATH, and adjust the perl5lib to your own path.
+# You need provide the ORF and UTR fatsa of mRNA to predict the off-target effects.
 ```
 
+- Command
+
 ```
-python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ --offtarget True
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ --offtarget True --ORF_fasta ./data/ORF_example.fa --UTR_fasta ./data/UTR_example.fa
 ```
 
 - Example output
