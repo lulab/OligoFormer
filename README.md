@@ -67,10 +67,12 @@ python scripts/main.py --datasets Hu new --cuda 0 --learning_rate 0.0001 --batch
 ```
 
 ### 3.Model inference
+
+#### 3.1 Inference without off-target
+
 ```
 python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
 ```
-
 
 - Example output
 
@@ -92,6 +94,26 @@ pos	sense	siRNA	efficacy
 # siRNA: siRNA sequence
 # efficacy: The predicted efficacy of siRNA
 ```
+
+#### 3.2 Inference with off-target
+
+```
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
+```
+
+- Dependency of perl
+
+```
+cpan Statistics::Lite
+cpan Bio::TreeIO
+# You also need install Vienarna package and export its PATH
+```
+
+```
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ --offtarget True
+```
+
+- Example output
 
 
 ## References
