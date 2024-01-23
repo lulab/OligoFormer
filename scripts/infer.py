@@ -198,14 +198,14 @@ def infer(Args):
 			RESULT.to_csv(Args.infer_output + str(_name) + '.txt',sep='\t',index = None,header=True)
 			RESULT_ranked.to_csv(Args.infer_output + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
 			if Args.offtarget == True:
-				with open('./result/' + _name + '.fasta', 'w') as f:
+				with open('./result/' + _name + '.fa', 'w') as f:
 					siRNA = pd.read_table('./result/' + _name + '.txt', sep='\t')
 					for i in range(siRNA.shape[0]):
 						f.write('>'+str(siRNA.iloc[i,0])+'\n')
 						f.write(str(siRNA.iloc[i,1])+'\n')
-				PITA = subprocess.Popen(['./scripts/pita.sh', '../UTR_example.fasta', '../../result/' + _name + '.fasta', '../ORF_example.fasta', '' + _name + ''])
+				PITA = subprocess.Popen(['./scripts/pita.sh', '../' + Args.UTR_fasta.split('/')[-1], '../../result/' + _name + '.fa', '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
 				PITA.wait()
-				PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fasta', '../UTR_example.fasta', '../ORF_example.fasta', '' + _name + ''])
+				PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fa', '../' + Args.UTR_fasta.split('/')[-1], '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
 				PheLiM.wait()
 				pita_results = pd.read_table('./data/' + _name + '_pita_results_targets.tab', sep='\t')
 				if pita_results.shape[0] > 0:
@@ -218,7 +218,7 @@ def infer(Args):
 					siRNA = pd.merge(siRNA, phelim_results, left_on='pos', right_on='ID', how='left')
 					siRNA.drop(['ID','mRNA'], axis=1, inplace=True)
 				siRNA.to_csv('./result/' + _name + '.csv', index=False, na_rep='NA')
-				os.system('rm -rf ./result/' + _name + '.fasta')
+				os.system('rm -rf ./result/' + _name + '.fa')
 	elif Args.infer == 2:
 		_mRNA = input("please input target mRNA: \n")
 		if len(_mRNA) < 19:
@@ -276,14 +276,14 @@ def infer(Args):
 		RESULT.to_csv(Args.infer_output + str(_name) + '.txt',sep='\t',index = None,header=True)
 		RESULT_ranked.to_csv(Args.infer_output + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
 		if Args.offtarget == True:
-			with open('./result/' + _name + '.fasta', 'w') as f:
+			with open('./result/' + _name + '.fa', 'w') as f:
 				siRNA = pd.read_table('./result/' + _name + '.txt', sep='\t')
 				for i in range(siRNA.shape[0]):
 					f.write('>'+str(siRNA.iloc[i,0])+'\n')
 					f.write(str(siRNA.iloc[i,1])+'\n')
-			PITA = subprocess.Popen(['./scripts/pita.sh', '../UTR_example.fasta', '../../result/' + _name + '.fasta', '../ORF_example.fasta', '' + _name + ''])
+			PITA = subprocess.Popen(['./scripts/pita.sh', '../' + Args.UTR_fasta.split('/')[-1], '../../result/' + _name + '.fa', '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
 			PITA.wait()
-			PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fasta', '../UTR_example.fasta', '../ORF_example.fasta', '' + _name + ''])
+			PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fa', '../' + Args.UTR_fasta.split('/')[-1], '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
 			PheLiM.wait()
 			pita_results = pd.read_table('./data/' + _name + '_pita_results_targets.tab', sep='\t')
 			if pita_results.shape[0] > 0:
@@ -296,4 +296,4 @@ def infer(Args):
 				siRNA = pd.merge(siRNA, phelim_results, left_on='pos', right_on='ID', how='left')
 				siRNA.drop(['ID','mRNA'], axis=1, inplace=True)
 			siRNA.to_csv('./result/' + _name + '.csv', index=False, na_rep='NA')
-			os.system('rm -rf ./result/' + _name + '.fasta')
+			os.system('rm -rf ./result/' + _name + '.fa')
