@@ -32,6 +32,8 @@ def main():
     # Infer mode
     parser.add_argument('--infer', type=int, default=0, help='0: train; 1: infer fasta; 2: infer manually')
     parser.add_argument('--infer_fasta', type=str, default='./data/example.fa', help='fasta file to infer')
+    parser.add_argument('--ORF_fasta', type=str, default='./data/ORF_example.fa', help='fasta file to infer')
+    parser.add_argument('--UTR_fasta', type=str, default='./data/UTR_example.fa', help='fasta file to infer')
     parser.add_argument('--offtarget', type=bool, default=False, help='whether to use off-target prediction')
     parser.add_argument('--infer_output', type=str, default='./result/', help='output path')
     Args = parser.parse_args()
