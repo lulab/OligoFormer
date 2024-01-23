@@ -102,7 +102,7 @@ pos sense siRNA efficacy
 ```
 cpan Statistics::Lite
 cpan Bio::TreeIO
-# You also need install Vienarna package and export its PATH
+# You also need install Vienarna package and export the PATH, and adjust the perl5lib to your own path.
 ```
 
 ```
@@ -112,7 +112,7 @@ python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output 
 - Example output
 
 ```text
-pos sense siRNA efficacy PITA Score PheLiM Score
+pos sense siRNA efficacy PITA_Score PheLiM_Score
 0 UGAAUUUUUGUCAGAUAAA UUUAUCUGACAAAAAUUCA 0.907864335000515 NA NA
 1 GAAUUUUUGUCAGAUAAAU AUUUAUCUGACAAAAAUUC 0.8735435056686401 NA NA
 2 AAUUUUUGUCAGAUAAAUA UAUUUAUCUGACAAAAAUU 0.8030879194736481 NA NA
