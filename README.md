@@ -97,7 +97,7 @@ pos sense siRNA efficacy
 
 #### 3.2 Inference with off-target
 
-![OligoFormer application](figures/Figure5.png)
+<img src="figures/Figure5.png"  width="400" />
 
 - Dependency of perl
 
