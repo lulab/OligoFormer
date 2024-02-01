@@ -152,3 +152,6 @@ pos,sense,siRNA,efficacy,PITA_Score,Scaled_PITA_Score,PheLiM_Score,Scaled_PheLiM
 
 [4] [Huesken, D., Lange, J., Mickanin, C. *et al.* Design of a genome-wide siRNA library using an artificial neural network. *Nat Biotechnol* **23**, 995–1001 (2005).](https://www.nature.com/articles/nbt1118#Abs1)
 
+## License and Disclaimer
+This tool is for research purpose and not approved for clinical use. The tool shall not be used for commercial purposes without permission.
+
