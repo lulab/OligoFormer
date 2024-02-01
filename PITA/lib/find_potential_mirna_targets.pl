@@ -2,8 +2,8 @@
 
 use strict;
 
-require "./lib/load_args.pl";
-require "./lib/sequence_helpers.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/sequence_helpers.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -352,7 +352,7 @@ sub FindPairings
 
 __DATA__
 
-./lib/find_potential_mirna_targets.pl <file>
+EXE_BASE_DIR/lib/find_potential_mirna_targets.pl <file>
 
    Takes in a stab file of targets and a stab file of mirnas, 
    and outputs locations of potential start sites within the input stab 

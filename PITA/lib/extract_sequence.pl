@@ -2,8 +2,8 @@
 
 use strict;
 
-require "./lib/load_args.pl";
-require "./lib/sequence_helpers.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/sequence_helpers.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -152,7 +152,7 @@ while(<$file_ref>)
 
 __DATA__
 
-./lib/extract_sequence.pl <file>
+EXE_BASE_DIR/lib/extract_sequence.pl <file>
 
    Extracts a sequence from a given stab file
 

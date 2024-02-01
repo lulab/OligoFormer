@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
-require "./lib/libfile.pl";
-require "./lib/libtable.pl";
+require "EXE_BASE_DIR/lib/libfile.pl";
+require "EXE_BASE_DIR/lib/libtable.pl";
 
 use strict;
 
@@ -198,7 +198,7 @@ while(@ARGV)
 
 # open(SYN,">tmp_syns");
 
-if((@fill_lines) and $#fill_lines>=0) # if(defined(@fill_lines) and $#fill_lines>=0)
+if(@fill_lines and $#fill_lines>=0)
 {
   $fill = join($delim_out, @fill_lines);
 }
@@ -598,7 +598,7 @@ exit(0);
 ################# END MAIN #############################
 
 __DATA__
-syntax: ./lib/join.pl [OPTIONS] FILE1 FILE2
+syntax: EXE_BASE_DIR/lib/join.pl [OPTIONS] FILE1 FILE2
 
 This script takes two tables, contained in delimited files, as input and
 produces a new table that is a join of FILE1 and FILE2.  The script assumes

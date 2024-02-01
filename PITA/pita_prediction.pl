@@ -2,8 +2,8 @@
 use File::Basename;
 use strict;
 
-require "./lib/load_args.pl";
-require "./lib/format_number.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/format_number.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -43,7 +43,7 @@ my $gxp_header = "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>\n<GeneXPress>\
 
 print STDERR "Calculating predictions...\n";
 
-my $runcmd = "./lib/pita_run.pl -utr $utr_fn -mir $mir_fn -prefix ${prefix}_ " . 
+my $runcmd = "EXE_BASE_DIR/lib/pita_run.pl -utr $utr_fn -mir $mir_fn -prefix ${prefix}_ " . 
 	(length($upstream_fn) > 0 ? " -upstream $upstream_fn" : "") .
 	(length($flank_up) > 0 ? " -flank_up \"$flank_up\"" : "") .
 	(length($flank_down) > 0 ? " -flank_down \"$flank_down\"" : "") .
@@ -57,9 +57,9 @@ my $runcmd = "./lib/pita_run.pl -utr $utr_fn -mir $mir_fn -prefix ${prefix}_ " .
 system ($runcmd);
 
 
-system "rm ${prefix}_ext_utr.stab; mv ${prefix}_pita_results.tab tmp_${pid}; head -n 1 tmp_${pid} | cut -f 1-5,8,10- > ${prefix}_pita_results.tab; cat tmp_${pid} | ./lib/body.pl 2 -1 | tr -d '\r' | cut -f 1-8,10- | ./lib/merge_columns.pl -1 4 -2 5 -d ':' | ./lib/merge_columns.pl -1 4 -2 5 -d ':' | sed 's/Seed:Mismatchs:G:U/Seed/g' | sort -k 13n >> ${prefix}_pita_results.tab; rm tmp_${pid};";
+system "rm ${prefix}_ext_utr.stab; mv ${prefix}_pita_results.tab tmp_${pid}; head -n 1 tmp_${pid} | cut -f 1-5,8,10- > ${prefix}_pita_results.tab; cat tmp_${pid} | EXE_BASE_DIR/lib/body.pl 2 -1 | tr -d '\r' | cut -f 1-8,10- | EXE_BASE_DIR/lib/merge_columns.pl -1 4 -2 5 -d ':' | EXE_BASE_DIR/lib/merge_columns.pl -1 4 -2 5 -d ':' | sed 's/Seed:Mismatchs:G:U/Seed/g' | sort -k 13n >> ${prefix}_pita_results.tab; rm tmp_${pid};";
 
-system "cat ${prefix}_pita_results.tab | ./lib/body.pl 2 -1 | cut -f 1,2,13 | ./lib/modify_column.pl -c 2 -m '\"-1\"' | ./lib/average_rows.pl -k 0,1 -losoe -n | ./lib/cut.pl -f 2,3,1,4 | ./lib/modify_column.pl -c 3 -m '\"-1\"' | ./lib/modify_column.pl -c 3 -p 2 | sort -k 4n | ./lib/cap.pl \"RefSeq,microRNA,Sites,Score\" > ${prefix}_pita_results_targets.tab";
+system "cat ${prefix}_pita_results.tab | EXE_BASE_DIR/lib/body.pl 2 -1 | cut -f 1,2,13 | EXE_BASE_DIR/lib/modify_column.pl -c 2 -m '\"-1\"' | EXE_BASE_DIR/lib/average_rows.pl -k 0,1 -losoe -n | EXE_BASE_DIR/lib/cut.pl -f 2,3,1,4 | EXE_BASE_DIR/lib/modify_column.pl -c 3 -m '\"-1\"' | EXE_BASE_DIR/lib/modify_column.pl -c 3 -p 2 | sort -k 4n | EXE_BASE_DIR/lib/cap.pl \"RefSeq,microRNA,Sites,Score\" > ${prefix}_pita_results_targets.tab";
 
 print STDERR "Done.\n";
 
@@ -71,8 +71,8 @@ if ($gxp == 1)
    print GXP_FILE $gxp_header;
    close GXP_FILE;
 
-   system "./lib/fasta2stab.pl $utr_fn | ./lib/cut.pl -f 2,1,4,3 | ./lib/add_column.pl -s 0 | ./lib/add_column.pl -s 1 | ./lib/tab2feature_gxt.pl -n 'UTR Sequences' >> ${prefix}_pita_results.gxp";
-   system "./lib/body.pl 2 -1 ${prefix}_pita_results.tab | tr -d '\r' | ./lib/cut.pl -f 1-4,2,14 | ./lib/uniquify.pl -c 1 | ./lib/tab2feature_gxt.pl -n 'PITA Predictions' -c '0,0,255,1'  -lh 50 -l 'Filled box' -minc '0' -maxc '25' >> ${prefix}_pita_results.gxp";
+   system "EXE_BASE_DIR/lib/fasta2stab.pl $utr_fn | EXE_BASE_DIR/lib/stab2length.pl | EXE_BASE_DIR/lib/lin.pl | EXE_BASE_DIR/lib/add_column.pl -s 0 | EXE_BASE_DIR/lib/cut.pl -f 2,1,4,3 | EXE_BASE_DIR/lib/add_column.pl -s 0 | EXE_BASE_DIR/lib/add_column.pl -s 1 | EXE_BASE_DIR/lib/tab2feature_gxt.pl -n 'UTR Sequences' >> ${prefix}_pita_results.gxp";
+   system "EXE_BASE_DIR/lib/body.pl 2 -1 ${prefix}_pita_results.tab | tr -d '\r' | EXE_BASE_DIR/lib/cut.pl -f 1-4,2,14 | EXE_BASE_DIR/lib/uniquify.pl -c 1 | EXE_BASE_DIR/lib/tab2feature_gxt.pl -n 'PITA Predictions' -c '0,0,255,1'  -lh 50 -l 'Filled box' -minc '0' -maxc '25' >> ${prefix}_pita_results.gxp";
 
 
    open (GXP_FILE, ">>${prefix}_pita_results.gxp");

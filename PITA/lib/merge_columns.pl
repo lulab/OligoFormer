@@ -2,8 +2,8 @@
 
 use strict;
 
-require "./lib/load_args.pl";
-require "./lib/libfile.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/libfile.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -80,7 +80,7 @@ while (<$file_ref>)
 
 __DATA__
 
-./lib/merge_columns.pl <file>
+EXE_BASE_DIR/lib/merge_columns.pl <file>
 
    Merges 2 columns with a specified delimiter
 

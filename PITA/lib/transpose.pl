@@ -3,7 +3,7 @@
 ##############################################################################
 ##############################################################################
 ##
-## ./lib/transpose.pl
+## EXE_BASE_DIR/lib/transpose.pl
 ##
 ##############################################################################
 ##############################################################################
@@ -29,7 +29,7 @@
 ##############################################################################
 ##############################################################################
 
-require "./lib/libfile.pl";
+require "EXE_BASE_DIR/lib/libfile.pl";
 
 use strict;
 use warnings;
@@ -102,7 +102,7 @@ $verbose and print STDERR " done.\n";
 exit(0);
 
 __DATA__
-syntax: ./lib/transpose.pl [OPTIONS] [FILE | < FILE]
+syntax: EXE_BASE_DIR/lib/transpose.pl [OPTIONS] [FILE | < FILE]
 
 Transposes a table -- flips the rows and columns so that what
 were columns in the original table become the rows and what

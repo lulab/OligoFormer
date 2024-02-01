@@ -2,10 +2,10 @@
 
 use strict;
 
-require "./lib/load_args.pl";
-require "./lib/format_number.pl";
-require "./lib/libstats.pl";
-require "./lib/vector_ops.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/format_number.pl";
+require "EXE_BASE_DIR/lib/libstats.pl";
+require "EXE_BASE_DIR/lib/vector_ops.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -291,7 +291,7 @@ sub GetKey (\@)
 
 __DATA__
 
-./lib/average_rows.pl <source file>
+EXE_BASE_DIR/lib/average_rows.pl <source file>
 
    Average rows in <source file> that have the same key
 

@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 
-require "./lib/libfile.pl";
+require "EXE_BASE_DIR/lib/libfile.pl";
 
 use strict;
 
@@ -56,7 +56,7 @@ while(@ARGV)
   }
   else
   {
-    die("./lib/body.pl: Bad argument '$arg' given.  Use --help for help.");
+    die("EXE_BASE_DIR/lib/body.pl: Bad argument '$arg' given.  Use --help for help.");
   }
 }
 
@@ -74,7 +74,7 @@ my $num_lines = undef;
 my $tmp_file  = undef;
 if($end < -1 or ($beg<1 and $beg>0) or ($end>-1 and $end<0) or ($end<1 and $end>0))
 {
-   $tmp_file = 'tmp_' . time . '.' . rand() . './lib/body.pl';
+   $tmp_file = 'tmp_' . time . '.' . rand() . '.EXE_BASE_DIR/lib/body.pl';
    open(TMP, ">$tmp_file") or die("Could not open temporary file '$tmp_file' for writing");
    while(<$fin>)
      { print TMP; }
@@ -138,7 +138,7 @@ if(defined($tmp_file))
 exit(0);
 
 __DATA__
-Syntax: ./lib/body.pl BEG END < FILE
+Syntax: EXE_BASE_DIR/lib/body.pl BEG END < FILE
 
 BEG, END are the beginning and end lines (inclusive) to select from
 the file.  If END=-1 then the rest of the file is included for example BEG=2 END=-1
@@ -150,6 +150,6 @@ OPTIONS are:
 -skip <n1,n2...>: Exclude line numbers n1,n2...
 -select <n1,n2>:  Select line numbers n1,n2...
 -quiet:           Do not print any message to STDERR.
--f:               Allow giving BEG and END as fractions of number of lines in file (for example ./lib/body.pl 4 -0.2)
+-f:               Allow giving BEG and END as fractions of number of lines in file (for example EXE_BASE_DIR/lib/body.pl 4 -0.2)
 
 

@@ -72,7 +72,7 @@ while(<$file>)
 }
 
 __DATA__
-/home/data/www/web/oligoformer/site/PITA/lib/cap.pl [OPTIONS] COMMA-SEPERATED-LIST FILE
+EXE_BASE_DIR/lib/cap.pl [OPTIONS] COMMA-SEPERATED-LIST FILE
 
 TAB_FILE - a tab-delimited file (can also be passed into standard input.
 

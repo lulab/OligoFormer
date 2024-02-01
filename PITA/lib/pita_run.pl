@@ -2,7 +2,7 @@
 
 use strict;
 
-require "./lib/load_args.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -56,15 +56,15 @@ if ($use_stab)
 }
 else
 {
-	dsystem ("cat $utr_fn | ./lib/dos2unix.pl | ./lib/fasta2stab.pl > tmp_utr_stab_$r");
-	dsystem ("cat $mir_fn | ./lib/dos2unix.pl | ./lib/fasta2stab.pl > tmp_mir_stab_$r");
+	dsystem ("cat $utr_fn | EXE_BASE_DIR/lib/dos2unix.pl | EXE_BASE_DIR/lib/fasta2stab.pl > tmp_utr_stab_$r");
+	dsystem ("cat $mir_fn | EXE_BASE_DIR/lib/dos2unix.pl | EXE_BASE_DIR/lib/fasta2stab.pl > tmp_mir_stab_$r");
 }
 
 if ($upstream_fn eq "")
 {
 	dsystem ("cat tmp_utr_stab_$r " .
 			 "| cut -f 1 " .
-			 "| ./lib/add_column.pl -s $POLY_A " .
+			 "| EXE_BASE_DIR/lib/add_column.pl -s $POLY_A " .
 			 "> tmp_prefix_$r;");
 }
 else
@@ -75,33 +75,33 @@ else
 	}
 	else
 	{
-		dsystem ("cat $upstream_fn | ./lib/fasta2stab.pl > tmp_upstream_stab_$r");
+		dsystem ("cat $upstream_fn | EXE_BASE_DIR/lib/fasta2stab.pl > tmp_upstream_stab_$r");
 	}
 	
 	dsystem ("cat tmp_utr_stab_$r " .
 			 "| cut -f 1 " .
-			 "| ./lib/add_column.pl -s $POLY_A " .
-			 "| ./lib/join.pl -o A - tmp_upstream_stab_$r " .
-			 "| ./lib/merge_columns.pl -1 1 -2 2 " .
+			 "| EXE_BASE_DIR/lib/add_column.pl -s $POLY_A " .
+			 "| EXE_BASE_DIR/lib/join.pl -o A - tmp_upstream_stab_$r " .
+			 "| EXE_BASE_DIR/lib/merge_columns.pl -1 1 -2 2 " .
 			 "> tmp_ext_utr_$r;");
 	
 	dsystem ("cat tmp_ext_utr_$r " .
-			 "| ./lib/stab2length.pl " .
-			 "| ./lib/cut.pl -f 1,1,2,2 " .
-			 "| ./lib/modify_column.pl -c 2 -s " . ($CDS_FLANK-1) . " " .
+			 "| EXE_BASE_DIR/lib/stab2length.pl " .
+			 "| EXE_BASE_DIR/lib/cut.pl -f 1,1,2,2 " .
+			 "| EXE_BASE_DIR/lib/modify_column.pl -c 2 -s " . ($CDS_FLANK-1) . " " .
 			 ">tmp_ext_utr_pos_$r");
 			 
 	dsystem ("cat tmp_ext_utr_$r " .
-			 "| ./lib/extract_sequence.pl -f tmp_ext_utr_pos_$r " .
+			 "| EXE_BASE_DIR/lib/extract_sequence.pl -f tmp_ext_utr_pos_$r " .
 			 "> tmp_prefix_$r");
 }
 
 my $ext_utr_fn = $output_dir . $prefix . "ext_utr.stab";
 
-dsystem ("./lib/join.pl tmp_prefix_$r tmp_utr_stab_$r " .
-         "| ./lib/add_column.pl -s $POLY_A " .
-         "| ./lib/merge_columns.pl -1 1 -2 2 " .
-         "| ./lib/merge_columns.pl -1 1 -2 2 " .
+dsystem ("EXE_BASE_DIR/lib/join.pl tmp_prefix_$r tmp_utr_stab_$r " .
+         "| EXE_BASE_DIR/lib/add_column.pl -s $POLY_A " .
+         "| EXE_BASE_DIR/lib/merge_columns.pl -1 1 -2 2 " .
+         "| EXE_BASE_DIR/lib/merge_columns.pl -1 1 -2 2 " .
          "> " . $ext_utr_fn);
 
 
@@ -109,7 +109,7 @@ dsystem ("./lib/join.pl tmp_prefix_$r tmp_utr_stab_$r " .
 ## Step 1: Search potential targets
 
 print STDERR "Finding potential targets...\n";
-dsystem ("./lib/find_potential_mirna_targets.pl tmp_utr_stab_$r -f tmp_mir_stab_$r $echoed_pt_args > tmp_pt_$r");
+dsystem ("EXE_BASE_DIR/lib/find_potential_mirna_targets.pl tmp_utr_stab_$r -f tmp_mir_stab_$r $echoed_pt_args > tmp_pt_$r");
 
 my $n_potential_targets = `wc -l tmp_pt_$r | sed 's/^ *//g' | cut -f 1 -d ' '`;
 if (length($limit) > 0 and $n_potential_targets > $limit)
@@ -122,17 +122,17 @@ if (length($limit) > 0 and $n_potential_targets > $limit)
 
 print STDERR "Computing site scores...\n";
 dsystem ("cat tmp_pt_$r " .
-		 "| ./lib/join.pl -1 2 - $ext_utr_fn " .
-		 "| ./lib/cut.pl -f 1-9,11- " .
-		 "| ./lib/modify_column.pl -c 2,3 -a $CDS_FLANK " .
-		 "| ./lib/RNAddG_compute.pl -ddgarea $DDG_AREA -upstream_rest $FLANK_UP -downstream_rest $FLANK_DOWN " .
-		 "| ./lib/modify_column.pl -c 2,3 -s $CDS_FLANK " .
-		 "| ./lib/modify_column.pl -c 9,10,11,12,13,14 -m '\"-1\"' " .
-		 "| ./lib/cut.pl -f 1-15,14 " .
-		 "| ./lib/modify_column.pl -c 15 -sc 14 " .
-		 "| ./lib/cut.pl -f 1-12,14-16,13 " .
-		 "| ./lib/modify_column.pl -c 9,10,11,12,13,14,15 -p 2 -m '\"-1\"' " .
-		 "| ./lib/cap.pl \"UTR,microRNA,Start,End,Seed,Mismatchs,G:U,Loop,Site size,dGduplex,dG5,dG3,dG0,dG1,dGopen,ddG\" " .
+		 "| EXE_BASE_DIR/lib/join.pl -1 2 - $ext_utr_fn " .
+		 "| EXE_BASE_DIR/lib/cut.pl -f 1-9,11- " .
+		 "| EXE_BASE_DIR/lib/modify_column.pl -c 2,3 -a $CDS_FLANK " .
+		 "| EXE_BASE_DIR/lib/RNAddG_compute.pl -ddgarea $DDG_AREA -upstream_rest $FLANK_UP -downstream_rest $FLANK_DOWN " .
+		 "| EXE_BASE_DIR/lib/modify_column.pl -c 2,3 -s $CDS_FLANK " .
+		 "| EXE_BASE_DIR/lib/modify_column.pl -c 9,10,11,12,13,14 -m '\"-1\"' " .
+		 "| EXE_BASE_DIR/lib/cut.pl -f 1-15,14 " .
+		 "| EXE_BASE_DIR/lib/modify_column.pl -c 15 -sc 14 " .
+		 "| EXE_BASE_DIR/lib/cut.pl -f 1-12,14-16,13 " .
+		 "| EXE_BASE_DIR/lib/modify_column.pl -c 9,10,11,12,13,14,15 -p 2 -m '\"-1\"' " .
+		 "| EXE_BASE_DIR/lib/cap.pl \"UTR,microRNA,Start,End,Seed,Mismatchs,G:U,Loop,Site size,dGduplex,dG5,dG3,dG0,dG1,dGopen,ddG\" " .
 		 "> " . $output_dir . $prefix . "pita_results.tab");
 
 
@@ -156,7 +156,7 @@ sub dsystem {
 
 
 __DATA__
-syntax: ./lib/pita_run.pl [OPTIONS]
+syntax: EXE_BASE_DIR/lib/pita_run.pl [OPTIONS]
 
 Execute the PITA algorithm for identifying and scoring microRNA target sites.
 

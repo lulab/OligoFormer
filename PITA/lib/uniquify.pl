@@ -2,7 +2,7 @@
 
 #use strict;
 
-require "./lib/load_args.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -106,14 +106,14 @@ while(<$file_ref>)
 
 __DATA__
 
-./lib/uniquify.pl <file>
+EXE_BASE_DIR/lib/uniquify.pl <file>
 
    Takes in a tab delimited file and uniquifies a column: whenever 
    encountering an entry that already appeared, appends a number
    to that column "-1", "-2", ...
 
    -c <num>:   Columns to uniquify (zero based, default: 0), may be several columns, e.g. -c 0,2-4,7
-   -g <1/0>:   Group colums inorder to uniquify them together. Default is 0.Forexamle running: ./lib/uniquify.pl <FILE> -c 1-3 -g 1 will treat coloumns 1-3 as one and uniquify their concatenation.   -f:         Force a number even on first occurrence
+   -g <1/0>:   Group colums inorder to uniquify them together. Default is 0.Forexamle running: EXE_BASE_DIR/lib/uniquify.pl <FILE> -c 1-3 -g 1 will treat coloumns 1-3 as one and uniquify their concatenation.   -f:         Force a number even on first occurrence
                (default: first occurrence does not get a number appended)
 
 

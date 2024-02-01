@@ -117,7 +117,7 @@ sub GetNumColumns
 {
    my ($file_name) = @_;
 
-   my $rows = `head -1 $file_name | ./lib/transpose.pl | wc -l`;
+   my $rows = `head -1 $file_name | EXE_BASE_DIR/lib/transpose.pl | wc -l`;
 
    $rows =~ /^ *([^ ]+)/;
 
@@ -372,7 +372,7 @@ sub expandPath
   $file =~ s/~/$home/ge;
   $file =~ s/\$HOME/$home/ge;
   $file =~ s/\$\(HOME\)/$home/ge;
-  $file =~ s/\$\{HOME}/$home/ge;
+  $file =~ s/\${HOME}/$home/ge;
   # print STDERR "'$file'\n";
 
   return $file;
@@ -1585,7 +1585,7 @@ sub ExtractFileLinesBetweenRegexps
   my ($in_file_ref, $out_file_ref, $regexp_from, $regexp_to, $from_inclusive, $to_inclusive) = @_;
 
   if ( $regexp_from eq $regexp_to ) {
-    die "(./lib/libfile.pl) ExtractFileLinesBetweenRegexps() - 'from' and 'to' regexps are identical. Give me a break, use grep.\n";
+    die "(EXE_BASE_DIR/lib/libfile.pl) ExtractFileLinesBetweenRegexps() - 'from' and 'to' regexps are identical. Give me a break, use grep.\n";
   }
 
   my $reached_from = 0;
@@ -1624,7 +1624,7 @@ sub ExtractAllFileLinesNotBetweenRegexps
   my ($in_file_ref, $out_file_ref, $regexp_from, $regexp_to, $from_inclusive, $to_inclusive) = @_;
 
   if ( $regexp_from eq $regexp_to ) {
-    die "(./lib/libfile.pl) ExtractAllFileLinesNotBetweenRegexps() - 'from' and 'to' regexps are identical. Give me a break, use grep.\n";
+    die "(EXE_BASE_DIR/lib/libfile.pl) ExtractAllFileLinesNotBetweenRegexps() - 'from' and 'to' regexps are identical. Give me a break, use grep.\n";
   }
 
   my $print_flag = 1;

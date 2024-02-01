@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
-require "./lib/libfile.pl";
-require "./lib/load_args.pl";
+require "EXE_BASE_DIR/lib/libfile.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
 
 
 use strict;
@@ -189,7 +189,7 @@ exit(0);
 
 __DATA__
 
-syntax: ./lib/cut.pl [OPTIONS] TAB_FILE
+syntax: EXE_BASE_DIR/lib/cut.pl [OPTIONS] TAB_FILE
 
 TAB_FILE is any tab-delim_inited file.  Can also be passed into standard
    input.

@@ -3,7 +3,7 @@
 use strict;
 use POSIX;
 
-require "./lib/ltqnorm.pl";
+require "EXE_BASE_DIR/lib/ltqnorm.pl";
 
 my $MAXDOUBLE = 1e200;
 

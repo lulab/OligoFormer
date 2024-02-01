@@ -3,12 +3,12 @@
 use strict;
 use List::Util qw[shuffle min max];
 
-require "./lib/load_args.pl";
-require "./lib/sequence_helpers.pl";
-require "./lib/format_number.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/sequence_helpers.pl";
+require "EXE_BASE_DIR/lib/format_number.pl";
 
-my $RNAHYBRID_EXE_DIR = "./Bin/RNAHybrid/RNAhybrid-2.1/src";
-my $RNAddG_EXE_DIR 		= "./Bin/ViennaRNA/ViennaRNA-1.6/Progs/";
+my $RNAHYBRID_EXE_DIR = "EXE_BASE_DIR/Bin/RNAHybrid/RNAhybrid-2.1/src";
+my $RNAddG_EXE_DIR 		= "EXE_BASE_DIR/Bin/ViennaRNA/ViennaRNA-1.6/Progs/";
 
 
 if ($ARGV[0] eq "--help")
@@ -306,7 +306,7 @@ sub extract_sequence {
 
 __DATA__
 
-./lib/RNAddG_compute.pl <file>
+EXE_BASE_DIR/lib/RNAddG_compute.pl <file>
 
 	Compute the dG energies of potential target sites whose seed is given in the external
 	tab file.

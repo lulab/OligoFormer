@@ -1,5 +1,3 @@
-#! /usr/bin/env perl
-
 # Find locations of TargetScan seeds in a sequence file
 # Also print file of sequence lengths
 

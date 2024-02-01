@@ -1,4 +1,3 @@
-#! /usr/bin/env perl
 #######################################################################
 # Copyright(c) 2007-2015 Whitehead Institute for Biomedical Research.
 #              All Rights Reserved

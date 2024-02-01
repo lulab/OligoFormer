@@ -2,10 +2,10 @@
 
 use strict;
 
-require "./lib/load_args.pl";
-require "./lib/libfile.pl";
-require "./lib/format_number.pl";
-require "./lib/sequence_helpers.pl";
+require "EXE_BASE_DIR/lib/load_args.pl";
+require "EXE_BASE_DIR/lib/libfile.pl";
+require "EXE_BASE_DIR/lib/format_number.pl";
+require "EXE_BASE_DIR/lib/sequence_helpers.pl";
 
 if ($ARGV[0] eq "--help")
 {
@@ -249,7 +249,7 @@ while (<$file_ref>)
 
 __DATA__
 
-./lib/add_column.pl <file>
+EXE_BASE_DIR/lib/add_column.pl <file>
 
    Adds a column to each of the lines of a file.
    Operations on more than two columns can be specified using the ',-' notation (e.g., 1,4-6,23 means columns 1,4,5,6,23)

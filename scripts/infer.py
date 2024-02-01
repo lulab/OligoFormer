@@ -21,9 +21,6 @@ import warnings
 warnings.filterwarnings("ignore")
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
-import warnings
-warnings.filterwarnings("ignore")
-
 DeltaG = {'AA': -0.93, 'UU': -0.93, 'AU': -1.10, 'UA': -1.33, 'CU': -2.08, 'AG': -2.08, 'CA': -2.11, 'UG': -2.11, 'GU': -2.24,  'AC': -2.24, 'GA': -2.35,  'UC': -2.35, 'CG': -2.36, 'GG': -3.26, 'CC': -3.26, 'GC': -3.42, 'init': 4.09, 'endAU': 0.45, 'sym': 0.43}
 DeltaH = {'AA': -6.82, 'UU': -6.82, 'AU': -9.38, 'UA': -7.69, 'CU': -10.48, 'AG': -10.48, 'CA': -10.44, 'UG': -10.44, 'GU': -11.40,  'AC': -11.40, 'GA': -12.44,  'UC': -12.44, 'CG': -10.64, 'GG': -13.39, 'CC': -13.39, 'GC': -14.88, 'init': 3.61, 'endAU': 3.72, 'sym': 0}
 
@@ -125,6 +122,25 @@ def calculate_td(df):
 	df['td'] = [list(df.iloc[i,2:]) for i in range(df.shape[0])]
 	return df[['siRNA','mRNA','td']]
 
+def calculate_evaluation_score(efficacy, off_target):
+    return efficacy / np.sqrt(1 + off_target)
+
+def calculate_off_target_score(pita_score: pd.Series, phelim_score: pd.Series) -> pd.Series:
+	off_target_score = []
+	for i in range(pita_score.shape[0]):
+		if np.isnan(pita_score[i]) and np.isnan(phelim_score[i]):
+			off_target_score.append(0)
+		elif np.isnan(pita_score[i]):
+			off_target_score.append(phelim_score[i])
+		elif np.isnan(phelim_score[i]):
+			off_target_score.append(pita_score[i])
+		else:
+			off_target_score.append(2 / (1 / pita_score[i] + 1 / phelim_score[i]))
+	return pd.Series(off_target_score)
+
+def min_max_scaler(x):
+    return (x - np.min(x)) / (np.max(x) - np.min(x))
+
 def infer(Args):
 	os.environ["CUDA_VISIBLE_DEVICES"] = str(Args.cuda)
 	random.seed(Args.seed)
@@ -148,7 +164,7 @@ def infer(Args):
 		for _name, _mRNA in fa_dict.items():
 			print(_name)
 			if len(_mRNA) < 19:
-				raise Exception("The length of mRNA is less tha 19 nt!")
+				raise Exception("The length of mRNA is less than 19 nt!")
 			_infer_df = pd.DataFrame(columns=['siRNA','mRNA'])
 			_siRNA = list()
 			for i in range(len(_mRNA) - 19 + 1): 
@@ -197,28 +213,51 @@ def infer(Args):
 			RESULT_ranked = RESULT.sort_values(by='efficacy', ascending=False)
 			RESULT.to_csv(Args.infer_output + str(_name) + '.txt',sep='\t',index = None,header=True)
 			RESULT_ranked.to_csv(Args.infer_output + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
-			if Args.offtarget == True:
-				with open('./result/' + _name + '.fa', 'w') as f:
-					siRNA = pd.read_table('./result/' + _name + '.txt', sep='\t')
-					for i in range(siRNA.shape[0]):
-						f.write('>'+str(siRNA.iloc[i,0])+'\n')
-						f.write(str(siRNA.iloc[i,1])+'\n')
-				PITA = subprocess.Popen(['./scripts/pita.sh', '../' + Args.UTR_fasta.split('/')[-1], '../../result/' + _name + '.fa', '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
-				PITA.wait()
-				PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fa', '../' + Args.UTR_fasta.split('/')[-1], '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
-				PheLiM.wait()
-				pita_results = pd.read_table('./data/' + _name + '_pita_results_targets.tab', sep='\t')
-				if pita_results.shape[0] > 0:
-					pita_results.rename(columns={'Score': 'PITA_Score'}, inplace=True)
-					siRNA = pd.merge(siRNA, pita_results, left_on='pos', right_on='microRNA', how='left')
-					siRNA.drop(['microRNA','Sites','RefSeq'], axis=1, inplace=True)
-				phelim_results = pd.read_table('./data/' + _name + '_phelim_predictions.tab', sep='\t')
-				if phelim_results.shape[0] > 0:
-					phelim_results.rename(columns={'PheLiM Score': 'Phelim_score'}, inplace=True)
-					siRNA = pd.merge(siRNA, phelim_results, left_on='pos', right_on='ID', how='left')
-					siRNA.drop(['ID','mRNA'], axis=1, inplace=True)
-				siRNA.to_csv('./result/' + _name + '.csv', index=False, na_rep='NA')
-				os.system('rm -rf ./result/' + _name + '.fa')
+		if Args.offtarget == True:
+			with open('./result/' + _name + '.fa', 'w') as f:
+				siRNA = pd.read_table('./result/' + _name + '.txt', sep='\t')
+				for i in range(siRNA.shape[0]):
+					f.write('>'+str(siRNA.iloc[i,0])+'\n')
+					f.write(str(siRNA.iloc[i,1])+'\n')
+			os.system('mkdir ./tmp/')
+			PITA = subprocess.Popen(['./scripts/pita.sh', '../'+Args.UTR_fasta, '../result/' + _name + '.fa', '../'+Args.ORF_fasta, _name])
+			PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fa', '../../'+Args.UTR_fasta, '../../'+Args.ORF_fasta, _name])
+			PITA.wait()
+			PheLiM.wait()
+			pita_results = pd.read_table('./PITA/' + _name + '_pita_results_targets.tab', sep='\t')
+			if pita_results.shape[0] > 0:
+				pita_results.columns = ['id','pos','sites','PITA_Score']
+				pita_results.drop(['sites', 'id'], axis=1, inplace=True)
+				pita_results = pita_results.sort_values(by=['pos', 'PITA_Score'], ascending=True)
+				pita_results = pita_results.drop_duplicates(subset=['pos'], keep='first')
+				pita_results['Scaled_PITA_Score'] = min_max_scaler(pita_results['PITA_Score'].apply(lambda x: -x))
+				siRNA = pd.merge(siRNA, pita_results, on='pos', how='left')
+			phelim_results = pd.read_table('./tmp/PheLiM/' + _name + '_offtarget_predictions.tab', sep='\t')
+			if phelim_results.shape[0] > 0:
+				phelim_results = phelim_results.sort_values(by=['pos', 'PheLiM_Score'], ascending=False)
+				phelim_results = phelim_results.drop_duplicates(subset=['pos'], keep='first')
+				phelim_results.drop(['mRNA'], axis=1, inplace=True)
+				phelim_results['Scaled_PheLiM_Score'] = min_max_scaler(phelim_results['PheLiM_Score'])
+				siRNA = pd.merge(siRNA, phelim_results, on='pos', how='left')
+			siRNA['off_target_score'] = min_max_scaler(calculate_off_target_score(siRNA['Scaled_PITA_Score'], siRNA['Scaled_PheLiM_Score']))
+			siRNA['evaluation_score'] = calculate_evaluation_score(siRNA['efficacy'], siRNA['off_target_score'])
+			immune_seq = []
+			for i in range(siRNA.shape[0]):
+				if 'UGUGU' in siRNA.iloc[i, 2] or 'GUCCUUCA' in siRNA.iloc[i, 2] or 'CUGAAUU' in siRNA.iloc[i, 2]:
+					siRNA.iloc[i, 9] = 0.5 * siRNA.iloc[i, 9]
+					immune_seq.append(1)
+				else:
+					immune_seq.append(0)
+			siRNA['Immune_Motif'] = pd.Series(immune_seq)
+			siRNA['evaluation_score'] = min_max_scaler(siRNA['evaluation_score'])
+			cols = siRNA.columns[[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 9]]
+			siRNA = siRNA[cols]
+			siRNA = siRNA.sort_values(by='pos', ascending=True)
+			siRNA.to_csv('./result/' + _name + '.csv', index=False, na_rep='NA')
+			os.system('rm -rf ./tmp/')
+			os.system('rm -rf ./result/' + _name + '.fa')
+			os.system('rm -rf ./PITA/' + _name + '*.tab')
+			os.system('rm -rf ./PITA/tmp_seqfile*')
 	elif Args.infer == 2:
 		_mRNA = input("please input target mRNA: \n")
 		if len(_mRNA) < 19:
@@ -281,19 +320,42 @@ def infer(Args):
 				for i in range(siRNA.shape[0]):
 					f.write('>'+str(siRNA.iloc[i,0])+'\n')
 					f.write(str(siRNA.iloc[i,1])+'\n')
-			PITA = subprocess.Popen(['./scripts/pita.sh', '../' + Args.UTR_fasta.split('/')[-1], '../../result/' + _name + '.fa', '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
+			os.system('mkdir ./tmp/')
+			PITA = subprocess.Popen(['./scripts/pita.sh', '../'+Args.UTR_fasta, '../result/' + _name + '.fa', '../'+Args.ORF_fasta, _name])
+			PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fa', '../../'+Args.UTR_fasta, '../../'+Args.ORF_fasta, _name])
 			PITA.wait()
-			PheLiM = subprocess.Popen(['./scripts/phelim.sh', '../../result/' + _name + '.fa', '../' + Args.UTR_fasta.split('/')[-1], '../' + Args.ORF_fasta.split('/')[-1], '' + _name + ''])
 			PheLiM.wait()
-			pita_results = pd.read_table('./data/' + _name + '_pita_results_targets.tab', sep='\t')
+			pita_results = pd.read_table('./PITA/' + _name + '_pita_results_targets.tab', sep='\t')
 			if pita_results.shape[0] > 0:
-				pita_results.rename(columns={'Score': 'PITA_score'}, inplace=True)
-				siRNA = pd.merge(siRNA, pita_results, left_on='pos', right_on='microRNA', how='left')
-				siRNA.drop(['microRNA','Sites','RefSeq'], axis=1, inplace=True)
-			phelim_results = pd.read_table('./data/' + _name + '_phelim_predictions.tab', sep='\t')
+				pita_results.columns = ['id','pos','sites','PITA_Score']
+				pita_results.drop(['sites', 'id'], axis=1, inplace=True)
+				pita_results = pita_results.sort_values(by=['pos', 'PITA_Score'], ascending=True)
+				pita_results = pita_results.drop_duplicates(subset=['pos'], keep='first')
+				pita_results['Scaled_PITA_Score'] = min_max_scaler(pita_results['PITA_Score'].apply(lambda x: -x))
+				siRNA = pd.merge(siRNA, pita_results, on='pos', how='left')
+			phelim_results = pd.read_table('./tmp/PheLiM/' + _name + '_offtarget_predictions.tab', sep='\t')
 			if phelim_results.shape[0] > 0:
-				phelim_results.rename(columns={'PheLiM Score': 'Phelim_score'}, inplace=True)
-				siRNA = pd.merge(siRNA, phelim_results, left_on='pos', right_on='ID', how='left')
-				siRNA.drop(['ID','mRNA'], axis=1, inplace=True)
+				phelim_results = phelim_results.sort_values(by=['pos', 'PheLiM_Score'], ascending=False)
+				phelim_results = phelim_results.drop_duplicates(subset=['pos'], keep='first')
+				phelim_results.drop(['mRNA'], axis=1, inplace=True)
+				phelim_results['Scaled_PheLiM_Score'] = min_max_scaler(phelim_results['PheLiM_Score'])
+				siRNA = pd.merge(siRNA, phelim_results, on='pos', how='left')
+			siRNA['off_target_score'] = min_max_scaler(calculate_off_target_score(siRNA['Scaled_PITA_Score'], siRNA['Scaled_PheLiM_Score']))
+			siRNA['evaluation_score'] = calculate_evaluation_score(siRNA['efficacy'], siRNA['off_target_score'])
+			immune_seq = []
+			for i in range(siRNA.shape[0]):
+				if 'UGUGU' in siRNA.iloc[i, 2] or 'GUCCUUCA' in siRNA.iloc[i, 2] or 'CUGAAUU' in siRNA.iloc[i, 2]:
+					siRNA.iloc[i, 9] = 0.5 * siRNA.iloc[i, 9]
+					immune_seq.append(1)
+				else:
+					immune_seq.append(0)
+			siRNA['Immune_Motif'] = pd.Series(immune_seq)
+			siRNA['evaluation_score'] = min_max_scaler(siRNA['evaluation_score'])
+			cols = siRNA.columns[[0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 9]]
+			siRNA = siRNA[cols]
+			siRNA = siRNA.sort_values(by='pos', ascending=True)
 			siRNA.to_csv('./result/' + _name + '.csv', index=False, na_rep='NA')
+			os.system('rm -rf ./tmp/')
 			os.system('rm -rf ./result/' + _name + '.fa')
+			os.system('rm -rf ./PITA/' + _name + '*.tab')
+			os.system('rm -rf ./PITA/tmp_seqfile*')

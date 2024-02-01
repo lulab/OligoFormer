@@ -1,7 +1,3 @@
-#! /usr/bin/env perl
-BEGIN {
-    unshift @INC,'/qhsky1/baiyilan/software/anaconda/lib/perl5/site_perl/5.22.0/';
-}
 use warnings;
 
 #######################################################################
