@@ -1,0 +1,3635 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="720pt" viewBox="0 0 720 720" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2024-05-23T14:22:52.154710</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.7.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 720 
+L 720 720 
+L 720 0 
+L 0 0 
+L 0 720 
+z
+" style="fill: none"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 90 138.701887 
+L 142.641509 138.701887 
+L 142.641509 86.4 
+L 90 86.4 
+L 90 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_1">
+    <path d="M 90 86.4 
+L 116.320755 86.4 
+L 116.320755 112.550943 
+L 90 112.550943 
+L 90 86.4 
+" clip-path="url(#p5dbc11c550)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 86.4 
+L 142.641509 86.4 
+L 142.641509 112.550943 
+L 116.320755 112.550943 
+L 116.320755 86.4 
+" clip-path="url(#p5dbc11c550)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 112.550943 
+L 116.320755 112.550943 
+L 116.320755 138.701887 
+L 90 138.701887 
+L 90 112.550943 
+" clip-path="url(#p5dbc11c550)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 112.550943 
+L 142.641509 112.550943 
+L 142.641509 138.701887 
+L 116.320755 138.701887 
+L 116.320755 112.550943 
+" clip-path="url(#p5dbc11c550)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_2">
+    <path d="M 90 86.4 
+L 116.320755 86.4 
+L 116.320755 112.550943 
+L 90 112.550943 
+L 90 86.4 
+" clip-path="url(#p5dbc11c550)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 86.4 
+L 142.641509 86.4 
+L 142.641509 112.550943 
+L 116.320755 112.550943 
+L 116.320755 86.4 
+" clip-path="url(#p5dbc11c550)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 112.550943 
+L 116.320755 112.550943 
+L 116.320755 138.701887 
+L 90 138.701887 
+L 90 112.550943 
+" clip-path="url(#p5dbc11c550)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 112.550943 
+L 142.641509 112.550943 
+L 142.641509 138.701887 
+L 116.320755 138.701887 
+L 116.320755 112.550943 
+" clip-path="url(#p5dbc11c550)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_1"/>
+   <g id="matplotlib.axis_2"/>
+   <g id="text_1">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="102.067659" transform="rotate(-0 103.160377 102.067659)">10</text>
+   </g>
+   <g id="text_2">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="102.067659" transform="rotate(-0 129.481132 102.067659)">4</text>
+   </g>
+   <g id="text_3">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="128.218603" transform="rotate(-0 103.160377 128.218603)">0</text>
+   </g>
+   <g id="text_4">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="128.218603" transform="rotate(-0 129.481132 128.218603)">11</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_3">
+    <path d="M 153.169811 138.701887 
+L 205.811321 138.701887 
+L 205.811321 86.4 
+L 153.169811 86.4 
+L 153.169811 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_3">
+    <path d="M 153.169811 86.4 
+L 179.490566 86.4 
+L 179.490566 112.550943 
+L 153.169811 112.550943 
+L 153.169811 86.4 
+" clip-path="url(#p463b0be9e0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 86.4 
+L 205.811321 86.4 
+L 205.811321 112.550943 
+L 179.490566 112.550943 
+L 179.490566 86.4 
+" clip-path="url(#p463b0be9e0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 112.550943 
+L 179.490566 112.550943 
+L 179.490566 138.701887 
+L 153.169811 138.701887 
+L 153.169811 112.550943 
+" clip-path="url(#p463b0be9e0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 112.550943 
+L 205.811321 112.550943 
+L 205.811321 138.701887 
+L 179.490566 138.701887 
+L 179.490566 112.550943 
+" clip-path="url(#p463b0be9e0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_4">
+    <path d="M 153.169811 86.4 
+L 179.490566 86.4 
+L 179.490566 112.550943 
+L 153.169811 112.550943 
+L 153.169811 86.4 
+" clip-path="url(#p463b0be9e0)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 86.4 
+L 205.811321 86.4 
+L 205.811321 112.550943 
+L 179.490566 112.550943 
+L 179.490566 86.4 
+" clip-path="url(#p463b0be9e0)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 112.550943 
+L 179.490566 112.550943 
+L 179.490566 138.701887 
+L 153.169811 138.701887 
+L 153.169811 112.550943 
+" clip-path="url(#p463b0be9e0)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 112.550943 
+L 205.811321 112.550943 
+L 205.811321 138.701887 
+L 179.490566 138.701887 
+L 179.490566 112.550943 
+" clip-path="url(#p463b0be9e0)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_3"/>
+   <g id="matplotlib.axis_4"/>
+   <g id="text_5">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="102.067659" transform="rotate(-0 166.330189 102.067659)">21</text>
+   </g>
+   <g id="text_6">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="102.067659" transform="rotate(-0 192.650943 102.067659)">12</text>
+   </g>
+   <g id="text_7">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="128.218603" transform="rotate(-0 166.330189 128.218603)">0</text>
+   </g>
+   <g id="text_8">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="128.218603" transform="rotate(-0 192.650943 128.218603)">1</text>
+   </g>
+  </g>
+  <g id="axes_3">
+   <g id="patch_4">
+    <path d="M 216.339623 138.701887 
+L 268.981132 138.701887 
+L 268.981132 86.4 
+L 216.339623 86.4 
+L 216.339623 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_5">
+    <path d="M 216.339623 86.4 
+L 242.660377 86.4 
+L 242.660377 112.550943 
+L 216.339623 112.550943 
+L 216.339623 86.4 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 86.4 
+L 268.981132 86.4 
+L 268.981132 112.550943 
+L 242.660377 112.550943 
+L 242.660377 86.4 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 112.550943 
+L 242.660377 112.550943 
+L 242.660377 138.701887 
+L 216.339623 138.701887 
+L 216.339623 112.550943 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 112.550943 
+L 268.981132 112.550943 
+L 268.981132 138.701887 
+L 242.660377 138.701887 
+L 242.660377 112.550943 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_6">
+    <path d="M 216.339623 86.4 
+L 242.660377 86.4 
+L 242.660377 112.550943 
+L 216.339623 112.550943 
+L 216.339623 86.4 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 86.4 
+L 268.981132 86.4 
+L 268.981132 112.550943 
+L 242.660377 112.550943 
+L 242.660377 86.4 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 112.550943 
+L 242.660377 112.550943 
+L 242.660377 138.701887 
+L 216.339623 138.701887 
+L 216.339623 112.550943 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 112.550943 
+L 268.981132 112.550943 
+L 268.981132 138.701887 
+L 242.660377 138.701887 
+L 242.660377 112.550943 
+" clip-path="url(#p3f2ff77bbb)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_5"/>
+   <g id="matplotlib.axis_6"/>
+   <g id="text_9">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="102.067659" transform="rotate(-0 229.5 102.067659)">31</text>
+   </g>
+   <g id="text_10">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="102.067659" transform="rotate(-0 255.820755 102.067659)">17</text>
+   </g>
+   <g id="text_11">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="128.218603" transform="rotate(-0 229.5 128.218603)">0</text>
+   </g>
+   <g id="text_12">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="128.218603" transform="rotate(-0 255.820755 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_4">
+   <g id="patch_5">
+    <path d="M 279.509434 138.701887 
+L 332.150943 138.701887 
+L 332.150943 86.4 
+L 279.509434 86.4 
+L 279.509434 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_7">
+    <path d="M 279.509434 86.4 
+L 305.830189 86.4 
+L 305.830189 112.550943 
+L 279.509434 112.550943 
+L 279.509434 86.4 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 86.4 
+L 332.150943 86.4 
+L 332.150943 112.550943 
+L 305.830189 112.550943 
+L 305.830189 86.4 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 112.550943 
+L 305.830189 112.550943 
+L 305.830189 138.701887 
+L 279.509434 138.701887 
+L 279.509434 112.550943 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 112.550943 
+L 332.150943 112.550943 
+L 332.150943 138.701887 
+L 305.830189 138.701887 
+L 305.830189 112.550943 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_8">
+    <path d="M 279.509434 86.4 
+L 305.830189 86.4 
+L 305.830189 112.550943 
+L 279.509434 112.550943 
+L 279.509434 86.4 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 86.4 
+L 332.150943 86.4 
+L 332.150943 112.550943 
+L 305.830189 112.550943 
+L 305.830189 86.4 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 112.550943 
+L 305.830189 112.550943 
+L 305.830189 138.701887 
+L 279.509434 138.701887 
+L 279.509434 112.550943 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 112.550943 
+L 332.150943 112.550943 
+L 332.150943 138.701887 
+L 305.830189 138.701887 
+L 305.830189 112.550943 
+" clip-path="url(#p7ce0d83ec8)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_7"/>
+   <g id="matplotlib.axis_8"/>
+   <g id="text_13">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="102.067659" transform="rotate(-0 292.669811 102.067659)">53</text>
+   </g>
+   <g id="text_14">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="102.067659" transform="rotate(-0 318.990566 102.067659)">17</text>
+   </g>
+   <g id="text_15">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="128.218603" transform="rotate(-0 292.669811 128.218603)">0</text>
+   </g>
+   <g id="text_16">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="128.218603" transform="rotate(-0 318.990566 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_5">
+   <g id="patch_6">
+    <path d="M 342.679245 138.701887 
+L 395.320755 138.701887 
+L 395.320755 86.4 
+L 342.679245 86.4 
+L 342.679245 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_9">
+    <path d="M 342.679245 86.4 
+L 369 86.4 
+L 369 112.550943 
+L 342.679245 112.550943 
+L 342.679245 86.4 
+" clip-path="url(#p3e4d38a000)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 86.4 
+L 395.320755 86.4 
+L 395.320755 112.550943 
+L 369 112.550943 
+L 369 86.4 
+" clip-path="url(#p3e4d38a000)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 112.550943 
+L 369 112.550943 
+L 369 138.701887 
+L 342.679245 138.701887 
+L 342.679245 112.550943 
+" clip-path="url(#p3e4d38a000)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 112.550943 
+L 395.320755 112.550943 
+L 395.320755 138.701887 
+L 369 138.701887 
+L 369 112.550943 
+" clip-path="url(#p3e4d38a000)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_10">
+    <path d="M 342.679245 86.4 
+L 369 86.4 
+L 369 112.550943 
+L 342.679245 112.550943 
+L 342.679245 86.4 
+" clip-path="url(#p3e4d38a000)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 86.4 
+L 395.320755 86.4 
+L 395.320755 112.550943 
+L 369 112.550943 
+L 369 86.4 
+" clip-path="url(#p3e4d38a000)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 112.550943 
+L 369 112.550943 
+L 369 138.701887 
+L 342.679245 138.701887 
+L 342.679245 112.550943 
+" clip-path="url(#p3e4d38a000)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 112.550943 
+L 395.320755 112.550943 
+L 395.320755 138.701887 
+L 369 138.701887 
+L 369 112.550943 
+" clip-path="url(#p3e4d38a000)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_9"/>
+   <g id="matplotlib.axis_10"/>
+   <g id="text_17">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="102.067659" transform="rotate(-0 355.839623 102.067659)">65</text>
+   </g>
+   <g id="text_18">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="102.067659" transform="rotate(-0 382.160377 102.067659)">12</text>
+   </g>
+   <g id="text_19">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="128.218603" transform="rotate(-0 355.839623 128.218603)">0</text>
+   </g>
+   <g id="text_20">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="128.218603" transform="rotate(-0 382.160377 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_6">
+   <g id="patch_7">
+    <path d="M 405.849057 138.701887 
+L 458.490566 138.701887 
+L 458.490566 86.4 
+L 405.849057 86.4 
+L 405.849057 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_11">
+    <path d="M 405.849057 86.4 
+L 432.169811 86.4 
+L 432.169811 112.550943 
+L 405.849057 112.550943 
+L 405.849057 86.4 
+" clip-path="url(#p03bf0e868a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 86.4 
+L 458.490566 86.4 
+L 458.490566 112.550943 
+L 432.169811 112.550943 
+L 432.169811 86.4 
+" clip-path="url(#p03bf0e868a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 112.550943 
+L 432.169811 112.550943 
+L 432.169811 138.701887 
+L 405.849057 138.701887 
+L 405.849057 112.550943 
+" clip-path="url(#p03bf0e868a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 112.550943 
+L 458.490566 112.550943 
+L 458.490566 138.701887 
+L 432.169811 138.701887 
+L 432.169811 112.550943 
+" clip-path="url(#p03bf0e868a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_12">
+    <path d="M 405.849057 86.4 
+L 432.169811 86.4 
+L 432.169811 112.550943 
+L 405.849057 112.550943 
+L 405.849057 86.4 
+" clip-path="url(#p03bf0e868a)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 86.4 
+L 458.490566 86.4 
+L 458.490566 112.550943 
+L 432.169811 112.550943 
+L 432.169811 86.4 
+" clip-path="url(#p03bf0e868a)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 112.550943 
+L 432.169811 112.550943 
+L 432.169811 138.701887 
+L 405.849057 138.701887 
+L 405.849057 112.550943 
+" clip-path="url(#p03bf0e868a)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 112.550943 
+L 458.490566 112.550943 
+L 458.490566 138.701887 
+L 432.169811 138.701887 
+L 432.169811 112.550943 
+" clip-path="url(#p03bf0e868a)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_11"/>
+   <g id="matplotlib.axis_12"/>
+   <g id="text_21">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="102.067659" transform="rotate(-0 419.009434 102.067659)">66</text>
+   </g>
+   <g id="text_22">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="102.067659" transform="rotate(-0 445.330189 102.067659)">13</text>
+   </g>
+   <g id="text_23">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="128.218603" transform="rotate(-0 419.009434 128.218603)">0</text>
+   </g>
+   <g id="text_24">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="128.218603" transform="rotate(-0 445.330189 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_7">
+   <g id="patch_8">
+    <path d="M 469.018868 138.701887 
+L 521.660377 138.701887 
+L 521.660377 86.4 
+L 469.018868 86.4 
+L 469.018868 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_13">
+    <path d="M 469.018868 86.4 
+L 495.339623 86.4 
+L 495.339623 112.550943 
+L 469.018868 112.550943 
+L 469.018868 86.4 
+" clip-path="url(#p915a5ec375)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 86.4 
+L 521.660377 86.4 
+L 521.660377 112.550943 
+L 495.339623 112.550943 
+L 495.339623 86.4 
+" clip-path="url(#p915a5ec375)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 469.018868 112.550943 
+L 495.339623 112.550943 
+L 495.339623 138.701887 
+L 469.018868 138.701887 
+L 469.018868 112.550943 
+" clip-path="url(#p915a5ec375)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 112.550943 
+L 521.660377 112.550943 
+L 521.660377 138.701887 
+L 495.339623 138.701887 
+L 495.339623 112.550943 
+" clip-path="url(#p915a5ec375)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_14">
+    <path d="M 469.018868 86.4 
+L 495.339623 86.4 
+L 495.339623 112.550943 
+L 469.018868 112.550943 
+L 469.018868 86.4 
+" clip-path="url(#p915a5ec375)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 86.4 
+L 521.660377 86.4 
+L 521.660377 112.550943 
+L 495.339623 112.550943 
+L 495.339623 86.4 
+" clip-path="url(#p915a5ec375)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 469.018868 112.550943 
+L 495.339623 112.550943 
+L 495.339623 138.701887 
+L 469.018868 138.701887 
+L 469.018868 112.550943 
+" clip-path="url(#p915a5ec375)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 112.550943 
+L 521.660377 112.550943 
+L 521.660377 138.701887 
+L 495.339623 138.701887 
+L 495.339623 112.550943 
+" clip-path="url(#p915a5ec375)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_13"/>
+   <g id="matplotlib.axis_14"/>
+   <g id="text_25">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="482.179245" y="102.067659" transform="rotate(-0 482.179245 102.067659)">78</text>
+   </g>
+   <g id="text_26">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="508.5" y="102.067659" transform="rotate(-0 508.5 102.067659)">15</text>
+   </g>
+   <g id="text_27">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="482.179245" y="128.218603" transform="rotate(-0 482.179245 128.218603)">0</text>
+   </g>
+   <g id="text_28">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="508.5" y="128.218603" transform="rotate(-0 508.5 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_8">
+   <g id="patch_9">
+    <path d="M 532.188679 138.701887 
+L 584.830189 138.701887 
+L 584.830189 86.4 
+L 532.188679 86.4 
+L 532.188679 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_15">
+    <path d="M 532.188679 86.4 
+L 558.509434 86.4 
+L 558.509434 112.550943 
+L 532.188679 112.550943 
+L 532.188679 86.4 
+" clip-path="url(#pd1fb26317f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 86.4 
+L 584.830189 86.4 
+L 584.830189 112.550943 
+L 558.509434 112.550943 
+L 558.509434 86.4 
+" clip-path="url(#pd1fb26317f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 532.188679 112.550943 
+L 558.509434 112.550943 
+L 558.509434 138.701887 
+L 532.188679 138.701887 
+L 532.188679 112.550943 
+" clip-path="url(#pd1fb26317f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 112.550943 
+L 584.830189 112.550943 
+L 584.830189 138.701887 
+L 558.509434 138.701887 
+L 558.509434 112.550943 
+" clip-path="url(#pd1fb26317f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_16">
+    <path d="M 532.188679 86.4 
+L 558.509434 86.4 
+L 558.509434 112.550943 
+L 532.188679 112.550943 
+L 532.188679 86.4 
+" clip-path="url(#pd1fb26317f)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 86.4 
+L 584.830189 86.4 
+L 584.830189 112.550943 
+L 558.509434 112.550943 
+L 558.509434 86.4 
+" clip-path="url(#pd1fb26317f)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 532.188679 112.550943 
+L 558.509434 112.550943 
+L 558.509434 138.701887 
+L 532.188679 138.701887 
+L 532.188679 112.550943 
+" clip-path="url(#pd1fb26317f)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 112.550943 
+L 584.830189 112.550943 
+L 584.830189 138.701887 
+L 558.509434 138.701887 
+L 558.509434 112.550943 
+" clip-path="url(#pd1fb26317f)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_15"/>
+   <g id="matplotlib.axis_16"/>
+   <g id="text_29">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="545.349057" y="102.067659" transform="rotate(-0 545.349057 102.067659)">90</text>
+   </g>
+   <g id="text_30">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="571.669811" y="102.067659" transform="rotate(-0 571.669811 102.067659)">13</text>
+   </g>
+   <g id="text_31">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="545.349057" y="128.218603" transform="rotate(-0 545.349057 128.218603)">0</text>
+   </g>
+   <g id="text_32">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="571.669811" y="128.218603" transform="rotate(-0 571.669811 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_9">
+   <g id="patch_10">
+    <path d="M 595.358491 138.701887 
+L 648 138.701887 
+L 648 86.4 
+L 595.358491 86.4 
+L 595.358491 138.701887 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_17">
+    <path d="M 595.358491 86.4 
+L 621.679245 86.4 
+L 621.679245 112.550943 
+L 595.358491 112.550943 
+L 595.358491 86.4 
+" clip-path="url(#pa7238a216a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 621.679245 86.4 
+L 648 86.4 
+L 648 112.550943 
+L 621.679245 112.550943 
+L 621.679245 86.4 
+" clip-path="url(#pa7238a216a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 595.358491 112.550943 
+L 621.679245 112.550943 
+L 621.679245 138.701887 
+L 595.358491 138.701887 
+L 595.358491 112.550943 
+" clip-path="url(#pa7238a216a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 621.679245 112.550943 
+L 648 112.550943 
+L 648 138.701887 
+L 621.679245 138.701887 
+L 621.679245 112.550943 
+" clip-path="url(#pa7238a216a)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_18">
+    <path d="M 595.358491 86.4 
+L 621.679245 86.4 
+L 621.679245 112.550943 
+L 595.358491 112.550943 
+L 595.358491 86.4 
+" clip-path="url(#pa7238a216a)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 621.679245 86.4 
+L 648 86.4 
+L 648 112.550943 
+L 621.679245 112.550943 
+L 621.679245 86.4 
+" clip-path="url(#pa7238a216a)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 595.358491 112.550943 
+L 621.679245 112.550943 
+L 621.679245 138.701887 
+L 595.358491 138.701887 
+L 595.358491 112.550943 
+" clip-path="url(#pa7238a216a)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 621.679245 112.550943 
+L 648 112.550943 
+L 648 138.701887 
+L 621.679245 138.701887 
+L 621.679245 112.550943 
+" clip-path="url(#pa7238a216a)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_17"/>
+   <g id="matplotlib.axis_18"/>
+   <g id="text_33">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="608.518868" y="102.067659" transform="rotate(-0 608.518868 102.067659)">102</text>
+   </g>
+   <g id="text_34">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="634.839623" y="102.067659" transform="rotate(-0 634.839623 102.067659)">16</text>
+   </g>
+   <g id="text_35">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="608.518868" y="128.218603" transform="rotate(-0 608.518868 128.218603)">0</text>
+   </g>
+   <g id="text_36">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="634.839623" y="128.218603" transform="rotate(-0 634.839623 128.218603)">0</text>
+   </g>
+  </g>
+  <g id="axes_10">
+   <g id="patch_11">
+    <path d="M 90 201.464151 
+L 142.641509 201.464151 
+L 142.641509 149.162264 
+L 90 149.162264 
+L 90 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_19">
+    <path d="M 90 149.162264 
+L 116.320755 149.162264 
+L 116.320755 175.313208 
+L 90 175.313208 
+L 90 149.162264 
+" clip-path="url(#p9496b28265)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 149.162264 
+L 142.641509 149.162264 
+L 142.641509 175.313208 
+L 116.320755 175.313208 
+L 116.320755 149.162264 
+" clip-path="url(#p9496b28265)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 175.313208 
+L 116.320755 175.313208 
+L 116.320755 201.464151 
+L 90 201.464151 
+L 90 175.313208 
+" clip-path="url(#p9496b28265)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 175.313208 
+L 142.641509 175.313208 
+L 142.641509 201.464151 
+L 116.320755 201.464151 
+L 116.320755 175.313208 
+" clip-path="url(#p9496b28265)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_20">
+    <path d="M 90 149.162264 
+L 116.320755 149.162264 
+L 116.320755 175.313208 
+L 90 175.313208 
+L 90 149.162264 
+" clip-path="url(#p9496b28265)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 149.162264 
+L 142.641509 149.162264 
+L 142.641509 175.313208 
+L 116.320755 175.313208 
+L 116.320755 149.162264 
+" clip-path="url(#p9496b28265)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 175.313208 
+L 116.320755 175.313208 
+L 116.320755 201.464151 
+L 90 201.464151 
+L 90 175.313208 
+" clip-path="url(#p9496b28265)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 175.313208 
+L 142.641509 175.313208 
+L 142.641509 201.464151 
+L 116.320755 201.464151 
+L 116.320755 175.313208 
+" clip-path="url(#p9496b28265)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_19"/>
+   <g id="matplotlib.axis_20"/>
+   <g id="text_37">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="164.829923" transform="rotate(-0 103.160377 164.829923)">0</text>
+   </g>
+   <g id="text_38">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="164.829923" transform="rotate(-0 129.481132 164.829923)">0</text>
+   </g>
+   <g id="text_39">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="190.980867" transform="rotate(-0 103.160377 190.980867)">8</text>
+   </g>
+   <g id="text_40">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="190.980867" transform="rotate(-0 129.481132 190.980867)">21</text>
+   </g>
+  </g>
+  <g id="axes_11">
+   <g id="patch_12">
+    <path d="M 153.169811 201.464151 
+L 205.811321 201.464151 
+L 205.811321 149.162264 
+L 153.169811 149.162264 
+L 153.169811 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_21">
+    <path d="M 153.169811 149.162264 
+L 179.490566 149.162264 
+L 179.490566 175.313208 
+L 153.169811 175.313208 
+L 153.169811 149.162264 
+" clip-path="url(#p11399fca79)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 149.162264 
+L 205.811321 149.162264 
+L 205.811321 175.313208 
+L 179.490566 175.313208 
+L 179.490566 149.162264 
+" clip-path="url(#p11399fca79)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 175.313208 
+L 179.490566 175.313208 
+L 179.490566 201.464151 
+L 153.169811 201.464151 
+L 153.169811 175.313208 
+" clip-path="url(#p11399fca79)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 175.313208 
+L 205.811321 175.313208 
+L 205.811321 201.464151 
+L 179.490566 201.464151 
+L 179.490566 175.313208 
+" clip-path="url(#p11399fca79)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_22">
+    <path d="M 153.169811 149.162264 
+L 179.490566 149.162264 
+L 179.490566 175.313208 
+L 153.169811 175.313208 
+L 153.169811 149.162264 
+" clip-path="url(#p11399fca79)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 149.162264 
+L 205.811321 149.162264 
+L 205.811321 175.313208 
+L 179.490566 175.313208 
+L 179.490566 149.162264 
+" clip-path="url(#p11399fca79)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 175.313208 
+L 179.490566 175.313208 
+L 179.490566 201.464151 
+L 153.169811 201.464151 
+L 153.169811 175.313208 
+" clip-path="url(#p11399fca79)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 175.313208 
+L 205.811321 175.313208 
+L 205.811321 201.464151 
+L 179.490566 201.464151 
+L 179.490566 175.313208 
+" clip-path="url(#p11399fca79)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_21"/>
+   <g id="matplotlib.axis_22"/>
+   <g id="text_41">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="164.829923" transform="rotate(-0 166.330189 164.829923)">15</text>
+   </g>
+   <g id="text_42">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="164.829923" transform="rotate(-0 192.650943 164.829923)">2</text>
+   </g>
+   <g id="text_43">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="190.980867" transform="rotate(-0 166.330189 190.980867)">8</text>
+   </g>
+   <g id="text_44">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="190.980867" transform="rotate(-0 192.650943 190.980867)">26</text>
+   </g>
+  </g>
+  <g id="axes_12">
+   <g id="patch_13">
+    <path d="M 216.339623 201.464151 
+L 268.981132 201.464151 
+L 268.981132 149.162264 
+L 216.339623 149.162264 
+L 216.339623 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_23">
+    <path d="M 216.339623 149.162264 
+L 242.660377 149.162264 
+L 242.660377 175.313208 
+L 216.339623 175.313208 
+L 216.339623 149.162264 
+" clip-path="url(#p1915d495b1)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 149.162264 
+L 268.981132 149.162264 
+L 268.981132 175.313208 
+L 242.660377 175.313208 
+L 242.660377 149.162264 
+" clip-path="url(#p1915d495b1)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 175.313208 
+L 242.660377 175.313208 
+L 242.660377 201.464151 
+L 216.339623 201.464151 
+L 216.339623 175.313208 
+" clip-path="url(#p1915d495b1)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 175.313208 
+L 268.981132 175.313208 
+L 268.981132 201.464151 
+L 242.660377 201.464151 
+L 242.660377 175.313208 
+" clip-path="url(#p1915d495b1)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_24">
+    <path d="M 216.339623 149.162264 
+L 242.660377 149.162264 
+L 242.660377 175.313208 
+L 216.339623 175.313208 
+L 216.339623 149.162264 
+" clip-path="url(#p1915d495b1)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 149.162264 
+L 268.981132 149.162264 
+L 268.981132 175.313208 
+L 242.660377 175.313208 
+L 242.660377 149.162264 
+" clip-path="url(#p1915d495b1)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 175.313208 
+L 242.660377 175.313208 
+L 242.660377 201.464151 
+L 216.339623 201.464151 
+L 216.339623 175.313208 
+" clip-path="url(#p1915d495b1)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 175.313208 
+L 268.981132 175.313208 
+L 268.981132 201.464151 
+L 242.660377 201.464151 
+L 242.660377 175.313208 
+" clip-path="url(#p1915d495b1)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_23"/>
+   <g id="matplotlib.axis_24"/>
+   <g id="text_45">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="164.829923" transform="rotate(-0 229.5 164.829923)">24</text>
+   </g>
+   <g id="text_46">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="164.829923" transform="rotate(-0 255.820755 164.829923)">22</text>
+   </g>
+   <g id="text_47">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="190.980867" transform="rotate(-0 229.5 190.980867)">2</text>
+   </g>
+   <g id="text_48">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="190.980867" transform="rotate(-0 255.820755 190.980867)">9</text>
+   </g>
+  </g>
+  <g id="axes_13">
+   <g id="patch_14">
+    <path d="M 279.509434 201.464151 
+L 332.150943 201.464151 
+L 332.150943 149.162264 
+L 279.509434 149.162264 
+L 279.509434 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_25">
+    <path d="M 279.509434 149.162264 
+L 305.830189 149.162264 
+L 305.830189 175.313208 
+L 279.509434 175.313208 
+L 279.509434 149.162264 
+" clip-path="url(#p3a99c754b4)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 149.162264 
+L 332.150943 149.162264 
+L 332.150943 175.313208 
+L 305.830189 175.313208 
+L 305.830189 149.162264 
+" clip-path="url(#p3a99c754b4)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 175.313208 
+L 305.830189 175.313208 
+L 305.830189 201.464151 
+L 279.509434 201.464151 
+L 279.509434 175.313208 
+" clip-path="url(#p3a99c754b4)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 175.313208 
+L 332.150943 175.313208 
+L 332.150943 201.464151 
+L 305.830189 201.464151 
+L 305.830189 175.313208 
+" clip-path="url(#p3a99c754b4)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_26">
+    <path d="M 279.509434 149.162264 
+L 305.830189 149.162264 
+L 305.830189 175.313208 
+L 279.509434 175.313208 
+L 279.509434 149.162264 
+" clip-path="url(#p3a99c754b4)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 149.162264 
+L 332.150943 149.162264 
+L 332.150943 175.313208 
+L 305.830189 175.313208 
+L 305.830189 149.162264 
+" clip-path="url(#p3a99c754b4)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 175.313208 
+L 305.830189 175.313208 
+L 305.830189 201.464151 
+L 279.509434 201.464151 
+L 279.509434 175.313208 
+" clip-path="url(#p3a99c754b4)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 175.313208 
+L 332.150943 175.313208 
+L 332.150943 201.464151 
+L 305.830189 201.464151 
+L 305.830189 175.313208 
+" clip-path="url(#p3a99c754b4)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_25"/>
+   <g id="matplotlib.axis_26"/>
+   <g id="text_49">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="164.829923" transform="rotate(-0 292.669811 164.829923)">44</text>
+   </g>
+   <g id="text_50">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="164.829923" transform="rotate(-0 318.990566 164.829923)">18</text>
+   </g>
+   <g id="text_51">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="190.980867" transform="rotate(-0 292.669811 190.980867)">2</text>
+   </g>
+   <g id="text_52">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="190.980867" transform="rotate(-0 318.990566 190.980867)">6</text>
+   </g>
+  </g>
+  <g id="axes_14">
+   <g id="patch_15">
+    <path d="M 342.679245 201.464151 
+L 395.320755 201.464151 
+L 395.320755 149.162264 
+L 342.679245 149.162264 
+L 342.679245 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_27">
+    <path d="M 342.679245 149.162264 
+L 369 149.162264 
+L 369 175.313208 
+L 342.679245 175.313208 
+L 342.679245 149.162264 
+" clip-path="url(#p8148690a08)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 149.162264 
+L 395.320755 149.162264 
+L 395.320755 175.313208 
+L 369 175.313208 
+L 369 149.162264 
+" clip-path="url(#p8148690a08)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 175.313208 
+L 369 175.313208 
+L 369 201.464151 
+L 342.679245 201.464151 
+L 342.679245 175.313208 
+" clip-path="url(#p8148690a08)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 175.313208 
+L 395.320755 175.313208 
+L 395.320755 201.464151 
+L 369 201.464151 
+L 369 175.313208 
+" clip-path="url(#p8148690a08)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_28">
+    <path d="M 342.679245 149.162264 
+L 369 149.162264 
+L 369 175.313208 
+L 342.679245 175.313208 
+L 342.679245 149.162264 
+" clip-path="url(#p8148690a08)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 149.162264 
+L 395.320755 149.162264 
+L 395.320755 175.313208 
+L 369 175.313208 
+L 369 149.162264 
+" clip-path="url(#p8148690a08)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 175.313208 
+L 369 175.313208 
+L 369 201.464151 
+L 342.679245 201.464151 
+L 342.679245 175.313208 
+" clip-path="url(#p8148690a08)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 175.313208 
+L 395.320755 175.313208 
+L 395.320755 201.464151 
+L 369 201.464151 
+L 369 175.313208 
+" clip-path="url(#p8148690a08)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_27"/>
+   <g id="matplotlib.axis_28"/>
+   <g id="text_53">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="164.829923" transform="rotate(-0 355.839623 164.829923)">57</text>
+   </g>
+   <g id="text_54">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="164.829923" transform="rotate(-0 382.160377 164.829923)">22</text>
+   </g>
+   <g id="text_55">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="190.980867" transform="rotate(-0 355.839623 190.980867)">1</text>
+   </g>
+   <g id="text_56">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="190.980867" transform="rotate(-0 382.160377 190.980867)">1</text>
+   </g>
+  </g>
+  <g id="axes_15">
+   <g id="patch_16">
+    <path d="M 405.849057 201.464151 
+L 458.490566 201.464151 
+L 458.490566 149.162264 
+L 405.849057 149.162264 
+L 405.849057 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_29">
+    <path d="M 405.849057 149.162264 
+L 432.169811 149.162264 
+L 432.169811 175.313208 
+L 405.849057 175.313208 
+L 405.849057 149.162264 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 149.162264 
+L 458.490566 149.162264 
+L 458.490566 175.313208 
+L 432.169811 175.313208 
+L 432.169811 149.162264 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 175.313208 
+L 432.169811 175.313208 
+L 432.169811 201.464151 
+L 405.849057 201.464151 
+L 405.849057 175.313208 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 175.313208 
+L 458.490566 175.313208 
+L 458.490566 201.464151 
+L 432.169811 201.464151 
+L 432.169811 175.313208 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_30">
+    <path d="M 405.849057 149.162264 
+L 432.169811 149.162264 
+L 432.169811 175.313208 
+L 405.849057 175.313208 
+L 405.849057 149.162264 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 149.162264 
+L 458.490566 149.162264 
+L 458.490566 175.313208 
+L 432.169811 175.313208 
+L 432.169811 149.162264 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 175.313208 
+L 432.169811 175.313208 
+L 432.169811 201.464151 
+L 405.849057 201.464151 
+L 405.849057 175.313208 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 175.313208 
+L 458.490566 175.313208 
+L 458.490566 201.464151 
+L 432.169811 201.464151 
+L 432.169811 175.313208 
+" clip-path="url(#pc5a6c9d89d)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_29"/>
+   <g id="matplotlib.axis_30"/>
+   <g id="text_57">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="164.829923" transform="rotate(-0 419.009434 164.829923)">73</text>
+   </g>
+   <g id="text_58">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="164.829923" transform="rotate(-0 445.330189 164.829923)">26</text>
+   </g>
+   <g id="text_59">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="190.980867" transform="rotate(-0 419.009434 190.980867)">0</text>
+   </g>
+   <g id="text_60">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="190.980867" transform="rotate(-0 445.330189 190.980867)">1</text>
+   </g>
+  </g>
+  <g id="axes_16">
+   <g id="patch_17">
+    <path d="M 469.018868 201.464151 
+L 521.660377 201.464151 
+L 521.660377 149.162264 
+L 469.018868 149.162264 
+L 469.018868 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_31">
+    <path d="M 469.018868 149.162264 
+L 495.339623 149.162264 
+L 495.339623 175.313208 
+L 469.018868 175.313208 
+L 469.018868 149.162264 
+" clip-path="url(#pc493d79a57)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 149.162264 
+L 521.660377 149.162264 
+L 521.660377 175.313208 
+L 495.339623 175.313208 
+L 495.339623 149.162264 
+" clip-path="url(#pc493d79a57)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 469.018868 175.313208 
+L 495.339623 175.313208 
+L 495.339623 201.464151 
+L 469.018868 201.464151 
+L 469.018868 175.313208 
+" clip-path="url(#pc493d79a57)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 175.313208 
+L 521.660377 175.313208 
+L 521.660377 201.464151 
+L 495.339623 201.464151 
+L 495.339623 175.313208 
+" clip-path="url(#pc493d79a57)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_32">
+    <path d="M 469.018868 149.162264 
+L 495.339623 149.162264 
+L 495.339623 175.313208 
+L 469.018868 175.313208 
+L 469.018868 149.162264 
+" clip-path="url(#pc493d79a57)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 149.162264 
+L 521.660377 149.162264 
+L 521.660377 175.313208 
+L 495.339623 175.313208 
+L 495.339623 149.162264 
+" clip-path="url(#pc493d79a57)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 469.018868 175.313208 
+L 495.339623 175.313208 
+L 495.339623 201.464151 
+L 469.018868 201.464151 
+L 469.018868 175.313208 
+" clip-path="url(#pc493d79a57)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 175.313208 
+L 521.660377 175.313208 
+L 521.660377 201.464151 
+L 495.339623 201.464151 
+L 495.339623 175.313208 
+" clip-path="url(#pc493d79a57)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_31"/>
+   <g id="matplotlib.axis_32"/>
+   <g id="text_61">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="482.179245" y="164.829923" transform="rotate(-0 482.179245 164.829923)">82</text>
+   </g>
+   <g id="text_62">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="508.5" y="164.829923" transform="rotate(-0 508.5 164.829923)">23</text>
+   </g>
+   <g id="text_63">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="482.179245" y="190.980867" transform="rotate(-0 482.179245 190.980867)">0</text>
+   </g>
+   <g id="text_64">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="508.5" y="190.980867" transform="rotate(-0 508.5 190.980867)">0</text>
+   </g>
+  </g>
+  <g id="axes_17">
+   <g id="patch_18">
+    <path d="M 532.188679 201.464151 
+L 584.830189 201.464151 
+L 584.830189 149.162264 
+L 532.188679 149.162264 
+L 532.188679 201.464151 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_33">
+    <path d="M 532.188679 149.162264 
+L 558.509434 149.162264 
+L 558.509434 175.313208 
+L 532.188679 175.313208 
+L 532.188679 149.162264 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 149.162264 
+L 584.830189 149.162264 
+L 584.830189 175.313208 
+L 558.509434 175.313208 
+L 558.509434 149.162264 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 532.188679 175.313208 
+L 558.509434 175.313208 
+L 558.509434 201.464151 
+L 532.188679 201.464151 
+L 532.188679 175.313208 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 175.313208 
+L 584.830189 175.313208 
+L 584.830189 201.464151 
+L 558.509434 201.464151 
+L 558.509434 175.313208 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_34">
+    <path d="M 532.188679 149.162264 
+L 558.509434 149.162264 
+L 558.509434 175.313208 
+L 532.188679 175.313208 
+L 532.188679 149.162264 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 149.162264 
+L 584.830189 149.162264 
+L 584.830189 175.313208 
+L 558.509434 175.313208 
+L 558.509434 149.162264 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 532.188679 175.313208 
+L 558.509434 175.313208 
+L 558.509434 201.464151 
+L 532.188679 201.464151 
+L 532.188679 175.313208 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 558.509434 175.313208 
+L 584.830189 175.313208 
+L 584.830189 201.464151 
+L 558.509434 201.464151 
+L 558.509434 175.313208 
+" clip-path="url(#p8e42fd0fb6)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_33"/>
+   <g id="matplotlib.axis_34"/>
+   <g id="text_65">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="545.349057" y="164.829923" transform="rotate(-0 545.349057 164.829923)">90</text>
+   </g>
+   <g id="text_66">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="571.669811" y="164.829923" transform="rotate(-0 571.669811 164.829923)">28</text>
+   </g>
+   <g id="text_67">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="545.349057" y="190.980867" transform="rotate(-0 545.349057 190.980867)">0</text>
+   </g>
+   <g id="text_68">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="571.669811" y="190.980867" transform="rotate(-0 571.669811 190.980867)">0</text>
+   </g>
+  </g>
+  <g id="axes_18">
+   <g id="patch_19">
+    <path d="M 90 264.226415 
+L 142.641509 264.226415 
+L 142.641509 211.924528 
+L 90 211.924528 
+L 90 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_35">
+    <path d="M 90 211.924528 
+L 116.320755 211.924528 
+L 116.320755 238.075472 
+L 90 238.075472 
+L 90 211.924528 
+" clip-path="url(#p1a9f223cdd)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 211.924528 
+L 142.641509 211.924528 
+L 142.641509 238.075472 
+L 116.320755 238.075472 
+L 116.320755 211.924528 
+" clip-path="url(#p1a9f223cdd)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 238.075472 
+L 116.320755 238.075472 
+L 116.320755 264.226415 
+L 90 264.226415 
+L 90 238.075472 
+" clip-path="url(#p1a9f223cdd)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 238.075472 
+L 142.641509 238.075472 
+L 142.641509 264.226415 
+L 116.320755 264.226415 
+L 116.320755 238.075472 
+" clip-path="url(#p1a9f223cdd)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_36">
+    <path d="M 90 211.924528 
+L 116.320755 211.924528 
+L 116.320755 238.075472 
+L 90 238.075472 
+L 90 211.924528 
+" clip-path="url(#p1a9f223cdd)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 211.924528 
+L 142.641509 211.924528 
+L 142.641509 238.075472 
+L 116.320755 238.075472 
+L 116.320755 211.924528 
+" clip-path="url(#p1a9f223cdd)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 238.075472 
+L 116.320755 238.075472 
+L 116.320755 264.226415 
+L 90 264.226415 
+L 90 238.075472 
+" clip-path="url(#p1a9f223cdd)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 238.075472 
+L 142.641509 238.075472 
+L 142.641509 264.226415 
+L 116.320755 264.226415 
+L 116.320755 238.075472 
+" clip-path="url(#p1a9f223cdd)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_35"/>
+   <g id="matplotlib.axis_36"/>
+   <g id="text_69">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="227.592188" transform="rotate(-0 103.160377 227.592188)">0</text>
+   </g>
+   <g id="text_70">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="227.592188" transform="rotate(-0 129.481132 227.592188)">0</text>
+   </g>
+   <g id="text_71">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="253.743131" transform="rotate(-0 103.160377 253.743131)">9</text>
+   </g>
+   <g id="text_72">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="253.743131" transform="rotate(-0 129.481132 253.743131)">33</text>
+   </g>
+  </g>
+  <g id="axes_19">
+   <g id="patch_20">
+    <path d="M 153.169811 264.226415 
+L 205.811321 264.226415 
+L 205.811321 211.924528 
+L 153.169811 211.924528 
+L 153.169811 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_37">
+    <path d="M 153.169811 211.924528 
+L 179.490566 211.924528 
+L 179.490566 238.075472 
+L 153.169811 238.075472 
+L 153.169811 211.924528 
+" clip-path="url(#p06a64e92a8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 211.924528 
+L 205.811321 211.924528 
+L 205.811321 238.075472 
+L 179.490566 238.075472 
+L 179.490566 211.924528 
+" clip-path="url(#p06a64e92a8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 238.075472 
+L 179.490566 238.075472 
+L 179.490566 264.226415 
+L 153.169811 264.226415 
+L 153.169811 238.075472 
+" clip-path="url(#p06a64e92a8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 238.075472 
+L 205.811321 238.075472 
+L 205.811321 264.226415 
+L 179.490566 264.226415 
+L 179.490566 238.075472 
+" clip-path="url(#p06a64e92a8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_38">
+    <path d="M 153.169811 211.924528 
+L 179.490566 211.924528 
+L 179.490566 238.075472 
+L 153.169811 238.075472 
+L 153.169811 211.924528 
+" clip-path="url(#p06a64e92a8)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 211.924528 
+L 205.811321 211.924528 
+L 205.811321 238.075472 
+L 179.490566 238.075472 
+L 179.490566 211.924528 
+" clip-path="url(#p06a64e92a8)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 238.075472 
+L 179.490566 238.075472 
+L 179.490566 264.226415 
+L 153.169811 264.226415 
+L 153.169811 238.075472 
+" clip-path="url(#p06a64e92a8)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 238.075472 
+L 205.811321 238.075472 
+L 205.811321 264.226415 
+L 179.490566 264.226415 
+L 179.490566 238.075472 
+" clip-path="url(#p06a64e92a8)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_37"/>
+   <g id="matplotlib.axis_38"/>
+   <g id="text_73">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="227.592188" transform="rotate(-0 166.330189 227.592188)">4</text>
+   </g>
+   <g id="text_74">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="227.592188" transform="rotate(-0 192.650943 227.592188)">2</text>
+   </g>
+   <g id="text_75">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="253.743131" transform="rotate(-0 166.330189 253.743131)">18</text>
+   </g>
+   <g id="text_76">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="253.743131" transform="rotate(-0 192.650943 253.743131)">38</text>
+   </g>
+  </g>
+  <g id="axes_20">
+   <g id="patch_21">
+    <path d="M 216.339623 264.226415 
+L 268.981132 264.226415 
+L 268.981132 211.924528 
+L 216.339623 211.924528 
+L 216.339623 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_39">
+    <path d="M 216.339623 211.924528 
+L 242.660377 211.924528 
+L 242.660377 238.075472 
+L 216.339623 238.075472 
+L 216.339623 211.924528 
+" clip-path="url(#p79d0d9aa76)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 211.924528 
+L 268.981132 211.924528 
+L 268.981132 238.075472 
+L 242.660377 238.075472 
+L 242.660377 211.924528 
+" clip-path="url(#p79d0d9aa76)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 238.075472 
+L 242.660377 238.075472 
+L 242.660377 264.226415 
+L 216.339623 264.226415 
+L 216.339623 238.075472 
+" clip-path="url(#p79d0d9aa76)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 238.075472 
+L 268.981132 238.075472 
+L 268.981132 264.226415 
+L 242.660377 264.226415 
+L 242.660377 238.075472 
+" clip-path="url(#p79d0d9aa76)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_40">
+    <path d="M 216.339623 211.924528 
+L 242.660377 211.924528 
+L 242.660377 238.075472 
+L 216.339623 238.075472 
+L 216.339623 211.924528 
+" clip-path="url(#p79d0d9aa76)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 211.924528 
+L 268.981132 211.924528 
+L 268.981132 238.075472 
+L 242.660377 238.075472 
+L 242.660377 211.924528 
+" clip-path="url(#p79d0d9aa76)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 238.075472 
+L 242.660377 238.075472 
+L 242.660377 264.226415 
+L 216.339623 264.226415 
+L 216.339623 238.075472 
+" clip-path="url(#p79d0d9aa76)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 238.075472 
+L 268.981132 238.075472 
+L 268.981132 264.226415 
+L 242.660377 264.226415 
+L 242.660377 238.075472 
+" clip-path="url(#p79d0d9aa76)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_39"/>
+   <g id="matplotlib.axis_40"/>
+   <g id="text_77">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="227.592188" transform="rotate(-0 229.5 227.592188)">20</text>
+   </g>
+   <g id="text_78">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="227.592188" transform="rotate(-0 255.820755 227.592188)">7</text>
+   </g>
+   <g id="text_79">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="253.743131" transform="rotate(-0 229.5 253.743131)">5</text>
+   </g>
+   <g id="text_80">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="253.743131" transform="rotate(-0 255.820755 253.743131)">30</text>
+   </g>
+  </g>
+  <g id="axes_21">
+   <g id="patch_22">
+    <path d="M 279.509434 264.226415 
+L 332.150943 264.226415 
+L 332.150943 211.924528 
+L 279.509434 211.924528 
+L 279.509434 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_41">
+    <path d="M 279.509434 211.924528 
+L 305.830189 211.924528 
+L 305.830189 238.075472 
+L 279.509434 238.075472 
+L 279.509434 211.924528 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 211.924528 
+L 332.150943 211.924528 
+L 332.150943 238.075472 
+L 305.830189 238.075472 
+L 305.830189 211.924528 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 238.075472 
+L 305.830189 238.075472 
+L 305.830189 264.226415 
+L 279.509434 264.226415 
+L 279.509434 238.075472 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 238.075472 
+L 332.150943 238.075472 
+L 332.150943 264.226415 
+L 305.830189 264.226415 
+L 305.830189 238.075472 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_42">
+    <path d="M 279.509434 211.924528 
+L 305.830189 211.924528 
+L 305.830189 238.075472 
+L 279.509434 238.075472 
+L 279.509434 211.924528 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 211.924528 
+L 332.150943 211.924528 
+L 332.150943 238.075472 
+L 305.830189 238.075472 
+L 305.830189 211.924528 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 238.075472 
+L 305.830189 238.075472 
+L 305.830189 264.226415 
+L 279.509434 264.226415 
+L 279.509434 238.075472 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 238.075472 
+L 332.150943 238.075472 
+L 332.150943 264.226415 
+L 305.830189 264.226415 
+L 305.830189 238.075472 
+" clip-path="url(#p3ee1c1ad39)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_41"/>
+   <g id="matplotlib.axis_42"/>
+   <g id="text_81">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="227.592188" transform="rotate(-0 292.669811 227.592188)">42</text>
+   </g>
+   <g id="text_82">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="227.592188" transform="rotate(-0 318.990566 227.592188)">23</text>
+   </g>
+   <g id="text_83">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="253.743131" transform="rotate(-0 292.669811 253.743131)">8</text>
+   </g>
+   <g id="text_84">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="253.743131" transform="rotate(-0 318.990566 253.743131)">8</text>
+   </g>
+  </g>
+  <g id="axes_22">
+   <g id="patch_23">
+    <path d="M 342.679245 264.226415 
+L 395.320755 264.226415 
+L 395.320755 211.924528 
+L 342.679245 211.924528 
+L 342.679245 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_43">
+    <path d="M 342.679245 211.924528 
+L 369 211.924528 
+L 369 238.075472 
+L 342.679245 238.075472 
+L 342.679245 211.924528 
+" clip-path="url(#p0ae7ea7497)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 211.924528 
+L 395.320755 211.924528 
+L 395.320755 238.075472 
+L 369 238.075472 
+L 369 211.924528 
+" clip-path="url(#p0ae7ea7497)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 238.075472 
+L 369 238.075472 
+L 369 264.226415 
+L 342.679245 264.226415 
+L 342.679245 238.075472 
+" clip-path="url(#p0ae7ea7497)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 238.075472 
+L 395.320755 238.075472 
+L 395.320755 264.226415 
+L 369 264.226415 
+L 369 238.075472 
+" clip-path="url(#p0ae7ea7497)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_44">
+    <path d="M 342.679245 211.924528 
+L 369 211.924528 
+L 369 238.075472 
+L 342.679245 238.075472 
+L 342.679245 211.924528 
+" clip-path="url(#p0ae7ea7497)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 211.924528 
+L 395.320755 211.924528 
+L 395.320755 238.075472 
+L 369 238.075472 
+L 369 211.924528 
+" clip-path="url(#p0ae7ea7497)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 238.075472 
+L 369 238.075472 
+L 369 264.226415 
+L 342.679245 264.226415 
+L 342.679245 238.075472 
+" clip-path="url(#p0ae7ea7497)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 238.075472 
+L 395.320755 238.075472 
+L 395.320755 264.226415 
+L 369 264.226415 
+L 369 238.075472 
+" clip-path="url(#p0ae7ea7497)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_43"/>
+   <g id="matplotlib.axis_44"/>
+   <g id="text_85">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="227.592188" transform="rotate(-0 355.839623 227.592188)">57</text>
+   </g>
+   <g id="text_86">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="227.592188" transform="rotate(-0 382.160377 227.592188)">26</text>
+   </g>
+   <g id="text_87">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="253.743131" transform="rotate(-0 355.839623 253.743131)">0</text>
+   </g>
+   <g id="text_88">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="253.743131" transform="rotate(-0 382.160377 253.743131)">5</text>
+   </g>
+  </g>
+  <g id="axes_23">
+   <g id="patch_24">
+    <path d="M 405.849057 264.226415 
+L 458.490566 264.226415 
+L 458.490566 211.924528 
+L 405.849057 211.924528 
+L 405.849057 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_45">
+    <path d="M 405.849057 211.924528 
+L 432.169811 211.924528 
+L 432.169811 238.075472 
+L 405.849057 238.075472 
+L 405.849057 211.924528 
+" clip-path="url(#p3061e1da4d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 211.924528 
+L 458.490566 211.924528 
+L 458.490566 238.075472 
+L 432.169811 238.075472 
+L 432.169811 211.924528 
+" clip-path="url(#p3061e1da4d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 238.075472 
+L 432.169811 238.075472 
+L 432.169811 264.226415 
+L 405.849057 264.226415 
+L 405.849057 238.075472 
+" clip-path="url(#p3061e1da4d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 238.075472 
+L 458.490566 238.075472 
+L 458.490566 264.226415 
+L 432.169811 264.226415 
+L 432.169811 238.075472 
+" clip-path="url(#p3061e1da4d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_46">
+    <path d="M 405.849057 211.924528 
+L 432.169811 211.924528 
+L 432.169811 238.075472 
+L 405.849057 238.075472 
+L 405.849057 211.924528 
+" clip-path="url(#p3061e1da4d)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 211.924528 
+L 458.490566 211.924528 
+L 458.490566 238.075472 
+L 432.169811 238.075472 
+L 432.169811 211.924528 
+" clip-path="url(#p3061e1da4d)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 238.075472 
+L 432.169811 238.075472 
+L 432.169811 264.226415 
+L 405.849057 264.226415 
+L 405.849057 238.075472 
+" clip-path="url(#p3061e1da4d)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 238.075472 
+L 458.490566 238.075472 
+L 458.490566 264.226415 
+L 432.169811 264.226415 
+L 432.169811 238.075472 
+" clip-path="url(#p3061e1da4d)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_45"/>
+   <g id="matplotlib.axis_46"/>
+   <g id="text_89">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="227.592188" transform="rotate(-0 419.009434 227.592188)">69</text>
+   </g>
+   <g id="text_90">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="227.592188" transform="rotate(-0 445.330189 227.592188)">37</text>
+   </g>
+   <g id="text_91">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="253.743131" transform="rotate(-0 419.009434 253.743131)">0</text>
+   </g>
+   <g id="text_92">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="253.743131" transform="rotate(-0 445.330189 253.743131)">2</text>
+   </g>
+  </g>
+  <g id="axes_24">
+   <g id="patch_25">
+    <path d="M 469.018868 264.226415 
+L 521.660377 264.226415 
+L 521.660377 211.924528 
+L 469.018868 211.924528 
+L 469.018868 264.226415 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_47">
+    <path d="M 469.018868 211.924528 
+L 495.339623 211.924528 
+L 495.339623 238.075472 
+L 469.018868 238.075472 
+L 469.018868 211.924528 
+" clip-path="url(#p2f382ce76c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 211.924528 
+L 521.660377 211.924528 
+L 521.660377 238.075472 
+L 495.339623 238.075472 
+L 495.339623 211.924528 
+" clip-path="url(#p2f382ce76c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 469.018868 238.075472 
+L 495.339623 238.075472 
+L 495.339623 264.226415 
+L 469.018868 264.226415 
+L 469.018868 238.075472 
+" clip-path="url(#p2f382ce76c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 238.075472 
+L 521.660377 238.075472 
+L 521.660377 264.226415 
+L 495.339623 264.226415 
+L 495.339623 238.075472 
+" clip-path="url(#p2f382ce76c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_48">
+    <path d="M 469.018868 211.924528 
+L 495.339623 211.924528 
+L 495.339623 238.075472 
+L 469.018868 238.075472 
+L 469.018868 211.924528 
+" clip-path="url(#p2f382ce76c)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 211.924528 
+L 521.660377 211.924528 
+L 521.660377 238.075472 
+L 495.339623 238.075472 
+L 495.339623 211.924528 
+" clip-path="url(#p2f382ce76c)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 469.018868 238.075472 
+L 495.339623 238.075472 
+L 495.339623 264.226415 
+L 469.018868 264.226415 
+L 469.018868 238.075472 
+" clip-path="url(#p2f382ce76c)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 495.339623 238.075472 
+L 521.660377 238.075472 
+L 521.660377 264.226415 
+L 495.339623 264.226415 
+L 495.339623 238.075472 
+" clip-path="url(#p2f382ce76c)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_47"/>
+   <g id="matplotlib.axis_48"/>
+   <g id="text_93">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="482.179245" y="227.592188" transform="rotate(-0 482.179245 227.592188)">85</text>
+   </g>
+   <g id="text_94">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="508.5" y="227.592188" transform="rotate(-0 508.5 227.592188)">33</text>
+   </g>
+   <g id="text_95">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="482.179245" y="253.743131" transform="rotate(-0 482.179245 253.743131)">0</text>
+   </g>
+   <g id="text_96">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="508.5" y="253.743131" transform="rotate(-0 508.5 253.743131)">0</text>
+   </g>
+  </g>
+  <g id="axes_25">
+   <g id="patch_26">
+    <path d="M 90 326.988679 
+L 142.641509 326.988679 
+L 142.641509 274.686792 
+L 90 274.686792 
+L 90 326.988679 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_49">
+    <path d="M 90 274.686792 
+L 116.320755 274.686792 
+L 116.320755 300.837736 
+L 90 300.837736 
+L 90 274.686792 
+" clip-path="url(#pa65003e0bc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 274.686792 
+L 142.641509 274.686792 
+L 142.641509 300.837736 
+L 116.320755 300.837736 
+L 116.320755 274.686792 
+" clip-path="url(#pa65003e0bc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 300.837736 
+L 116.320755 300.837736 
+L 116.320755 326.988679 
+L 90 326.988679 
+L 90 300.837736 
+" clip-path="url(#pa65003e0bc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 300.837736 
+L 142.641509 300.837736 
+L 142.641509 326.988679 
+L 116.320755 326.988679 
+L 116.320755 300.837736 
+" clip-path="url(#pa65003e0bc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_50">
+    <path d="M 90 274.686792 
+L 116.320755 274.686792 
+L 116.320755 300.837736 
+L 90 300.837736 
+L 90 274.686792 
+" clip-path="url(#pa65003e0bc)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 274.686792 
+L 142.641509 274.686792 
+L 142.641509 300.837736 
+L 116.320755 300.837736 
+L 116.320755 274.686792 
+" clip-path="url(#pa65003e0bc)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 300.837736 
+L 116.320755 300.837736 
+L 116.320755 326.988679 
+L 90 326.988679 
+L 90 300.837736 
+" clip-path="url(#pa65003e0bc)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 300.837736 
+L 142.641509 300.837736 
+L 142.641509 326.988679 
+L 116.320755 326.988679 
+L 116.320755 300.837736 
+" clip-path="url(#pa65003e0bc)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_49"/>
+   <g id="matplotlib.axis_50"/>
+   <g id="text_97">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="290.354452" transform="rotate(-0 103.160377 290.354452)">0</text>
+   </g>
+   <g id="text_98">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="290.354452" transform="rotate(-0 129.481132 290.354452)">0</text>
+   </g>
+   <g id="text_99">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="316.505395" transform="rotate(-0 103.160377 316.505395)">19</text>
+   </g>
+   <g id="text_100">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="316.505395" transform="rotate(-0 129.481132 316.505395)">45</text>
+   </g>
+  </g>
+  <g id="axes_26">
+   <g id="patch_27">
+    <path d="M 153.169811 326.988679 
+L 205.811321 326.988679 
+L 205.811321 274.686792 
+L 153.169811 274.686792 
+L 153.169811 326.988679 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_51">
+    <path d="M 153.169811 274.686792 
+L 179.490566 274.686792 
+L 179.490566 300.837736 
+L 153.169811 300.837736 
+L 153.169811 274.686792 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 274.686792 
+L 205.811321 274.686792 
+L 205.811321 300.837736 
+L 179.490566 300.837736 
+L 179.490566 274.686792 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 300.837736 
+L 179.490566 300.837736 
+L 179.490566 326.988679 
+L 153.169811 326.988679 
+L 153.169811 300.837736 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 300.837736 
+L 205.811321 300.837736 
+L 205.811321 326.988679 
+L 179.490566 326.988679 
+L 179.490566 300.837736 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_52">
+    <path d="M 153.169811 274.686792 
+L 179.490566 274.686792 
+L 179.490566 300.837736 
+L 153.169811 300.837736 
+L 153.169811 274.686792 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 274.686792 
+L 205.811321 274.686792 
+L 205.811321 300.837736 
+L 179.490566 300.837736 
+L 179.490566 274.686792 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 300.837736 
+L 179.490566 300.837736 
+L 179.490566 326.988679 
+L 153.169811 326.988679 
+L 153.169811 300.837736 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 300.837736 
+L 205.811321 300.837736 
+L 205.811321 326.988679 
+L 179.490566 326.988679 
+L 179.490566 300.837736 
+" clip-path="url(#p3ee7a8fc34)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_51"/>
+   <g id="matplotlib.axis_52"/>
+   <g id="text_101">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="290.354452" transform="rotate(-0 166.330189 290.354452)">4</text>
+   </g>
+   <g id="text_102">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="290.354452" transform="rotate(-0 192.650943 290.354452)">0</text>
+   </g>
+   <g id="text_103">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="316.505395" transform="rotate(-0 166.330189 316.505395)">15</text>
+   </g>
+   <g id="text_104">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="316.505395" transform="rotate(-0 192.650943 316.505395)">55</text>
+   </g>
+  </g>
+  <g id="axes_27">
+   <g id="patch_28">
+    <path d="M 216.339623 326.988679 
+L 268.981132 326.988679 
+L 268.981132 274.686792 
+L 216.339623 274.686792 
+L 216.339623 326.988679 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_53">
+    <path d="M 216.339623 274.686792 
+L 242.660377 274.686792 
+L 242.660377 300.837736 
+L 216.339623 300.837736 
+L 216.339623 274.686792 
+" clip-path="url(#p8866ce9306)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 274.686792 
+L 268.981132 274.686792 
+L 268.981132 300.837736 
+L 242.660377 300.837736 
+L 242.660377 274.686792 
+" clip-path="url(#p8866ce9306)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 300.837736 
+L 242.660377 300.837736 
+L 242.660377 326.988679 
+L 216.339623 326.988679 
+L 216.339623 300.837736 
+" clip-path="url(#p8866ce9306)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 300.837736 
+L 268.981132 300.837736 
+L 268.981132 326.988679 
+L 242.660377 326.988679 
+L 242.660377 300.837736 
+" clip-path="url(#p8866ce9306)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_54">
+    <path d="M 216.339623 274.686792 
+L 242.660377 274.686792 
+L 242.660377 300.837736 
+L 216.339623 300.837736 
+L 216.339623 274.686792 
+" clip-path="url(#p8866ce9306)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 274.686792 
+L 268.981132 274.686792 
+L 268.981132 300.837736 
+L 242.660377 300.837736 
+L 242.660377 274.686792 
+" clip-path="url(#p8866ce9306)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 300.837736 
+L 242.660377 300.837736 
+L 242.660377 326.988679 
+L 216.339623 326.988679 
+L 216.339623 300.837736 
+" clip-path="url(#p8866ce9306)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 300.837736 
+L 268.981132 300.837736 
+L 268.981132 326.988679 
+L 242.660377 326.988679 
+L 242.660377 300.837736 
+" clip-path="url(#p8866ce9306)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_53"/>
+   <g id="matplotlib.axis_54"/>
+   <g id="text_105">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="290.354452" transform="rotate(-0 229.5 290.354452)">11</text>
+   </g>
+   <g id="text_106">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="290.354452" transform="rotate(-0 255.820755 290.354452)">4</text>
+   </g>
+   <g id="text_107">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="316.505395" transform="rotate(-0 229.5 316.505395)">20</text>
+   </g>
+   <g id="text_108">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="316.505395" transform="rotate(-0 255.820755 316.505395)">46</text>
+   </g>
+  </g>
+  <g id="axes_28">
+   <g id="patch_29">
+    <path d="M 279.509434 326.988679 
+L 332.150943 326.988679 
+L 332.150943 274.686792 
+L 279.509434 274.686792 
+L 279.509434 326.988679 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_55">
+    <path d="M 279.509434 274.686792 
+L 305.830189 274.686792 
+L 305.830189 300.837736 
+L 279.509434 300.837736 
+L 279.509434 274.686792 
+" clip-path="url(#p2ff148b3ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 274.686792 
+L 332.150943 274.686792 
+L 332.150943 300.837736 
+L 305.830189 300.837736 
+L 305.830189 274.686792 
+" clip-path="url(#p2ff148b3ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 300.837736 
+L 305.830189 300.837736 
+L 305.830189 326.988679 
+L 279.509434 326.988679 
+L 279.509434 300.837736 
+" clip-path="url(#p2ff148b3ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 300.837736 
+L 332.150943 300.837736 
+L 332.150943 326.988679 
+L 305.830189 326.988679 
+L 305.830189 300.837736 
+" clip-path="url(#p2ff148b3ef)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_56">
+    <path d="M 279.509434 274.686792 
+L 305.830189 274.686792 
+L 305.830189 300.837736 
+L 279.509434 300.837736 
+L 279.509434 274.686792 
+" clip-path="url(#p2ff148b3ef)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 274.686792 
+L 332.150943 274.686792 
+L 332.150943 300.837736 
+L 305.830189 300.837736 
+L 305.830189 274.686792 
+" clip-path="url(#p2ff148b3ef)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 300.837736 
+L 305.830189 300.837736 
+L 305.830189 326.988679 
+L 279.509434 326.988679 
+L 279.509434 300.837736 
+" clip-path="url(#p2ff148b3ef)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 300.837736 
+L 332.150943 300.837736 
+L 332.150943 326.988679 
+L 305.830189 326.988679 
+L 305.830189 300.837736 
+" clip-path="url(#p2ff148b3ef)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_55"/>
+   <g id="matplotlib.axis_56"/>
+   <g id="text_109">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="290.354452" transform="rotate(-0 292.669811 290.354452)">38</text>
+   </g>
+   <g id="text_110">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="290.354452" transform="rotate(-0 318.990566 290.354452)">19</text>
+   </g>
+   <g id="text_111">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="316.505395" transform="rotate(-0 292.669811 316.505395)">8</text>
+   </g>
+   <g id="text_112">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="316.505395" transform="rotate(-0 318.990566 316.505395)">32</text>
+   </g>
+  </g>
+  <g id="axes_29">
+   <g id="patch_30">
+    <path d="M 342.679245 326.988679 
+L 395.320755 326.988679 
+L 395.320755 274.686792 
+L 342.679245 274.686792 
+L 342.679245 326.988679 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_57">
+    <path d="M 342.679245 274.686792 
+L 369 274.686792 
+L 369 300.837736 
+L 342.679245 300.837736 
+L 342.679245 274.686792 
+" clip-path="url(#pe2012d4ff6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 274.686792 
+L 395.320755 274.686792 
+L 395.320755 300.837736 
+L 369 300.837736 
+L 369 274.686792 
+" clip-path="url(#pe2012d4ff6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 300.837736 
+L 369 300.837736 
+L 369 326.988679 
+L 342.679245 326.988679 
+L 342.679245 300.837736 
+" clip-path="url(#pe2012d4ff6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 300.837736 
+L 395.320755 300.837736 
+L 395.320755 326.988679 
+L 369 326.988679 
+L 369 300.837736 
+" clip-path="url(#pe2012d4ff6)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_58">
+    <path d="M 342.679245 274.686792 
+L 369 274.686792 
+L 369 300.837736 
+L 342.679245 300.837736 
+L 342.679245 274.686792 
+" clip-path="url(#pe2012d4ff6)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 274.686792 
+L 395.320755 274.686792 
+L 395.320755 300.837736 
+L 369 300.837736 
+L 369 274.686792 
+" clip-path="url(#pe2012d4ff6)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 300.837736 
+L 369 300.837736 
+L 369 326.988679 
+L 342.679245 326.988679 
+L 342.679245 300.837736 
+" clip-path="url(#pe2012d4ff6)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 300.837736 
+L 395.320755 300.837736 
+L 395.320755 326.988679 
+L 369 326.988679 
+L 369 300.837736 
+" clip-path="url(#pe2012d4ff6)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_57"/>
+   <g id="matplotlib.axis_58"/>
+   <g id="text_113">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="290.354452" transform="rotate(-0 355.839623 290.354452)">53</text>
+   </g>
+   <g id="text_114">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="290.354452" transform="rotate(-0 382.160377 290.354452)">20</text>
+   </g>
+   <g id="text_115">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="316.505395" transform="rotate(-0 355.839623 316.505395)">8</text>
+   </g>
+   <g id="text_116">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="316.505395" transform="rotate(-0 382.160377 316.505395)">24</text>
+   </g>
+  </g>
+  <g id="axes_30">
+   <g id="patch_31">
+    <path d="M 405.849057 326.988679 
+L 458.490566 326.988679 
+L 458.490566 274.686792 
+L 405.849057 274.686792 
+L 405.849057 326.988679 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_59">
+    <path d="M 405.849057 274.686792 
+L 432.169811 274.686792 
+L 432.169811 300.837736 
+L 405.849057 300.837736 
+L 405.849057 274.686792 
+" clip-path="url(#p353006d90e)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 274.686792 
+L 458.490566 274.686792 
+L 458.490566 300.837736 
+L 432.169811 300.837736 
+L 432.169811 274.686792 
+" clip-path="url(#p353006d90e)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 300.837736 
+L 432.169811 300.837736 
+L 432.169811 326.988679 
+L 405.849057 326.988679 
+L 405.849057 300.837736 
+" clip-path="url(#p353006d90e)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 300.837736 
+L 458.490566 300.837736 
+L 458.490566 326.988679 
+L 432.169811 326.988679 
+L 432.169811 300.837736 
+" clip-path="url(#p353006d90e)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_60">
+    <path d="M 405.849057 274.686792 
+L 432.169811 274.686792 
+L 432.169811 300.837736 
+L 405.849057 300.837736 
+L 405.849057 274.686792 
+" clip-path="url(#p353006d90e)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 274.686792 
+L 458.490566 274.686792 
+L 458.490566 300.837736 
+L 432.169811 300.837736 
+L 432.169811 274.686792 
+" clip-path="url(#p353006d90e)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 405.849057 300.837736 
+L 432.169811 300.837736 
+L 432.169811 326.988679 
+L 405.849057 326.988679 
+L 405.849057 300.837736 
+" clip-path="url(#p353006d90e)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 432.169811 300.837736 
+L 458.490566 300.837736 
+L 458.490566 326.988679 
+L 432.169811 326.988679 
+L 432.169811 300.837736 
+" clip-path="url(#p353006d90e)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_59"/>
+   <g id="matplotlib.axis_60"/>
+   <g id="text_117">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="290.354452" transform="rotate(-0 419.009434 290.354452)">70</text>
+   </g>
+   <g id="text_118">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="290.354452" transform="rotate(-0 445.330189 290.354452)">26</text>
+   </g>
+   <g id="text_119">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="419.009434" y="316.505395" transform="rotate(-0 419.009434 316.505395)">8</text>
+   </g>
+   <g id="text_120">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="445.330189" y="316.505395" transform="rotate(-0 445.330189 316.505395)">14</text>
+   </g>
+  </g>
+  <g id="axes_31">
+   <g id="patch_32">
+    <path d="M 90 389.750943 
+L 142.641509 389.750943 
+L 142.641509 337.449057 
+L 90 337.449057 
+L 90 389.750943 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_61">
+    <path d="M 90 337.449057 
+L 116.320755 337.449057 
+L 116.320755 363.6 
+L 90 363.6 
+L 90 337.449057 
+" clip-path="url(#pcaadcebfe0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 337.449057 
+L 142.641509 337.449057 
+L 142.641509 363.6 
+L 116.320755 363.6 
+L 116.320755 337.449057 
+" clip-path="url(#pcaadcebfe0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 363.6 
+L 116.320755 363.6 
+L 116.320755 389.750943 
+L 90 389.750943 
+L 90 363.6 
+" clip-path="url(#pcaadcebfe0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 363.6 
+L 142.641509 363.6 
+L 142.641509 389.750943 
+L 116.320755 389.750943 
+L 116.320755 363.6 
+" clip-path="url(#pcaadcebfe0)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_62">
+    <path d="M 90 337.449057 
+L 116.320755 337.449057 
+L 116.320755 363.6 
+L 90 363.6 
+L 90 337.449057 
+" clip-path="url(#pcaadcebfe0)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 337.449057 
+L 142.641509 337.449057 
+L 142.641509 363.6 
+L 116.320755 363.6 
+L 116.320755 337.449057 
+" clip-path="url(#pcaadcebfe0)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 363.6 
+L 116.320755 363.6 
+L 116.320755 389.750943 
+L 90 389.750943 
+L 90 363.6 
+" clip-path="url(#pcaadcebfe0)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 363.6 
+L 142.641509 363.6 
+L 142.641509 389.750943 
+L 116.320755 389.750943 
+L 116.320755 363.6 
+" clip-path="url(#pcaadcebfe0)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_61"/>
+   <g id="matplotlib.axis_62"/>
+   <g id="text_121">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="353.116716" transform="rotate(-0 103.160377 353.116716)">0</text>
+   </g>
+   <g id="text_122">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="353.116716" transform="rotate(-0 129.481132 353.116716)">0</text>
+   </g>
+   <g id="text_123">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="379.267659" transform="rotate(-0 103.160377 379.267659)">14</text>
+   </g>
+   <g id="text_124">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="379.267659" transform="rotate(-0 129.481132 379.267659)">57</text>
+   </g>
+  </g>
+  <g id="axes_32">
+   <g id="patch_33">
+    <path d="M 153.169811 389.750943 
+L 205.811321 389.750943 
+L 205.811321 337.449057 
+L 153.169811 337.449057 
+L 153.169811 389.750943 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_63">
+    <path d="M 153.169811 337.449057 
+L 179.490566 337.449057 
+L 179.490566 363.6 
+L 153.169811 363.6 
+L 153.169811 337.449057 
+" clip-path="url(#pe7f9376e77)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 337.449057 
+L 205.811321 337.449057 
+L 205.811321 363.6 
+L 179.490566 363.6 
+L 179.490566 337.449057 
+" clip-path="url(#pe7f9376e77)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 363.6 
+L 179.490566 363.6 
+L 179.490566 389.750943 
+L 153.169811 389.750943 
+L 153.169811 363.6 
+" clip-path="url(#pe7f9376e77)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 363.6 
+L 205.811321 363.6 
+L 205.811321 389.750943 
+L 179.490566 389.750943 
+L 179.490566 363.6 
+" clip-path="url(#pe7f9376e77)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_64">
+    <path d="M 153.169811 337.449057 
+L 179.490566 337.449057 
+L 179.490566 363.6 
+L 153.169811 363.6 
+L 153.169811 337.449057 
+" clip-path="url(#pe7f9376e77)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 337.449057 
+L 205.811321 337.449057 
+L 205.811321 363.6 
+L 179.490566 363.6 
+L 179.490566 337.449057 
+" clip-path="url(#pe7f9376e77)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 363.6 
+L 179.490566 363.6 
+L 179.490566 389.750943 
+L 153.169811 389.750943 
+L 153.169811 363.6 
+" clip-path="url(#pe7f9376e77)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 363.6 
+L 205.811321 363.6 
+L 205.811321 389.750943 
+L 179.490566 389.750943 
+L 179.490566 363.6 
+" clip-path="url(#pe7f9376e77)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_63"/>
+   <g id="matplotlib.axis_64"/>
+   <g id="text_125">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="353.116716" transform="rotate(-0 166.330189 353.116716)">0</text>
+   </g>
+   <g id="text_126">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="353.116716" transform="rotate(-0 192.650943 353.116716)">0</text>
+   </g>
+   <g id="text_127">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="379.267659" transform="rotate(-0 166.330189 379.267659)">25</text>
+   </g>
+   <g id="text_128">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="379.267659" transform="rotate(-0 192.650943 379.267659)">64</text>
+   </g>
+  </g>
+  <g id="axes_33">
+   <g id="patch_34">
+    <path d="M 216.339623 389.750943 
+L 268.981132 389.750943 
+L 268.981132 337.449057 
+L 216.339623 337.449057 
+L 216.339623 389.750943 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_65">
+    <path d="M 216.339623 337.449057 
+L 242.660377 337.449057 
+L 242.660377 363.6 
+L 216.339623 363.6 
+L 216.339623 337.449057 
+" clip-path="url(#p3a6145f626)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 337.449057 
+L 268.981132 337.449057 
+L 268.981132 363.6 
+L 242.660377 363.6 
+L 242.660377 337.449057 
+" clip-path="url(#p3a6145f626)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 363.6 
+L 242.660377 363.6 
+L 242.660377 389.750943 
+L 216.339623 389.750943 
+L 216.339623 363.6 
+" clip-path="url(#p3a6145f626)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 363.6 
+L 268.981132 363.6 
+L 268.981132 389.750943 
+L 242.660377 389.750943 
+L 242.660377 363.6 
+" clip-path="url(#p3a6145f626)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_66">
+    <path d="M 216.339623 337.449057 
+L 242.660377 337.449057 
+L 242.660377 363.6 
+L 216.339623 363.6 
+L 216.339623 337.449057 
+" clip-path="url(#p3a6145f626)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 337.449057 
+L 268.981132 337.449057 
+L 268.981132 363.6 
+L 242.660377 363.6 
+L 242.660377 337.449057 
+" clip-path="url(#p3a6145f626)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 363.6 
+L 242.660377 363.6 
+L 242.660377 389.750943 
+L 216.339623 389.750943 
+L 216.339623 363.6 
+" clip-path="url(#p3a6145f626)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 363.6 
+L 268.981132 363.6 
+L 268.981132 389.750943 
+L 242.660377 389.750943 
+L 242.660377 363.6 
+" clip-path="url(#p3a6145f626)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_65"/>
+   <g id="matplotlib.axis_66"/>
+   <g id="text_129">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="353.116716" transform="rotate(-0 229.5 353.116716)">2</text>
+   </g>
+   <g id="text_130">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="353.116716" transform="rotate(-0 255.820755 353.116716)">1</text>
+   </g>
+   <g id="text_131">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="379.267659" transform="rotate(-0 229.5 379.267659)">27</text>
+   </g>
+   <g id="text_132">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="379.267659" transform="rotate(-0 255.820755 379.267659)">62</text>
+   </g>
+  </g>
+  <g id="axes_34">
+   <g id="patch_35">
+    <path d="M 279.509434 389.750943 
+L 332.150943 389.750943 
+L 332.150943 337.449057 
+L 279.509434 337.449057 
+L 279.509434 389.750943 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_67">
+    <path d="M 279.509434 337.449057 
+L 305.830189 337.449057 
+L 305.830189 363.6 
+L 279.509434 363.6 
+L 279.509434 337.449057 
+" clip-path="url(#pe37ec9d18c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 337.449057 
+L 332.150943 337.449057 
+L 332.150943 363.6 
+L 305.830189 363.6 
+L 305.830189 337.449057 
+" clip-path="url(#pe37ec9d18c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 363.6 
+L 305.830189 363.6 
+L 305.830189 389.750943 
+L 279.509434 389.750943 
+L 279.509434 363.6 
+" clip-path="url(#pe37ec9d18c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 363.6 
+L 332.150943 363.6 
+L 332.150943 389.750943 
+L 305.830189 389.750943 
+L 305.830189 363.6 
+" clip-path="url(#pe37ec9d18c)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_68">
+    <path d="M 279.509434 337.449057 
+L 305.830189 337.449057 
+L 305.830189 363.6 
+L 279.509434 363.6 
+L 279.509434 337.449057 
+" clip-path="url(#pe37ec9d18c)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 337.449057 
+L 332.150943 337.449057 
+L 332.150943 363.6 
+L 305.830189 363.6 
+L 305.830189 337.449057 
+" clip-path="url(#pe37ec9d18c)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 363.6 
+L 305.830189 363.6 
+L 305.830189 389.750943 
+L 279.509434 389.750943 
+L 279.509434 363.6 
+" clip-path="url(#pe37ec9d18c)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 363.6 
+L 332.150943 363.6 
+L 332.150943 389.750943 
+L 305.830189 389.750943 
+L 305.830189 363.6 
+" clip-path="url(#pe37ec9d18c)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_67"/>
+   <g id="matplotlib.axis_68"/>
+   <g id="text_133">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="353.116716" transform="rotate(-0 292.669811 353.116716)">17</text>
+   </g>
+   <g id="text_134">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="353.116716" transform="rotate(-0 318.990566 353.116716)">6</text>
+   </g>
+   <g id="text_135">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="379.267659" transform="rotate(-0 292.669811 379.267659)">35</text>
+   </g>
+   <g id="text_136">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="379.267659" transform="rotate(-0 318.990566 379.267659)">53</text>
+   </g>
+  </g>
+  <g id="axes_35">
+   <g id="patch_36">
+    <path d="M 342.679245 389.750943 
+L 395.320755 389.750943 
+L 395.320755 337.449057 
+L 342.679245 337.449057 
+L 342.679245 389.750943 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_69">
+    <path d="M 342.679245 337.449057 
+L 369 337.449057 
+L 369 363.6 
+L 342.679245 363.6 
+L 342.679245 337.449057 
+" clip-path="url(#p1ef09f00de)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 337.449057 
+L 395.320755 337.449057 
+L 395.320755 363.6 
+L 369 363.6 
+L 369 337.449057 
+" clip-path="url(#p1ef09f00de)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 363.6 
+L 369 363.6 
+L 369 389.750943 
+L 342.679245 389.750943 
+L 342.679245 363.6 
+" clip-path="url(#p1ef09f00de)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 363.6 
+L 395.320755 363.6 
+L 395.320755 389.750943 
+L 369 389.750943 
+L 369 363.6 
+" clip-path="url(#p1ef09f00de)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_70">
+    <path d="M 342.679245 337.449057 
+L 369 337.449057 
+L 369 363.6 
+L 342.679245 363.6 
+L 342.679245 337.449057 
+" clip-path="url(#p1ef09f00de)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 337.449057 
+L 395.320755 337.449057 
+L 395.320755 363.6 
+L 369 363.6 
+L 369 337.449057 
+" clip-path="url(#p1ef09f00de)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 342.679245 363.6 
+L 369 363.6 
+L 369 389.750943 
+L 342.679245 389.750943 
+L 342.679245 363.6 
+" clip-path="url(#p1ef09f00de)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 369 363.6 
+L 395.320755 363.6 
+L 395.320755 389.750943 
+L 369 389.750943 
+L 369 363.6 
+" clip-path="url(#p1ef09f00de)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_69"/>
+   <g id="matplotlib.axis_70"/>
+   <g id="text_137">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="353.116716" transform="rotate(-0 355.839623 353.116716)">38</text>
+   </g>
+   <g id="text_138">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="353.116716" transform="rotate(-0 382.160377 353.116716)">11</text>
+   </g>
+   <g id="text_139">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="355.839623" y="379.267659" transform="rotate(-0 355.839623 379.267659)">31</text>
+   </g>
+   <g id="text_140">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="382.160377" y="379.267659" transform="rotate(-0 382.160377 379.267659)">38</text>
+   </g>
+  </g>
+  <g id="axes_36">
+   <g id="patch_37">
+    <path d="M 90 452.513208 
+L 142.641509 452.513208 
+L 142.641509 400.211321 
+L 90 400.211321 
+L 90 452.513208 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_71">
+    <path d="M 90 400.211321 
+L 116.320755 400.211321 
+L 116.320755 426.362264 
+L 90 426.362264 
+L 90 400.211321 
+" clip-path="url(#p762beb3ca8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 400.211321 
+L 142.641509 400.211321 
+L 142.641509 426.362264 
+L 116.320755 426.362264 
+L 116.320755 400.211321 
+" clip-path="url(#p762beb3ca8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 426.362264 
+L 116.320755 426.362264 
+L 116.320755 452.513208 
+L 90 452.513208 
+L 90 426.362264 
+" clip-path="url(#p762beb3ca8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 426.362264 
+L 142.641509 426.362264 
+L 142.641509 452.513208 
+L 116.320755 452.513208 
+L 116.320755 426.362264 
+" clip-path="url(#p762beb3ca8)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_72">
+    <path d="M 90 400.211321 
+L 116.320755 400.211321 
+L 116.320755 426.362264 
+L 90 426.362264 
+L 90 400.211321 
+" clip-path="url(#p762beb3ca8)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 400.211321 
+L 142.641509 400.211321 
+L 142.641509 426.362264 
+L 116.320755 426.362264 
+L 116.320755 400.211321 
+" clip-path="url(#p762beb3ca8)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 426.362264 
+L 116.320755 426.362264 
+L 116.320755 452.513208 
+L 90 452.513208 
+L 90 426.362264 
+" clip-path="url(#p762beb3ca8)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 426.362264 
+L 142.641509 426.362264 
+L 142.641509 452.513208 
+L 116.320755 452.513208 
+L 116.320755 426.362264 
+" clip-path="url(#p762beb3ca8)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_71"/>
+   <g id="matplotlib.axis_72"/>
+   <g id="text_141">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="415.87898" transform="rotate(-0 103.160377 415.87898)">0</text>
+   </g>
+   <g id="text_142">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="415.87898" transform="rotate(-0 129.481132 415.87898)">0</text>
+   </g>
+   <g id="text_143">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="442.029923" transform="rotate(-0 103.160377 442.029923)">9</text>
+   </g>
+   <g id="text_144">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="442.029923" transform="rotate(-0 129.481132 442.029923)">74</text>
+   </g>
+  </g>
+  <g id="axes_37">
+   <g id="patch_38">
+    <path d="M 153.169811 452.513208 
+L 205.811321 452.513208 
+L 205.811321 400.211321 
+L 153.169811 400.211321 
+L 153.169811 452.513208 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_73">
+    <path d="M 153.169811 400.211321 
+L 179.490566 400.211321 
+L 179.490566 426.362264 
+L 153.169811 426.362264 
+L 153.169811 400.211321 
+" clip-path="url(#p64fe86d9f2)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 400.211321 
+L 205.811321 400.211321 
+L 205.811321 426.362264 
+L 179.490566 426.362264 
+L 179.490566 400.211321 
+" clip-path="url(#p64fe86d9f2)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 426.362264 
+L 179.490566 426.362264 
+L 179.490566 452.513208 
+L 153.169811 452.513208 
+L 153.169811 426.362264 
+" clip-path="url(#p64fe86d9f2)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 426.362264 
+L 205.811321 426.362264 
+L 205.811321 452.513208 
+L 179.490566 452.513208 
+L 179.490566 426.362264 
+" clip-path="url(#p64fe86d9f2)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_74">
+    <path d="M 153.169811 400.211321 
+L 179.490566 400.211321 
+L 179.490566 426.362264 
+L 153.169811 426.362264 
+L 153.169811 400.211321 
+" clip-path="url(#p64fe86d9f2)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 400.211321 
+L 205.811321 400.211321 
+L 205.811321 426.362264 
+L 179.490566 426.362264 
+L 179.490566 400.211321 
+" clip-path="url(#p64fe86d9f2)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 426.362264 
+L 179.490566 426.362264 
+L 179.490566 452.513208 
+L 153.169811 452.513208 
+L 153.169811 426.362264 
+" clip-path="url(#p64fe86d9f2)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 426.362264 
+L 205.811321 426.362264 
+L 205.811321 452.513208 
+L 179.490566 452.513208 
+L 179.490566 426.362264 
+" clip-path="url(#p64fe86d9f2)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_73"/>
+   <g id="matplotlib.axis_74"/>
+   <g id="text_145">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="415.87898" transform="rotate(-0 166.330189 415.87898)">0</text>
+   </g>
+   <g id="text_146">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="415.87898" transform="rotate(-0 192.650943 415.87898)">0</text>
+   </g>
+   <g id="text_147">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="442.029923" transform="rotate(-0 166.330189 442.029923)">19</text>
+   </g>
+   <g id="text_148">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="442.029923" transform="rotate(-0 192.650943 442.029923)">71</text>
+   </g>
+  </g>
+  <g id="axes_38">
+   <g id="patch_39">
+    <path d="M 216.339623 452.513208 
+L 268.981132 452.513208 
+L 268.981132 400.211321 
+L 216.339623 400.211321 
+L 216.339623 452.513208 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_75">
+    <path d="M 216.339623 400.211321 
+L 242.660377 400.211321 
+L 242.660377 426.362264 
+L 216.339623 426.362264 
+L 216.339623 400.211321 
+" clip-path="url(#p2681e04b13)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 400.211321 
+L 268.981132 400.211321 
+L 268.981132 426.362264 
+L 242.660377 426.362264 
+L 242.660377 400.211321 
+" clip-path="url(#p2681e04b13)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 426.362264 
+L 242.660377 426.362264 
+L 242.660377 452.513208 
+L 216.339623 452.513208 
+L 216.339623 426.362264 
+" clip-path="url(#p2681e04b13)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 426.362264 
+L 268.981132 426.362264 
+L 268.981132 452.513208 
+L 242.660377 452.513208 
+L 242.660377 426.362264 
+" clip-path="url(#p2681e04b13)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_76">
+    <path d="M 216.339623 400.211321 
+L 242.660377 400.211321 
+L 242.660377 426.362264 
+L 216.339623 426.362264 
+L 216.339623 400.211321 
+" clip-path="url(#p2681e04b13)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 400.211321 
+L 268.981132 400.211321 
+L 268.981132 426.362264 
+L 242.660377 426.362264 
+L 242.660377 400.211321 
+" clip-path="url(#p2681e04b13)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 426.362264 
+L 242.660377 426.362264 
+L 242.660377 452.513208 
+L 216.339623 452.513208 
+L 216.339623 426.362264 
+" clip-path="url(#p2681e04b13)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 426.362264 
+L 268.981132 426.362264 
+L 268.981132 452.513208 
+L 242.660377 452.513208 
+L 242.660377 426.362264 
+" clip-path="url(#p2681e04b13)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_75"/>
+   <g id="matplotlib.axis_76"/>
+   <g id="text_149">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="415.87898" transform="rotate(-0 229.5 415.87898)">0</text>
+   </g>
+   <g id="text_150">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="415.87898" transform="rotate(-0 255.820755 415.87898)">0</text>
+   </g>
+   <g id="text_151">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="442.029923" transform="rotate(-0 229.5 442.029923)">31</text>
+   </g>
+   <g id="text_152">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="442.029923" transform="rotate(-0 255.820755 442.029923)">75</text>
+   </g>
+  </g>
+  <g id="axes_39">
+   <g id="patch_40">
+    <path d="M 279.509434 452.513208 
+L 332.150943 452.513208 
+L 332.150943 400.211321 
+L 279.509434 400.211321 
+L 279.509434 452.513208 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_77">
+    <path d="M 279.509434 400.211321 
+L 305.830189 400.211321 
+L 305.830189 426.362264 
+L 279.509434 426.362264 
+L 279.509434 400.211321 
+" clip-path="url(#p547ee0ae19)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 400.211321 
+L 332.150943 400.211321 
+L 332.150943 426.362264 
+L 305.830189 426.362264 
+L 305.830189 400.211321 
+" clip-path="url(#p547ee0ae19)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 426.362264 
+L 305.830189 426.362264 
+L 305.830189 452.513208 
+L 279.509434 452.513208 
+L 279.509434 426.362264 
+" clip-path="url(#p547ee0ae19)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 426.362264 
+L 332.150943 426.362264 
+L 332.150943 452.513208 
+L 305.830189 452.513208 
+L 305.830189 426.362264 
+" clip-path="url(#p547ee0ae19)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_78">
+    <path d="M 279.509434 400.211321 
+L 305.830189 400.211321 
+L 305.830189 426.362264 
+L 279.509434 426.362264 
+L 279.509434 400.211321 
+" clip-path="url(#p547ee0ae19)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 400.211321 
+L 332.150943 400.211321 
+L 332.150943 426.362264 
+L 305.830189 426.362264 
+L 305.830189 400.211321 
+" clip-path="url(#p547ee0ae19)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 279.509434 426.362264 
+L 305.830189 426.362264 
+L 305.830189 452.513208 
+L 279.509434 452.513208 
+L 279.509434 426.362264 
+" clip-path="url(#p547ee0ae19)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 305.830189 426.362264 
+L 332.150943 426.362264 
+L 332.150943 452.513208 
+L 305.830189 452.513208 
+L 305.830189 426.362264 
+" clip-path="url(#p547ee0ae19)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_77"/>
+   <g id="matplotlib.axis_78"/>
+   <g id="text_153">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="415.87898" transform="rotate(-0 292.669811 415.87898)">10</text>
+   </g>
+   <g id="text_154">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="415.87898" transform="rotate(-0 318.990566 415.87898)">2</text>
+   </g>
+   <g id="text_155">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="292.669811" y="442.029923" transform="rotate(-0 292.669811 442.029923)">32</text>
+   </g>
+   <g id="text_156">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="318.990566" y="442.029923" transform="rotate(-0 318.990566 442.029923)">74</text>
+   </g>
+  </g>
+  <g id="axes_40">
+   <g id="patch_41">
+    <path d="M 90 515.275472 
+L 142.641509 515.275472 
+L 142.641509 462.973585 
+L 90 462.973585 
+L 90 515.275472 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_79">
+    <path d="M 90 462.973585 
+L 116.320755 462.973585 
+L 116.320755 489.124528 
+L 90 489.124528 
+L 90 462.973585 
+" clip-path="url(#pdad892ab46)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 462.973585 
+L 142.641509 462.973585 
+L 142.641509 489.124528 
+L 116.320755 489.124528 
+L 116.320755 462.973585 
+" clip-path="url(#pdad892ab46)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 489.124528 
+L 116.320755 489.124528 
+L 116.320755 515.275472 
+L 90 515.275472 
+L 90 489.124528 
+" clip-path="url(#pdad892ab46)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 489.124528 
+L 142.641509 489.124528 
+L 142.641509 515.275472 
+L 116.320755 515.275472 
+L 116.320755 489.124528 
+" clip-path="url(#pdad892ab46)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_80">
+    <path d="M 90 462.973585 
+L 116.320755 462.973585 
+L 116.320755 489.124528 
+L 90 489.124528 
+L 90 462.973585 
+" clip-path="url(#pdad892ab46)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 462.973585 
+L 142.641509 462.973585 
+L 142.641509 489.124528 
+L 116.320755 489.124528 
+L 116.320755 462.973585 
+" clip-path="url(#pdad892ab46)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 489.124528 
+L 116.320755 489.124528 
+L 116.320755 515.275472 
+L 90 515.275472 
+L 90 489.124528 
+" clip-path="url(#pdad892ab46)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 489.124528 
+L 142.641509 489.124528 
+L 142.641509 515.275472 
+L 116.320755 515.275472 
+L 116.320755 489.124528 
+" clip-path="url(#pdad892ab46)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_79"/>
+   <g id="matplotlib.axis_80"/>
+   <g id="text_157">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="478.641244" transform="rotate(-0 103.160377 478.641244)">0</text>
+   </g>
+   <g id="text_158">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="478.641244" transform="rotate(-0 129.481132 478.641244)">0</text>
+   </g>
+   <g id="text_159">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="504.792187" transform="rotate(-0 103.160377 504.792187)">14</text>
+   </g>
+   <g id="text_160">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="504.792187" transform="rotate(-0 129.481132 504.792187)">84</text>
+   </g>
+  </g>
+  <g id="axes_41">
+   <g id="patch_42">
+    <path d="M 153.169811 515.275472 
+L 205.811321 515.275472 
+L 205.811321 462.973585 
+L 153.169811 462.973585 
+L 153.169811 515.275472 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_81">
+    <path d="M 153.169811 462.973585 
+L 179.490566 462.973585 
+L 179.490566 489.124528 
+L 153.169811 489.124528 
+L 153.169811 462.973585 
+" clip-path="url(#peb15e03ffc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 462.973585 
+L 205.811321 462.973585 
+L 205.811321 489.124528 
+L 179.490566 489.124528 
+L 179.490566 462.973585 
+" clip-path="url(#peb15e03ffc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 489.124528 
+L 179.490566 489.124528 
+L 179.490566 515.275472 
+L 153.169811 515.275472 
+L 153.169811 489.124528 
+" clip-path="url(#peb15e03ffc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 489.124528 
+L 205.811321 489.124528 
+L 205.811321 515.275472 
+L 179.490566 515.275472 
+L 179.490566 489.124528 
+" clip-path="url(#peb15e03ffc)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_82">
+    <path d="M 153.169811 462.973585 
+L 179.490566 462.973585 
+L 179.490566 489.124528 
+L 153.169811 489.124528 
+L 153.169811 462.973585 
+" clip-path="url(#peb15e03ffc)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 462.973585 
+L 205.811321 462.973585 
+L 205.811321 489.124528 
+L 179.490566 489.124528 
+L 179.490566 462.973585 
+" clip-path="url(#peb15e03ffc)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 489.124528 
+L 179.490566 489.124528 
+L 179.490566 515.275472 
+L 153.169811 515.275472 
+L 153.169811 489.124528 
+" clip-path="url(#peb15e03ffc)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 489.124528 
+L 205.811321 489.124528 
+L 205.811321 515.275472 
+L 179.490566 515.275472 
+L 179.490566 489.124528 
+" clip-path="url(#peb15e03ffc)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_81"/>
+   <g id="matplotlib.axis_82"/>
+   <g id="text_161">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="478.641244" transform="rotate(-0 166.330189 478.641244)">0</text>
+   </g>
+   <g id="text_162">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="478.641244" transform="rotate(-0 192.650943 478.641244)">0</text>
+   </g>
+   <g id="text_163">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="504.792187" transform="rotate(-0 166.330189 504.792187)">20</text>
+   </g>
+   <g id="text_164">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="504.792187" transform="rotate(-0 192.650943 504.792187)">89</text>
+   </g>
+  </g>
+  <g id="axes_42">
+   <g id="patch_43">
+    <path d="M 216.339623 515.275472 
+L 268.981132 515.275472 
+L 268.981132 462.973585 
+L 216.339623 462.973585 
+L 216.339623 515.275472 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_83">
+    <path d="M 216.339623 462.973585 
+L 242.660377 462.973585 
+L 242.660377 489.124528 
+L 216.339623 489.124528 
+L 216.339623 462.973585 
+" clip-path="url(#pc6138a86af)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 462.973585 
+L 268.981132 462.973585 
+L 268.981132 489.124528 
+L 242.660377 489.124528 
+L 242.660377 462.973585 
+" clip-path="url(#pc6138a86af)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 489.124528 
+L 242.660377 489.124528 
+L 242.660377 515.275472 
+L 216.339623 515.275472 
+L 216.339623 489.124528 
+" clip-path="url(#pc6138a86af)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 489.124528 
+L 268.981132 489.124528 
+L 268.981132 515.275472 
+L 242.660377 515.275472 
+L 242.660377 489.124528 
+" clip-path="url(#pc6138a86af)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_84">
+    <path d="M 216.339623 462.973585 
+L 242.660377 462.973585 
+L 242.660377 489.124528 
+L 216.339623 489.124528 
+L 216.339623 462.973585 
+" clip-path="url(#pc6138a86af)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 462.973585 
+L 268.981132 462.973585 
+L 268.981132 489.124528 
+L 242.660377 489.124528 
+L 242.660377 462.973585 
+" clip-path="url(#pc6138a86af)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 216.339623 489.124528 
+L 242.660377 489.124528 
+L 242.660377 515.275472 
+L 216.339623 515.275472 
+L 216.339623 489.124528 
+" clip-path="url(#pc6138a86af)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 242.660377 489.124528 
+L 268.981132 489.124528 
+L 268.981132 515.275472 
+L 242.660377 515.275472 
+L 242.660377 489.124528 
+" clip-path="url(#pc6138a86af)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_83"/>
+   <g id="matplotlib.axis_84"/>
+   <g id="text_165">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="478.641244" transform="rotate(-0 229.5 478.641244)">0</text>
+   </g>
+   <g id="text_166">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="478.641244" transform="rotate(-0 255.820755 478.641244)">0</text>
+   </g>
+   <g id="text_167">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="229.5" y="504.792187" transform="rotate(-0 229.5 504.792187)">36</text>
+   </g>
+   <g id="text_168">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="255.820755" y="504.792187" transform="rotate(-0 255.820755 504.792187)">82</text>
+   </g>
+  </g>
+  <g id="axes_43">
+   <g id="patch_44">
+    <path d="M 90 578.037736 
+L 142.641509 578.037736 
+L 142.641509 525.735849 
+L 90 525.735849 
+L 90 578.037736 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_85">
+    <path d="M 90 525.735849 
+L 116.320755 525.735849 
+L 116.320755 551.886792 
+L 90 551.886792 
+L 90 525.735849 
+" clip-path="url(#p8f7292cd89)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 525.735849 
+L 142.641509 525.735849 
+L 142.641509 551.886792 
+L 116.320755 551.886792 
+L 116.320755 525.735849 
+" clip-path="url(#p8f7292cd89)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 551.886792 
+L 116.320755 551.886792 
+L 116.320755 578.037736 
+L 90 578.037736 
+L 90 551.886792 
+" clip-path="url(#p8f7292cd89)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 551.886792 
+L 142.641509 551.886792 
+L 142.641509 578.037736 
+L 116.320755 578.037736 
+L 116.320755 551.886792 
+" clip-path="url(#p8f7292cd89)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_86">
+    <path d="M 90 525.735849 
+L 116.320755 525.735849 
+L 116.320755 551.886792 
+L 90 551.886792 
+L 90 525.735849 
+" clip-path="url(#p8f7292cd89)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 525.735849 
+L 142.641509 525.735849 
+L 142.641509 551.886792 
+L 116.320755 551.886792 
+L 116.320755 525.735849 
+" clip-path="url(#p8f7292cd89)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 551.886792 
+L 116.320755 551.886792 
+L 116.320755 578.037736 
+L 90 578.037736 
+L 90 551.886792 
+" clip-path="url(#p8f7292cd89)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 551.886792 
+L 142.641509 551.886792 
+L 142.641509 578.037736 
+L 116.320755 578.037736 
+L 116.320755 551.886792 
+" clip-path="url(#p8f7292cd89)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_85"/>
+   <g id="matplotlib.axis_86"/>
+   <g id="text_169">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="541.403508" transform="rotate(-0 103.160377 541.403508)">0</text>
+   </g>
+   <g id="text_170">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="541.403508" transform="rotate(-0 129.481132 541.403508)">0</text>
+   </g>
+   <g id="text_171">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="567.554452" transform="rotate(-0 103.160377 567.554452)">14</text>
+   </g>
+   <g id="text_172">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="567.554452" transform="rotate(-0 129.481132 567.554452)">91</text>
+   </g>
+  </g>
+  <g id="axes_44">
+   <g id="patch_45">
+    <path d="M 153.169811 578.037736 
+L 205.811321 578.037736 
+L 205.811321 525.735849 
+L 153.169811 525.735849 
+L 153.169811 578.037736 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_87">
+    <path d="M 153.169811 525.735849 
+L 179.490566 525.735849 
+L 179.490566 551.886792 
+L 153.169811 551.886792 
+L 153.169811 525.735849 
+" clip-path="url(#p779615ba5f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 525.735849 
+L 205.811321 525.735849 
+L 205.811321 551.886792 
+L 179.490566 551.886792 
+L 179.490566 525.735849 
+" clip-path="url(#p779615ba5f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 551.886792 
+L 179.490566 551.886792 
+L 179.490566 578.037736 
+L 153.169811 578.037736 
+L 153.169811 551.886792 
+" clip-path="url(#p779615ba5f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 551.886792 
+L 205.811321 551.886792 
+L 205.811321 578.037736 
+L 179.490566 578.037736 
+L 179.490566 551.886792 
+" clip-path="url(#p779615ba5f)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_88">
+    <path d="M 153.169811 525.735849 
+L 179.490566 525.735849 
+L 179.490566 551.886792 
+L 153.169811 551.886792 
+L 153.169811 525.735849 
+" clip-path="url(#p779615ba5f)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 525.735849 
+L 205.811321 525.735849 
+L 205.811321 551.886792 
+L 179.490566 551.886792 
+L 179.490566 525.735849 
+" clip-path="url(#p779615ba5f)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 153.169811 551.886792 
+L 179.490566 551.886792 
+L 179.490566 578.037736 
+L 153.169811 578.037736 
+L 153.169811 551.886792 
+" clip-path="url(#p779615ba5f)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 179.490566 551.886792 
+L 205.811321 551.886792 
+L 205.811321 578.037736 
+L 179.490566 578.037736 
+L 179.490566 551.886792 
+" clip-path="url(#p779615ba5f)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_87"/>
+   <g id="matplotlib.axis_88"/>
+   <g id="text_173">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="541.403508" transform="rotate(-0 166.330189 541.403508)">0</text>
+   </g>
+   <g id="text_174">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="541.403508" transform="rotate(-0 192.650943 541.403508)">0</text>
+   </g>
+   <g id="text_175">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="166.330189" y="567.554452" transform="rotate(-0 166.330189 567.554452)">23</text>
+   </g>
+   <g id="text_176">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="192.650943" y="567.554452" transform="rotate(-0 192.650943 567.554452)">95</text>
+   </g>
+  </g>
+  <g id="axes_45">
+   <g id="patch_46">
+    <path d="M 90 640.8 
+L 142.641509 640.8 
+L 142.641509 588.498113 
+L 90 588.498113 
+L 90 640.8 
+z
+" style="fill: none"/>
+   </g>
+   <g id="QuadMesh_89">
+    <path d="M 90 588.498113 
+L 116.320755 588.498113 
+L 116.320755 614.649057 
+L 90 614.649057 
+L 90 588.498113 
+" clip-path="url(#p13bf8eb35d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 588.498113 
+L 142.641509 588.498113 
+L 142.641509 614.649057 
+L 116.320755 614.649057 
+L 116.320755 588.498113 
+" clip-path="url(#p13bf8eb35d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 614.649057 
+L 116.320755 614.649057 
+L 116.320755 640.8 
+L 90 640.8 
+L 90 614.649057 
+" clip-path="url(#p13bf8eb35d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 614.649057 
+L 142.641509 614.649057 
+L 142.641509 640.8 
+L 116.320755 640.8 
+L 116.320755 614.649057 
+" clip-path="url(#p13bf8eb35d)" style="fill: #ffffff; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="QuadMesh_90">
+    <path d="M 90 588.498113 
+L 116.320755 588.498113 
+L 116.320755 614.649057 
+L 90 614.649057 
+L 90 588.498113 
+" clip-path="url(#p13bf8eb35d)" style="fill: #d4efe2; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 588.498113 
+L 142.641509 588.498113 
+L 142.641509 614.649057 
+L 116.320755 614.649057 
+L 116.320755 588.498113 
+" clip-path="url(#p13bf8eb35d)" style="fill: #fcd9d7; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 90 614.649057 
+L 116.320755 614.649057 
+L 116.320755 640.8 
+L 90 640.8 
+L 90 614.649057 
+" clip-path="url(#p13bf8eb35d)" style="fill: #feefd9; stroke: #000000; stroke-width: 0.5"/>
+    <path d="M 116.320755 614.649057 
+L 142.641509 614.649057 
+L 142.641509 640.8 
+L 116.320755 640.8 
+L 116.320755 614.649057 
+" clip-path="url(#p13bf8eb35d)" style="fill: #d3eef9; stroke: #000000; stroke-width: 0.5"/>
+   </g>
+   <g id="matplotlib.axis_89"/>
+   <g id="matplotlib.axis_90"/>
+   <g id="text_177">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="604.165772" transform="rotate(-0 103.160377 604.165772)">0</text>
+   </g>
+   <g id="text_178">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="604.165772" transform="rotate(-0 129.481132 604.165772)">0</text>
+   </g>
+   <g id="text_179">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="103.160377" y="630.316716" transform="rotate(-0 103.160377 630.316716)">13</text>
+   </g>
+   <g id="text_180">
+    <text style="fill: #262626; font: 700 10px 'Arial'; text-anchor: middle" x="129.481132" y="630.316716" transform="rotate(-0 129.481132 630.316716)">105</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p5dbc11c550">
+   <rect x="90" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p463b0be9e0">
+   <rect x="153.169811" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3f2ff77bbb">
+   <rect x="216.339623" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p7ce0d83ec8">
+   <rect x="279.509434" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3e4d38a000">
+   <rect x="342.679245" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p03bf0e868a">
+   <rect x="405.849057" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p915a5ec375">
+   <rect x="469.018868" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pd1fb26317f">
+   <rect x="532.188679" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pa7238a216a">
+   <rect x="595.358491" y="86.4" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p9496b28265">
+   <rect x="90" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p11399fca79">
+   <rect x="153.169811" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p1915d495b1">
+   <rect x="216.339623" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3a99c754b4">
+   <rect x="279.509434" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p8148690a08">
+   <rect x="342.679245" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pc5a6c9d89d">
+   <rect x="405.849057" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pc493d79a57">
+   <rect x="469.018868" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p8e42fd0fb6">
+   <rect x="532.188679" y="149.162264" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p1a9f223cdd">
+   <rect x="90" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p06a64e92a8">
+   <rect x="153.169811" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p79d0d9aa76">
+   <rect x="216.339623" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3ee1c1ad39">
+   <rect x="279.509434" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p0ae7ea7497">
+   <rect x="342.679245" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3061e1da4d">
+   <rect x="405.849057" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p2f382ce76c">
+   <rect x="469.018868" y="211.924528" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pa65003e0bc">
+   <rect x="90" y="274.686792" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3ee7a8fc34">
+   <rect x="153.169811" y="274.686792" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p8866ce9306">
+   <rect x="216.339623" y="274.686792" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p2ff148b3ef">
+   <rect x="279.509434" y="274.686792" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pe2012d4ff6">
+   <rect x="342.679245" y="274.686792" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p353006d90e">
+   <rect x="405.849057" y="274.686792" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pcaadcebfe0">
+   <rect x="90" y="337.449057" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pe7f9376e77">
+   <rect x="153.169811" y="337.449057" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p3a6145f626">
+   <rect x="216.339623" y="337.449057" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pe37ec9d18c">
+   <rect x="279.509434" y="337.449057" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p1ef09f00de">
+   <rect x="342.679245" y="337.449057" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p762beb3ca8">
+   <rect x="90" y="400.211321" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p64fe86d9f2">
+   <rect x="153.169811" y="400.211321" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p2681e04b13">
+   <rect x="216.339623" y="400.211321" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p547ee0ae19">
+   <rect x="279.509434" y="400.211321" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pdad892ab46">
+   <rect x="90" y="462.973585" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="peb15e03ffc">
+   <rect x="153.169811" y="462.973585" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="pc6138a86af">
+   <rect x="216.339623" y="462.973585" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p8f7292cd89">
+   <rect x="90" y="525.735849" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p779615ba5f">
+   <rect x="153.169811" y="525.735849" width="52.641509" height="52.301887"/>
+  </clipPath>
+  <clipPath id="p13bf8eb35d">
+   <rect x="90" y="588.498113" width="52.641509" height="52.301887"/>
+  </clipPath>
+ </defs>
+</svg>
