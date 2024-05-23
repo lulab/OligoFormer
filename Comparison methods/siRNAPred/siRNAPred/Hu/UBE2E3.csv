@@ -1,0 +1,1089 @@
+﻿SEQUENCE,POSITION,SCORE
+5' --ccagaaucuaucacugcaaca 3',348-------368,1.018
+  3'guggucuuagauagugacguu--5',366-------346,
+5' --acucaguauuugaccaacaga 3',509-------529,0.988
+  3'ggugagucauaaacugguugu--5',527-------507,
+5' --gaaggagcuagcugaaauaac 3',157-------177,0.985
+  3'gucuuccucgaucgacuuuau--5',175-------155,
+5' --cucaguauuugaccaacagag 3',510-------530,0.965
+  3'gugagucauaaacugguuguc--5',528-------508,
+5' --ccacuagugcuaaaagaauuc 3',135-------155,0.955
+  3'uaggugaucacgauuuucuua--5',153-------133,
+5' --caaagguuuugcugucuauuu 3',435-------455,0.937
+  3'aaguuuccaaaacgacagaua--5',453-------433,
+5' --cacuagugcuaaaagaauuca 3',136-------156,0.937
+  3'aggugaucacgauuuucuuaa--5',154-------134,
+5' --acugcuaaguuauccacuagu 3',122-------142,0.935
+  3'ggugacgauucaauaggugau--5',140-------120,
+5' --gccacucaguauuugaccaac 3',506-------526,0.934
+  3'aucggugagucauaaacuggu--5',524-------504,
+5' --ccacucaguauuugaccaaca 3',507-------527,0.923
+  3'ucggugagucauaaacugguu--5',525-------505,
+5' --cuagugcuaaaagaauucaga 3',138-------158,0.922
+  3'gugaucacgauuuucuuaagu--5',156-------136,
+5' --guauuugaccaacagagcaga 3',514-------534,0.921
+  3'gucauaaacugguugucucgu--5',532-------512,
+5' --gcauagccacucaguauuuga 3',501-------521,0.921
+  3'uucguaucggugagucauaaa--5',519-------499,
+5' --cccuuuugacagacugcaacc 3',459-------479,0.921
+  3'aagggaaaacugucugacguu--5',477-------457,
+5' --aaguuauccacuagugcuaaa 3',128-------148,0.916
+  3'gauucaauaggugaucacgau--5',146-------126,
+5' --agcagaacacgacaggauagc 3',529-------549,0.914
+  3'ucucgucuugugcuguccuau--5',547-------527,
+5' --ucaguauuugaccaacagagc 3',511-------531,0.911
+  3'ugagucauaaacugguugucu--5',529-------509,
+5' --aguuauccacuagugcuaaaa 3',129-------149,0.91
+  3'auucaauaggugaucacgauu--5',147-------127,
+5' --gcagaagaaaaacaccaaacu 3',88-------108,0.909
+  3'gucgucuucuuuuugugguuu--5',106-------86,
+5' --guuauccacuagugcuaaaag 3',130-------150,0.907
+  3'uucaauaggugaucacgauuu--5',148-------128,
+5' --gugcuaaaagaauucagaagg 3',141-------161,0.902
+  3'aucacgauuuucuuaagucuu--5',159-------139,
+5' --ccuugauccuccuccuaauug 3',178-------198,0.898
+  3'ugggaacuaggaggaggauua--5',196-------176,
+5' --gaaucuaucacugcaacauca 3',351-------371,0.881
+  3'gucuuagauagugacguugua--5',369-------349,
+5' --gguuggaagcauagccacuca 3',493-------513,0.879
+  3'gaccaaccuucguaucgguga--5',511-------491,
+5' --ccgcuuugacuauuucaaagg 3',420-------440,0.879
+  3'agggcgaaacugauaaaguuu--5',438-------418,
+5' --agugcuaaaagaauucagaag 3',140-------160,0.879
+  3'gaucacgauuuucuuaagucu--5',158-------138,
+5' --acugcaacaucaacagucagg 3',360-------380,0.878
+  3'agugacguuguaguugucagu--5',378-------358,
+5' --gaagcauagccacucaguauu 3',498-------518,0.876
+  3'accuucguaucggugagucau--5',516-------496,
+5' --cugcuaaguuauccacuagug 3',123-------143,0.872
+  3'gugacgauucaauaggugauc--5',141-------121,
+5' --ccaacagagcagaacacgaca 3',522-------542,0.87
+  3'cugguugucucgucuugugcu--5',540-------520,
+5' --agaaucuaucacugcaacauc 3',350-------370,0.87
+  3'ggucuuagauagugacguugu--5',368-------348,
+5' --gaauggagaucaacuauacuu 3',230-------250,0.87
+  3'uacuuaccucuaguugauaug--5',248-------228,
+5' --aacagagcagaacacgacagg 3',524-------544,0.869
+  3'gguugucucgucuugugcugu--5',542-------522,
+5' --cugucuggacauccuuaaaga 3',388-------408,0.869
+  3'uagacagaccuguaggaauuu--5',406-------386,
+5' --caguauuugaccaacagagca 3',512-------532,0.867
+  3'gagucauaaacugguugucuc--5',530-------510,
+5' --caaaaccacugcuaaguuauc 3',115-------135,0.867
+  3'ucguuuuggugacgauucaau--5',133-------113,
+5' --caagaggaaagaaaaccuucu 3',59-------79,0.866
+  3'uuguucuccuuucuuuuggaa--5',77-------57,
+5' --ccugaagaacaagaggaaaga 3',50-------70,0.864
+  3'ucggacuucuuguucuccuuu--5',68-------48,
+5' --gguuacuuuccgcaccagaau 3',334-------354,0.861
+  3'uuccaaugaaaggcguggucu--5',352-------332,
+5' --ugaccaacagagcagaacacg 3',519-------539,0.86
+  3'aaacugguugucucgucuugu--5',537-------517,
+5' --cagaaggagcuagcugaaaua 3',155-------175,0.858
+  3'aagucuuccucgaucgacuuu--5',173-------153,
+5' --aagguuuugcugucuauuugu 3',437-------457,0.857
+  3'guuuccaaaacgacagauaaa--5',455-------435,
+5' --uccacuagugcuaaaagaauu 3',134-------154,0.857
+  3'auaggugaucacgauuuucuu--5',152-------132,
+5' --gcuaaguuauccacuagugcu 3',125-------145,0.857
+  3'gacgauucaauaggugaucac--5',143-------123,
+5' --agaaggagcuagcugaaauaa 3',156-------176,0.854
+  3'agucuuccucgaucgacuuua--5',174-------154,
+5' --gggccuaaaggagauaacauu 3',206-------226,0.852
+  3'gacccggauuuccucuauugu--5',224-------204,
+5' --cugucuauuuguucccuuuug 3',446-------466,0.85
+  3'acgacagauaaacaagggaaa--5',464-------444,
+5' --agaacaagaggaaagaaaacc 3',55-------75,0.85
+  3'cuucuuguucuccuuucuuuu--5',73-------53,
+5' --gguuuugcugucuauuuguuc 3',439-------459,0.848
+  3'uuccaaaacgacagauaaaca--5',457-------437,
+5' --cccuugauccuccuccuaauu 3',177-------197,0.848
+  3'uugggaacuaggaggaggauu--5',195-------175,
+5' --auuuaugaauggagaucaacu 3',224-------244,0.846
+  3'uguaaauacuuaccucuaguu--5',242-------222,
+5' --caccaaacucucuagcaaaac 3',100-------120,0.846
+  3'uugugguuugagagaucguuu--5',118-------98,
+5' --uggacauccuuaaagacaacu 3',393-------413,0.844
+  3'agaccuguaggaauuucuguu--5',411-------391,
+5' --aaggagcuagcugaaauaacc 3',158-------178,0.844
+  3'ucuuccucgaucgacuuuauu--5',176-------156,
+5' --cagagccugaagaacaagagg 3',45-------65,0.844
+  3'aggucucggacuucuuguucu--5',63-------43,
+5' --agaggaaagaaaaccuucugc 3',61-------81,0.842
+  3'guucuccuuucuuuuggaaga--5',79-------59,
+5' --guggcaguucagaugcggacc 3',6-------26,0.84
+  3'gucaccgucaagucuacgccu--5',24-------4,
+5' --agcagaagaaaaacaccaaac 3',87-------107,0.838
+  3'ggucgucuucuuuuugugguu--5',105-------85,
+5' --uccucugguuggaagcauagc 3',487-------507,0.837
+  3'cuaggagaccaaccuucguau--5',505-------485,
+5' --cagccgcuccagagccugaag 3',36-------56,0.836
+  3'gggucggcgaggucucggacu--5',54-------34,
+5' --gaagaacaagaggaaagaaaa 3',53-------73,0.833
+  3'gacuucuuguucuccuuucuu--5',71-------51,
+5' --ugaauggagaucaacuauacu 3',229-------249,0.832
+  3'auacuuaccucuaguugauau--5',247-------227,
+5' --aggauagccagacaguggacc 3',542-------562,0.831
+  3'uguccuaucggucugucaccu--5',560-------540,
+5' --gucuggacauccuuaaagaca 3',390-------410,0.828
+  3'gacagaccuguaggaauuucu--5',408-------388,
+5' --ccucugguuggaagcauagcc 3',488-------508,0.825
+  3'uaggagaccaaccuucguauc--5',506-------486,
+5' --guuacuuuccgcaccagaauc 3',335-------355,0.825
+  3'uccaaugaaaggcguggucuu--5',353-------333,
+5' --accggguucuguauaugaagg 3',256-------276,0.825
+  3'gguggcccaagacauauacuu--5',274-------254,
+5' --cuagcaaaaccacugcuaagu 3',111-------131,0.825
+  3'gagaucguuuuggugacgauu--5',129-------109,
+5' --gagcagaacacgacaggauag 3',528-------548,0.823
+  3'gucucgucuugugcuguccua--5',546-------526,
+5' --cuaaaagaauucagaaggagc 3',144-------164,0.823
+  3'acgauuuucuuaagucuuccu--5',162-------142,
+5' --ccaaagguuacuuuccgcacc 3',329-------349,0.822
+  3'gugguuuccaaugaaaggcgu--5',347-------327,
+5' --ggauaucacauuuucaucaga 3',292-------312,0.821
+  3'gaccuauaguguaaaaguagu--5',310-------290,
+5' --ggagcuagcugaaauaacccu 3',160-------180,0.821
+  3'uuccucgaucgacuuuauugg--5',178-------158,
+5' --ucagaaggagcuagcugaaau 3',154-------174,0.821
+  3'uaagucuuccucgaucgacuu--5',172-------152,
+5' --accacugcuaaguuauccacu 3',119-------139,0.821
+  3'uuuggugacgauucaauaggu--5',137-------117,
+5' --gcaaaaccacugcuaaguuau 3',114-------134,0.82
+  3'aucguuuuggugacgauucaa--5',132-------112,
+5' --gccugaagaacaagaggaaag 3',49-------69,0.818
+  3'cucggacuucuuguucuccuu--5',67-------47,
+5' --uccagagccugaagaacaaga 3',43-------63,0.818
+  3'cgaggucucggacuucuuguu--5',61-------41,
+5' --agagcagaacacgacaggaua 3',527-------547,0.816
+  3'ugucucgucuugugcuguccu--5',545-------525,
+5' --gcaccagaaucuaucacugca 3',345-------365,0.816
+  3'ggcguggucuuagauagugac--5',363-------343,
+5' --cagcagaagaaaaacaccaaa 3',86-------106,0.816
+  3'gggucgucuucuuuuuguggu--5',104-------84,
+5' --gcugucuauuuguucccuuuu 3',445-------465,0.812
+  3'aacgacagauaaacaagggaa--5',463-------443,
+5' --accagaaucuaucacugcaac 3',347-------367,0.811
+  3'cguggucuuagauagugacgu--5',365-------345,
+5' --acaccaaacucucuagcaaaa 3',99-------119,0.811
+  3'uuugugguuugagagaucguu--5',117-------97,
+5' --ucugucuggacauccuuaaag 3',387-------407,0.808
+  3'guagacagaccuguaggaauu--5',405-------385,
+5' --cagaaucuaucacugcaacau 3',349-------369,0.807
+  3'uggucuuagauagugacguug--5',367-------347,
+5' --cugcaacaucaacagucaggg 3',361-------381,0.806
+  3'gugacguuguaguugucaguc--5',379-------359,
+5' --agcugaaauaacccuugaucc 3',166-------186,0.806
+  3'gaucgacuuuauugggaacua--5',184-------164,
+5' --aaagguuuugcugucuauuug 3',436-------456,0.805
+  3'aguuuccaaaacgacagauaa--5',454-------434,
+5' --cugguuggaagcauagccacu 3',491-------511,0.803
+  3'gagaccaaccuucguaucggu--5',509-------489,
+5' --cuccagagccugaagaacaag 3',42-------62,0.803
+  3'gcgaggucucggacuucuugu--5',60-------40,
+5' --cccugcggauccucugguugg 3',478-------498,0.802
+  3'uugggacgccuaggagaccaa--5',496-------476,
+5' --ucaaagguuuugcugucuauu 3',434-------454,0.802
+  3'aaaguuuccaaaacgacagau--5',452-------432,
+5' --ugaagaacaagaggaaagaaa 3',52-------72,0.801
+  3'ggacuucuuguucuccuuucu--5',70-------50,
+5' --aucugucuggacauccuuaaa 3',386-------406,0.8
+  3'aguagacagaccuguaggaau--5',404-------384,
+5' --ggagaucaacuauacuugguc 3',234-------254,0.799
+  3'uaccucuaguugauaugaacc--5',252-------232,
+5' --gguccaccggguucuguauau 3',251-------271,0.798
+  3'aaccagguggcccaagacaua--5',269-------249,
+5' --gcggauccucugguuggaagc 3',482-------502,0.796
+  3'gacgccuaggagaccaaccuu--5',500-------480,
+5' --cgcuuugacuauuucaaaggu 3',421-------441,0.796
+  3'gggcgaaacugauaaaguuuc--5',439-------419,
+5' --agacugcaacccugcggaucc 3',469-------489,0.793
+  3'ugucugacguugggacgccua--5',487-------467,
+5' --gcuagcugaaauaacccuuga 3',163-------183,0.793
+  3'cucgaucgacuuuauugggaa--5',181-------161,
+5' --gcgagacccagccgcuccaga 3',28-------48,0.793
+  3'gucgcucugggucggcgaggu--5',46-------26,
+5' --acgacaggauagccagacagu 3',537-------557,0.79
+  3'ugugcuguccuaucggucugu--5',555-------535,
+5' --ggagauaacauuuaugaaugg 3',215-------235,0.79
+  3'uuccucuauuguaaauacuua--5',233-------213,
+5' --agccugaagaacaagaggaaa 3',48-------68,0.79
+  3'ucucggacuucuuguucuccu--5',66-------46,
+5' --caccggguucuguauaugaag 3',255-------275,0.788
+  3'agguggcccaagacauauacu--5',273-------253,
+5' --auagccacucaguauuugacc 3',503-------523,0.787
+  3'cguaucggugagucauaaacu--5',521-------501,
+5' --cccgcuuugacuauuucaaag 3',419-------439,0.787
+  3'cagggcgaaacugauaaaguu--5',437-------417,
+5' --ucuaucacugcaacaucaaca 3',354-------374,0.787
+  3'uuagauagugacguuguaguu--5',372-------352,
+5' --agccgcuccagagccugaaga 3',37-------57,0.787
+  3'ggucggcgaggucucggacuu--5',55-------35,
+5' --cuuuccgcaccagaaucuauc 3',339-------359,0.786
+  3'augaaaggcguggucuuagau--5',357-------337,
+5' --ggauagccagacaguggacca 3',543-------563,0.785
+  3'guccuaucggucugucaccug--5',561-------541,
+5' --ugcuaaguuauccacuagugc 3',124-------144,0.784
+  3'ugacgauucaauaggugauca--5',142-------122,
+5' --accaaacucucuagcaaaacc 3',101-------121,0.784
+  3'ugugguuugagagaucguuuu--5',119-------99,
+5' --cuugauccuccuccuaauugc 3',179-------199,0.783
+  3'gggaacuaggaggaggauuaa--5',197-------177,
+5' --acuagugcuaaaagaauucag 3',137-------157,0.782
+  3'ggugaucacgauuuucuuaag--5',155-------135,
+5' --ccacugcuaaguuauccacua 3',120-------140,0.782
+  3'uuggugacgauucaauaggug--5',138-------118,
+5' --ggaagcauagccacucaguau 3',497-------517,0.781
+  3'aaccuucguaucggugaguca--5',515-------495,
+5' --gugcugggccuaaaggagaua 3',201-------221,0.78
+  3'gucacgacccggauuuccucu--5',219-------199,
+5' --gaacacgacaggauagccaga 3',533-------553,0.778
+  3'gucuugugcuguccuaucggu--5',551-------531,
+5' --agcauagccacucaguauuug 3',500-------520,0.778
+  3'cuucguaucggugagucauaa--5',518-------498,
+5' --ggagucccgcuuugacuauuu 3',414-------434,0.778
+  3'gaccucagggcgaaacugaua--5',432-------412,
+5' --aagaacaagaggaaagaaaac 3',54-------74,0.778
+  3'acuucuuguucuccuuucuuu--5',72-------52,
+5' --gucagggagucaucugucugg 3',375-------395,0.777
+  3'gucagucccucaguagacaga--5',393-------373,
+5' --agguuuugcugucuauuuguu 3',438-------458,0.776
+  3'uuuccaaaacgacagauaaac--5',456-------436,
+5' --cagucagggagucaucugucu 3',373-------393,0.775
+  3'uugucagucccucaguagaca--5',391-------371,
+5' --cuggauaucacauuuucauca 3',290-------310,0.775
+  3'aagaccuauaguguaaaagua--5',308-------288,
+5' --acacgacaggauagccagaca 3',535-------555,0.772
+  3'cuugugcuguccuaucggucu--5',553-------533,
+5' --gaacaagaggaaagaaaaccu 3',56-------76,0.772
+  3'uucuuguucuccuuucuuuug--5',74-------54,
+5' --cacucaguauuugaccaacag 3',508-------528,0.771
+  3'cggugagucauaaacugguug--5',526-------506,
+5' --cacugcuaaguuauccacuag 3',121-------141,0.771
+  3'uggugacgauucaauagguga--5',139-------119,
+5' --uggagucccgcuuugacuauu 3',413-------433,0.769
+  3'ugaccucagggcgaaacugau--5',431-------411,
+5' --guuuuuucuggauaucacauu 3',283-------303,0.768
+  3'cacaaaaaagaccuauagugu--5',301-------281,
+5' --aagaauucagaaggagcuagc 3',148-------168,0.768
+  3'uuuucuuaagucuuccucgau--5',166-------146,
+5' --ggacauccuuaaagacaacug 3',394-------414,0.767
+  3'gaccuguaggaauuucuguug--5',412-------392,
+5' --gaaaaacaccaaacucucuag 3',94-------114,0.767
+  3'uucuuuuugugguuugagaga--5',112-------92,
+5' --gaaagaaaaccuucugccacc 3',65-------85,0.767
+  3'uccuuucuuuuggaagacggu--5',83-------63,
+5' --ccagagccugaagaacaagag 3',44-------64,0.767
+  3'gaggucucggacuucuuguuc--5',62-------42,
+5' --auccacuagugcuaaaagaau 3',133-------153,0.766
+  3'aauaggugaucacgauuuucu--5',151-------131,
+5' --uaaaggagauaacauuuauga 3',211-------231,0.764
+  3'ggauuuccucuauuguaaaua--5',229-------209,
+5' --cuaaaggagauaacauuuaug 3',210-------230,0.764
+  3'cggauuuccucuauuguaaau--5',228-------208,
+5' --aagguuacuuuccgcaccaga 3',332-------352,0.763
+  3'guuuccaaugaaaggcguggu--5',350-------330,
+5' --gauccuccuccuaauugcagu 3',182-------202,0.763
+  3'aacuaggaggaggauuaacgu--5',200-------180,
+5' --auuugaccaacagagcagaac 3',516-------536,0.762
+  3'cauaaacugguugucucgucu--5',534-------514,
+5' --caucagauuauccauuuaagc 3',306-------326,0.761
+  3'aaguagucuaauagguaaauu--5',324-------304,
+5' --uaugaauggagaucaacuaua 3',227-------247,0.761
+  3'aaauacuuaccucuaguugau--5',245-------225,
+5' --cuaucacugcaacaucaacag 3',355-------375,0.76
+  3'uagauagugacguuguaguug--5',373-------353,
+5' --acccuugauccuccuccuaau 3',176-------196,0.76
+  3'auugggaacuaggaggaggau--5',194-------174,
+5' --cagaugcggaccagcgagacc 3',15-------35,0.76
+  3'aagucuacgccuggucgcucu--5',33-------13,
+5' --caacagagcagaacacgacag 3',523-------543,0.759
+  3'ugguugucucgucuugugcug--5',541-------521,
+5' --ugucuauuuguucccuuuuga 3',447-------467,0.759
+  3'cgacagauaaacaagggaaaa--5',465-------445,
+5' --aucuaucacugcaacaucaac 3',353-------373,0.758
+  3'cuuagauagugacguuguagu--5',371-------351,
+5' --gccacccagcagaagaaaaac 3',80-------100,0.758
+  3'gacggugggucgucuucuuuu--5',98-------78,
+5' --cuucugccacccagcagaaga 3',75-------95,0.758
+  3'uggaagacggugggucgucuu--5',93-------73,
+5' --gagaucaacuauacuuggucc 3',235-------255,0.757
+  3'accucuaguugauaugaacca--5',253-------233,
+5' --ggccuaaaggagauaacauuu 3',207-------227,0.757
+  3'acccggauuuccucuauugua--5',225-------205,
+5' --aagaggaaagaaaaccuucug 3',60-------80,0.757
+  3'uguucuccuuucuuuuggaag--5',78-------58,
+5' --cgcaccagaaucuaucacugc 3',344-------364,0.755
+  3'aggcguggucuuagauaguga--5',362-------342,
+5' --aguauuugaccaacagagcag 3',513-------533,0.754
+  3'agucauaaacugguugucucg--5',531-------511,
+5' --aggagauaacauuuaugaaug 3',214-------234,0.754
+  3'uuuccucuauuguaaauacuu--5',232-------212,
+5' --gcagaacacgacaggauagcc 3',530-------550,0.753
+  3'cucgucuugugcuguccuauc--5',548-------528,
+5' --aauggagaucaacuauacuug 3',231-------251,0.753
+  3'acuuaccucuaguugauauga--5',249-------229,
+5' --cauuuaugaauggagaucaac 3',223-------243,0.753
+  3'uuguaaauacuuaccucuagu--5',241-------221,
+5' --agaagaaaaacaccaaacucu 3',90-------110,0.753
+  3'cgucuucuuuuugugguuuga--5',108-------88,
+5' --cgacaggauagccagacagug 3',538-------558,0.752
+  3'gugcuguccuaucggucuguc--5',556-------536,
+5' --acagagcagaacacgacagga 3',525-------545,0.752
+  3'guugucucgucuugugcuguc--5',543-------523,
+5' --ccuccuaauugcagugcuggg 3',188-------208,0.752
+  3'gaggaggauuaacgucacgac--5',206-------186,
+5' --guucagaugcggaccagcgag 3',12-------32,0.752
+  3'gucaagucuacgccuggucgc--5',30-------10,
+5' --caacaucaacagucagggagu 3',364-------384,0.751
+  3'acguuguaguugucagucccu--5',382-------362,
+5' --gcaguucagaugcggaccagc 3',9-------29,0.75
+  3'accgucaagucuacgccuggu--5',27-------7,
+5' --auggagaucaacuauacuugg 3',232-------252,0.749
+  3'cuuaccucuaguugauaugaa--5',250-------230,
+5' --cuuugacuauuucaaagguuu 3',423-------443,0.748
+  3'gcgaaacugauaaaguuucca--5',441-------421,
+5' --ccggguucuguauaugaaggu 3',257-------277,0.748
+  3'guggcccaagacauauacuuc--5',275-------255,
+5' --ugguccaccggguucuguaua 3',250-------270,0.748
+  3'gaaccagguggcccaagacau--5',268-------248,
+5' --uucagaaggagcuagcugaaa 3',153-------173,0.747
+  3'uuaagucuuccucgaucgacu--5',171-------151,
+5' --gcaacccugcggauccucugg 3',474-------494,0.746
+  3'gacguugggacgccuaggaga--5',492-------472,
+5' --gacaggauagccagacagugg 3',539-------559,0.745
+  3'ugcuguccuaucggucuguca--5',557-------537,
+5' --uggagaucaacuauacuuggu 3',233-------253,0.745
+  3'uuaccucuaguugauaugaac--5',251-------231,
+5' --uagcugaaauaacccuugauc 3',165-------185,0.745
+  3'cgaucgacuuuauugggaacu--5',183-------163,
+5' --agagccugaagaacaagagga 3',46-------66,0.745
+  3'ggucucggacuucuuguucuc--5',64-------44,
+5' --aaaaccacugcuaaguuaucc 3',116-------136,0.744
+  3'cguuuuggugacgauucaaua--5',134-------114,
+5' --cagaagaaaaacaccaaacuc 3',89-------109,0.744
+  3'ucgucuucuuuuugugguuug--5',107-------87,
+5' --ccacccagcagaagaaaaaca 3',81-------101,0.744
+  3'acggugggucgucuucuuuuu--5',99-------79,
+5' --augaauggagaucaacuauac 3',228-------248,0.743
+  3'aauacuuaccucuaguugaua--5',246-------226,
+5' --uuugaccaacagagcagaaca 3',517-------537,0.741
+  3'auaaacugguugucucgucuu--5',535-------515,
+5' --guuuugcugucuauuuguucc 3',440-------460,0.741
+  3'uccaaaacgacagauaaacaa--5',458-------438,
+5' --uuauccacuagugcuaaaaga 3',131-------151,0.741
+  3'ucaauaggugaucacgauuuu--5',149-------129,
+5' --acccagcagaagaaaaacacc 3',83-------103,0.74
+  3'ggugggucgucuucuuuuugu--5',101-------81,
+5' --ccuuuugacagacugcaaccc 3',460-------480,0.739
+  3'agggaaaacugucugacguug--5',478-------458,
+5' --aaaaacaccaaacucucuagc 3',95-------115,0.739
+  3'ucuuuuugugguuugagagau--5',113-------93,
+5' --aacuggagucccgcuuugacu 3',410-------430,0.738
+  3'uguugaccucagggcgaaacu--5',428-------408,
+5' --acaucaacagucagggaguca 3',366-------386,0.738
+  3'guuguaguugucagucccuca--5',384-------364,
+5' --ccuucugccacccagcagaag 3',74-------94,0.738
+  3'uuggaagacggugggucgucu--5',92-------72,
+5' --ucacauuuucaucagauuauc 3',297-------317,0.736
+  3'auaguguaaaaguagucuaau--5',315-------295,
+5' --aagaaaaacaccaaacucucu 3',92-------112,0.736
+  3'ucuucuuuuugugguuugaga--5',110-------90,
+5' --cugggccuaaaggagauaaca 3',204-------224,0.735
+  3'acgacccggauuuccucuauu--5',222-------202,
+5' --gaggaaagaaaaccuucugcc 3',62-------82,0.735
+  3'uucuccuuucuuuuggaagac--5',80-------60,
+5' --uucagaugcggaccagcgaga 3',13-------33,0.735
+  3'ucaagucuacgccuggucgcu--5',31-------11,
+5' --gaccaacagagcagaacacga 3',520-------540,0.734
+  3'aacugguugucucgucuugug--5',538-------518,
+5' --ccagcagaagaaaaacaccaa 3',85-------105,0.734
+  3'ugggucgucuucuuuuugugg--5',103-------83,
+5' --aagcauagccacucaguauuu 3',499-------519,0.731
+  3'ccuucguaucggugagucaua--5',517-------497,
+5' --cgcuccagagccugaagaaca 3',40-------60,0.731
+  3'cggcgaggucucggacuucuu--5',58-------38,
+5' --gccgcuccagagccugaagaa 3',38-------58,0.73
+  3'gucggcgaggucucggacuuc--5',56-------36,
+5' --uagccagacaguggaccaa 3',546-------566,0.729
+  3'cuaucggucugucaccugguu--5',564-------544,
+5' --uugacuauuucaaagguuuug 3',425-------445,0.729
+  3'gaaacugauaaaguuuccaaa--5',443-------423,
+5' --ccuaaaggagauaacauuuau 3',209-------229,0.729
+  3'ccggauuuccucuauuguaaa--5',227-------207,
+5' --ggguucuguauaugaaggugg 3',259-------279,0.728
+  3'ggcccaagacauauacuucca--5',277-------257,
+5' --agacaacuggagucccgcuuu 3',406-------426,0.726
+  3'uuucuguugaccucagggcga--5',424-------404,
+5' --caaagguuacuuuccgcacca 3',330-------350,0.726
+  3'ugguuuccaaugaaaggcgug--5',348-------328,
+5' --cuagcugaaauaacccuugau 3',164-------184,0.726
+  3'ucgaucgacuuuauugggaac--5',182-------162,
+5' --cugccacccagcagaagaaaa 3',78-------98,0.725
+  3'aagacggugggucgucuucuu--5',96-------76,
+5' --gacaacuggagucccgcuuug 3',407-------427,0.724
+  3'uucuguugaccucagggcgaa--5',425-------405,
+5' --agauuauccauuuaagccacc 3',310-------330,0.724
+  3'agucuaauagguaaauucggu--5',328-------308,
+5' --gagccugaagaacaagaggaa 3',47-------67,0.724
+  3'gucucggacuucuuguucucc--5',65-------45,
+5' --aaaccacugcuaaguuaucca 3',117-------137,0.723
+  3'guuuuggugacgauucaauag--5',135-------115,
+5' --caucugucuggacauccuuaa 3',385-------405,0.722
+  3'caguagacagaccuguaggaa--5',403-------383,
+5' --guucccuuuugacagacugca 3',456-------476,0.721
+  3'aacaagggaaaacugucugac--5',474-------454,
+5' --gcugggccuaaaggagauaac 3',203-------223,0.721
+  3'cacgacccggauuuccucuau--5',221-------201,
+5' --ggagucaucugucuggacauc 3',380-------400,0.72
+  3'ucccucaguagacagaccugu--5',398-------378,
+5' --agccaccaaagguuacuuucc 3',324-------344,0.72
+  3'auucggugguuuccaaugaaa--5',342-------322,
+5' --cacauuuucaucagauuaucc 3',298-------318,0.72
+  3'uaguguaaaaguagucuaaua--5',316-------296,
+5' --ucuggauaucacauuuucauc 3',289-------309,0.72
+  3'aaagaccuauaguguaaaagu--5',307-------287,
+5' --agaaaaacaccaaacucucua 3',93-------113,0.72
+  3'cuucuuuuugugguuugagag--5',111-------91,
+5' --auugcagugcugggccuaaag 3',195-------215,0.718
+  3'auuaacgucacgacccggauu--5',213-------193,
+5' --uagccacucaguauuugacca 3',504-------524,0.717
+  3'guaucggugagucauaaacug--5',522-------502,
+5' --cauagccacucaguauuugac 3',502-------522,0.716
+  3'ucguaucggugagucauaaac--5',520-------500,
+5' --ucacugcaacaucaacaguca 3',358-------378,0.714
+  3'auagugacguuguaguuguca--5',376-------356,
+5' --gaagaaaaacaccaaacucuc 3',91-------111,0.714
+  3'gucuucuuuuugugguuugag--5',109-------89,
+5' --acaagaggaaagaaaaccuuc 3',58-------78,0.713
+  3'cuuguucuccuuucuuuugga--5',76-------56,
+5' --uccgcaccagaaucuaucacu 3',342-------362,0.712
+  3'aaaggcguggucuuagauagu--5',360-------340,
+5' --ucaucagauuauccauuuaag 3',305-------325,0.712
+  3'aaaguagucuaauagguaaau--5',323-------303,
+5' --gauccucugguuggaagcaua 3',485-------505,0.711
+  3'gccuaggagaccaaccuucgu--5',503-------483,
+5' --ugcggauccucugguuggaag 3',481-------501,0.711
+  3'ggacgccuaggagaccaaccu--5',499-------479,
+5' --gucuauuuguucccuuuugac 3',448-------468,0.711
+  3'gacagauaaacaagggaaaac--5',466-------446,
+5' --cccagcagaagaaaaacacca 3',84-------104,0.71
+  3'gugggucgucuucuuuuugug--5',102-------82,
+5' --gccuaaaggagauaacauuua 3',208-------228,0.708
+  3'cccggauuuccucuauuguaa--5',226-------206,
+5' --gccaccaaagguuacuuuccg 3',325-------345,0.707
+  3'uucggugguuuccaaugaaag--5',343-------323,
+5' --ccuuaaagacaacuggagucc 3',400-------420,0.706
+  3'uaggaauuucuguugaccuca--5',418-------398,
+5' --uuuaagccaccaaagguuacu 3',320-------340,0.706
+  3'guaaauucggugguuuccaau--5',338-------318,
+5' --guguuuuuucuggauaucaca 3',281-------301,0.706
+  3'cacacaaaaaagaccuauagu--5',299-------279,
+5' --gcggaccagcgagacccagcc 3',20-------40,0.705
+  3'uacgccuggucgcucuggguc--5',38-------18,
+5' --ugacuauuucaaagguuuugc 3',426-------446,0.703
+  3'aaacugauaaaguuuccaaaa--5',444-------424,
+5' --aucacauuuucaucagauuau 3',296-------316,0.703
+  3'uauaguguaaaaguagucuaa--5',314-------294,
+5' --guguguuuuuucuggauauca 3',279-------299,0.703
+  3'accacacaaaaaagaccuaua--5',297-------277,
+5' --aacccuugauccuccuccuaa 3',175-------195,0.703
+  3'uauugggaacuaggaggagga--5',193-------173,
+5' --cuuuugacagacugcaacccu 3',461-------481,0.701
+  3'gggaaaacugucugacguugg--5',479-------459,
+5' --auccuuaaagacaacuggagu 3',398-------418,0.7
+  3'uguaggaauuucuguugaccu--5',416-------396,
+5' --cuggagucccgcuuugacuau 3',412-------432,0.698
+  3'uugaccucagggcgaaacuga--5',430-------410,
+5' --uagugcuaaaagaauucagaa 3',139-------159,0.698
+  3'ugaucacgauuuucuuaaguc--5',157-------137,
+5' --ugcggaccagcgagacccagc 3',19-------39,0.698
+  3'cuacgccuggucgcucugggu--5',37-------17,
+5' --auagccagacaguggaccaa 3',545-------565,0.697
+  3'ccuaucggucugucaccuggu--5',563-------543,
+5' --gaugcggaccagcgagaccca 3',17-------37,0.697
+  3'gucuacgccuggucgcucugg--5',35-------15,
+5' --acaacuggagucccgcuuuga 3',408-------428,0.695
+  3'ucuguugaccucagggcgaaa--5',426-------406,
+5' --cuaaguuauccacuagugcua 3',126-------146,0.695
+  3'acgauucaauaggugaucacg--5',144-------124,
+5' --ccugcggauccucugguugga 3',479-------499,0.694
+  3'ugggacgccuaggagaccaac--5',497-------477,
+5' --aucaacuauacuugguccacc 3',238-------258,0.694
+  3'ucuaguugauaugaaccaggu--5',256-------236,
+5' --gagucccgcuuugacuauuuc 3',415-------435,0.693
+  3'accucagggcgaaacugauaa--5',433-------413,
+5' --gcaguggcaguucagaugcgg 3',3-------23,0.693
+  3'gucgucaccgucaagucuacg--5',21-------1,
+5' --ccgcuccagagccugaagaac 3',39-------59,0.692
+  3'ucggcgaggucucggacuucu--5',57-------37,
+5' --uuuucuggauaucacauuuuc 3',286-------306,0.691
+  3'aaaaaagaccuauaguguaaa--5',304-------284,
+5' --gguguguuuuuucuggauauc 3',278-------298,0.691
+  3'caccacacaaaaaagaccuau--5',296-------276,
+5' --ugcugggccuaaaggagauaa 3',202-------222,0.69
+  3'ucacgacccggauuuccucua--5',220-------200,
+5' --gcuuugacuauuucaaagguu 3',422-------442,0.689
+  3'ggcgaaacugauaaaguuucc--5',440-------420,
+5' --gggagucaucugucuggacau 3',379-------399,0.689
+  3'gucccucaguagacagaccug--5',397-------377,
+5' --ucaacagucagggagucaucu 3',369-------389,0.689
+  3'guaguugucagucccucagua--5',387-------367,
+5' --aaagaauucagaaggagcuag 3',147-------167,0.689
+  3'auuuucuuaagucuuccucga--5',165-------145,
+5' --aauucagaaggagcuagcuga 3',151-------171,0.688
+  3'ucuuaagucuuccucgaucga--5',169-------149,
+5' --cagacugcaacccugcggauc 3',468-------488,0.687
+  3'cugucugacguugggacgccu--5',486-------466,
+5' --aggagcuagcugaaauaaccc 3',159-------179,0.687
+  3'cuuccucgaucgacuuuauug--5',177-------157,
+5' --uaaguuauccacuagugcuaa 3',127-------147,0.686
+  3'cgauucaauaggugaucacga--5',145-------125,
+5' --uuggaagcauagccacucagu 3',495-------515,0.685
+  3'ccaaccuucguaucggugagu--5',513-------493,
+5' --ucccgcuuugacuauuucaaa 3',418-------438,0.684
+  3'ucagggcgaaacugauaaagu--5',436-------416,
+5' --gguucuguauaugaagguggu 3',260-------280,0.684
+  3'gcccaagacauauacuuccac--5',278-------258,
+5' --uuuccgcaccagaaucuauca 3',340-------360,0.683
+  3'ugaaaggcguggucuuagaua--5',358-------338,
+5' --gcuccagagccugaagaacaa 3',41-------61,0.683
+  3'ggcgaggucucggacuucuug--5',59-------39,
+5' --caacagucagggagucaucug 3',370-------390,0.681
+  3'uaguugucagucccucaguag--5',388-------368,
+5' --agguuacuuuccgcaccagaa 3',333-------353,0.681
+  3'uuuccaaugaaaggcgugguc--5',351-------331,
+5' --auacuugguccaccggguucu 3',245-------265,0.681
+  3'gauaugaaccagguggcccaa--5',263-------243,
+5' --aaacucucuagcaaaaccacu 3',104-------124,0.681
+  3'gguuugagagaucguuuuggu--5',122-------102,
+5' --gacagacugcaacccugcgga 3',466-------486,0.68
+  3'aacugucugacguugggacgc--5',484-------464,
+5' --acuggagucccgcuuugacua 3',411-------431,0.678
+  3'guugaccucagggcgaaacug--5',429-------409,
+5' --agcaaaaccacugcuaaguua 3',113-------133,0.678
+  3'gaucguuuuggugacgauuca--5',131-------111,
+5' --aacacgacaggauagccagac 3',534-------554,0.677
+  3'ucuugugcuguccuaucgguc--5',552-------532,
+5' --gcugaaauaacccuugauccu 3',167-------187,0.677
+  3'aucgacuuuauugggaacuag--5',185-------165,
+5' --aucacugcaacaucaacaguc 3',357-------377,0.676
+  3'gauagugacguuguaguuguc--5',375-------355,
+5' --uguuuuuucuggauaucacau 3',282-------302,0.675
+  3'acacaaaaaagaccuauagug--5',300-------280,
+5' --agcuagcugaaauaacccuug 3',162-------182,0.675
+  3'ccucgaucgacuuuauuggga--5',180-------160,
+5' --cuauuucaaagguuuugcugu 3',429-------449,0.674
+  3'cugauaaaguuuccaaaacga--5',447-------427,
+5' --aaucuaucacugcaacaucaa 3',352-------372,0.674
+  3'ucuuagauagugacguuguag--5',370-------350,
+5' --cugaagaacaagaggaaagaa 3',51-------71,0.674
+  3'cggacuucuuguucuccuuuc--5',69-------49,
+5' --acucucuagcaaaaccacugc 3',106-------126,0.673
+  3'uuugagagaucguuuugguga--5',124-------104,
+5' --uguucccuuuugacagacugc 3',455-------475,0.672
+  3'aaacaagggaaaacugucuga--5',473-------453,
+5' --ugcugucuauuuguucccuuu 3',444-------464,0.672
+  3'aaacgacagauaaacaaggga--5',462-------442,
+5' --uuuuuucuggauaucacauuu 3',284-------304,0.672
+  3'acaaaaaagaccuauagugua--5',302-------282,
+5' --ccuccuccuaauugcagugcu 3',185-------205,0.672
+  3'uaggaggaggauuaacgucac--5',203-------183,
+5' --agaauucagaaggagcuagcu 3',149-------169,0.672
+  3'uuucuuaagucuuccucgauc--5',167-------147,
+5' --agggagucaucugucuggaca 3',378-------398,0.67
+  3'agucccucaguagacagaccu--5',396-------376,
+5' --aauugcagugcugggccuaaa 3',194-------214,0.67
+  3'gauuaacgucacgacccggau--5',212-------192,
+5' --uaucacugcaacaucaacagu 3',356-------376,0.669
+  3'agauagugacguuguaguugu--5',374-------354,
+5' --uugcagugcugggccuaaagg 3',196-------216,0.669
+  3'uuaacgucacgacccggauuu--5',214-------194,
+5' --ugcuaaaagaauucagaagga 3',142-------162,0.669
+  3'ucacgauuuucuuaagucuuc--5',160-------140,
+5' --gagucaucugucuggacaucc 3',381-------401,0.668
+  3'cccucaguagacagaccugua--5',399-------379,
+5' --agucccgcuuugacuauuuca 3',416-------436,0.667
+  3'ccucagggcgaaacugauaaa--5',434-------414,
+5' --cugcaacccugcggauccucu 3',472-------492,0.666
+  3'cugacguugggacgccuagga--5',490-------470,
+5' --guccaccggguucuguauaug 3',252-------272,0.666
+  3'accagguggcccaagacauau--5',270-------250,
+5' --ccagcgagacccagccgcucc 3',25-------45,0.666
+  3'cuggucgcucugggucggcga--5',43-------23,
+5' --cucucuagcaaaaccacugcu 3',107-------127,0.665
+  3'uugagagaucguuuuggugac--5',125-------105,
+5' --caacccugcggauccucuggu 3',475-------495,0.663
+  3'acguugggacgccuaggagac--5',493-------473,
+5' --gacugcaacccugcggauccu 3',470-------490,0.663
+  3'gucugacguugggacgccuag--5',488-------468,
+5' --agccacucaguauuugaccaa 3',505-------525,0.66
+  3'uaucggugagucauaaacugg--5',523-------503,
+5' --aacauuuaugaauggagauca 3',221-------241,0.66
+  3'uauuguaaauacuuaccucua--5',239-------219,
+5' --cugcggauccucugguuggaa 3',480-------500,0.659
+  3'gggacgccuaggagaccaacc--5',498-------478,
+5' --aacuauacuugguccaccggg 3',241-------261,0.659
+  3'aguugauaugaaccagguggc--5',259-------239,
+5' --cacugcaacaucaacagucag 3',359-------379,0.658
+  3'uagugacguuguaguugucag--5',377-------357,
+5' --ucuagcaaaaccacugcuaag 3',110-------130,0.658
+  3'agagaucguuuuggugacgau--5',128-------108,
+5' --cggaccagcgagacccagccg 3',21-------41,0.658
+  3'acgccuggucgcucugggucg--5',39-------19,
+5' --ugguuggaagcauagccacuc 3',492-------512,0.657
+  3'agaccaaccuucguaucggug--5',510-------490,
+5' --cggauccucugguuggaagca 3',483-------503,0.657
+  3'acgccuaggagaccaaccuuc--5',501-------481,
+5' --ucaucugucuggacauccuua 3',384-------404,0.657
+  3'ucaguagacagaccuguagga--5',402-------382,
+5' --agucagggagucaucugucug 3',374-------394,0.656
+  3'ugucagucccucaguagacag--5',392-------372,
+5' --agaugcggaccagcgagaccc 3',16-------36,0.656
+  3'agucuacgccuggucgcucug--5',34-------14,
+5' --aaggagauaacauuuaugaau 3',213-------233,0.655
+  3'auuuccucuauuguaaauacu--5',231-------211,
+5' --acaggauagccagacagugga 3',540-------560,0.652
+  3'gcuguccuaucggucugucac--5',558-------538,
+5' --caccagaaucuaucacugcaa 3',346-------366,0.652
+  3'gcguggucuuagauagugacg--5',364-------344,
+5' --aacagucagggagucaucugu 3',371-------391,0.651
+  3'aguugucagucccucaguaga--5',389-------369,
+5' --uugacagacugcaacccugcg 3',464-------484,0.65
+  3'aaaacugucugacguugggac--5',482-------462,
+5' --gaucaacuauacuugguccac 3',237-------257,0.65
+  3'cucuaguugauaugaaccagg--5',255-------235,
+5' --uuaugaauggagaucaacuau 3',226-------246,0.65
+  3'uaaauacuuaccucuaguuga--5',244-------224,
+5' --cagagcagaacacgacaggau 3',526-------546,0.649
+  3'uugucucgucuugugcugucc--5',544-------524,
+5' --ucuauuuguucccuuuugaca 3',449-------469,0.649
+  3'acagauaaacaagggaaaacu--5',467-------447,
+5' --uuuucaucagauuauccauuu 3',302-------322,0.649
+  3'guaaaaguagucuaauaggua--5',320-------300,
+5' --auaucacauuuucaucagauu 3',294-------314,0.649
+  3'ccuauaguguaaaaguagucu--5',312-------292,
+5' --gagcuagcugaaauaacccuu 3',161-------181,0.649
+  3'uccucgaucgacuuuauuggg--5',179-------159,
+5' --uauuugaccaacagagcagaa 3',515-------535,0.648
+  3'ucauaaacugguugucucguc--5',533-------513,
+5' --acccugcggauccucugguug 3',477-------497,0.648
+  3'guugggacgccuaggagacca--5',495-------475,
+5' --cuggacauccuuaaagacaac 3',392-------412,0.648
+  3'cagaccuguaggaauuucugu--5',410-------390,
+5' --gauaucacauuuucaucagau 3',293-------313,0.648
+  3'accuauaguguaaaaguaguc--5',311-------291,
+5' --auuuaagccaccaaagguuac 3',319-------339,0.647
+  3'gguaaauucggugguuuccaa--5',337-------317,
+5' --caacuggagucccgcuuugac 3',409-------429,0.646
+  3'cuguugaccucagggcgaaac--5',427-------407,
+5' --uagcaaaaccacugcuaaguu 3',112-------132,0.644
+  3'agaucguuuuggugacgauuc--5',130-------110,
+5' --agaucaacuauacuuggucca 3',236-------256,0.643
+  3'ccucuaguugauaugaaccag--5',254-------234,
+5' --cggguucuguauaugaaggug 3',258-------278,0.642
+  3'uggcccaagacauauacuucc--5',276-------256,
+5' --cagcgagacccagccgcucca 3',26-------46,0.642
+  3'uggucgcucugggucggcgag--5',44-------24,
+5' --aucaacagucagggagucauc 3',368-------388,0.641
+  3'uguaguugucagucccucagu--5',386-------366,
+5' --ugaaggugguguguuuuuucu 3',271-------291,0.641
+  3'auacuuccaccacacaaaaaa--5',289-------269,
+5' --auuucaaagguuuugcugucu 3',431-------451,0.64
+  3'gauaaaguuuccaaaacgaca--5',449-------429,
+5' --gauaacauuuaugaauggaga 3',218-------238,0.64
+  3'cucuauuguaaauacuuaccu--5',236-------216,
+5' --cucugguuggaagcauagcca 3',489-------509,0.639
+  3'aggagaccaaccuucguaucg--5',507-------487,
+5' --auccauuuaagccaccaaagg 3',315-------335,0.639
+  3'aauagguaaauucggugguuu--5',333-------313,
+5' --gcuaaaagaauucagaaggag 3',143-------163,0.639
+  3'cacgauuuucuuaagucuucc--5',161-------141,
+5' --auaugaaggugguguguuuuu 3',268-------288,0.638
+  3'cauauacuuccaccacacaaa--5',286-------266,
+5' --gaauucagaaggagcuagcug 3',150-------170,0.637
+  3'uucuuaagucuuccucgaucg--5',168-------148,
+5' --cagugcugggccuaaaggaga 3',199-------219,0.636
+  3'acgucacgacccggauuuccu--5',217-------197,
+5' --cccagccgcuccagagccuga 3',34-------54,0.636
+  3'cugggucggcgaggucucgga--5',52-------32,
+5' --uaacauuuaugaauggagauc 3',220-------240,0.635
+  3'cuauuguaaauacuuaccucu--5',238-------218,
+5' --aagccaccaaagguuacuuuc 3',323-------343,0.634
+  3'aauucggugguuuccaaugaa--5',341-------321,
+5' --cauuuaagccaccaaagguua 3',318-------338,0.634
+  3'agguaaauucggugguuucca--5',336-------316,
+5' --acagucagggagucaucuguc 3',372-------392,0.632
+  3'guugucagucccucaguagac--5',390-------370,
+5' --gcaacaucaacagucagggag 3',363-------383,0.631
+  3'gacguuguaguugucaguccc--5',381-------361,
+5' --gagauaacauuuaugaaugga 3',216-------236,0.631
+  3'uccucuauuguaaauacuuac--5',234-------214,
+5' --ugccacccagcagaagaaaaa 3',79-------99,0.631
+  3'agacggugggucgucuucuuu--5',97-------77,
+5' --gauuauccauuuaagccacca 3',311-------331,0.63
+  3'gucuaauagguaaauucggug--5',329-------309,
+5' --caguggcaguucagaugcgga 3',4-------24,0.63
+  3'ucgucaccgucaagucuacgc--5',22-------2,
+5' --aaaacaccaaacucucuagca 3',96-------116,0.629
+  3'cuuuuugugguuugagagauc--5',114-------94,
+5' --gagacccagccgcuccagagc 3',30-------50,0.629
+  3'cgcucugggucggcgaggucu--5',48-------28,
+5' --gaaauaacccuugauccuccu 3',170-------190,0.628
+  3'gacuuuauugggaacuaggag--5',188-------168,
+5' --uucaaagguuuugcugucuau 3',433-------453,0.627
+  3'uaaaguuuccaaaacgacaga--5',451-------431,
+5' --guuggaagcauagccacucag 3',494-------514,0.626
+  3'accaaccuucguaucggugag--5',512-------492,
+5' --gacuauuucaaagguuuugcu 3',427-------447,0.626
+  3'aacugauaaaguuuccaaaac--5',445-------425,
+5' --gaaggugguguguuuuuucug 3',272-------292,0.625
+  3'uacuuccaccacacaaaaaag--5',290-------270,
+5' --aaaagaauucagaaggagcua 3',146-------166,0.625
+  3'gauuuucuuaagucuuccucg--5',164-------144,
+5' --aacucucuagcaaaaccacug 3',105-------125,0.625
+  3'guuugagagaucguuuuggug--5',123-------103,
+5' --ccagccgcuccagagccugaa 3',35-------55,0.625
+  3'ugggucggcgaggucucggac--5',53-------33,
+5' --gugguguguuuuuucuggaua 3',276-------296,0.623
+  3'uccaccacacaaaaaagaccu--5',294-------274,
+5' --cuugguccaccggguucugua 3',248-------268,0.623
+  3'augaaccagguggcccaagac--5',266-------246,
+5' --aacaccaaacucucuagcaaa 3',98-------118,0.623
+  3'uuuugugguuugagagaucgu--5',116-------96,
+5' --ggaccagcgagacccagccgc 3',22-------42,0.623
+  3'cgccuggucgcucugggucgg--5',40-------20,
+5' --cucuagcaaaaccacugcuaa 3',109-------129,0.622
+  3'gagagaucguuuuggugacga--5',127-------107,
+5' --ucugccacccagcagaagaaa 3',77-------97,0.622
+  3'gaagacggugggucgucuucu--5',95-------75,
+5' --uuuguucccuuuugacagacu 3',453-------473,0.62
+  3'auaaacaagggaaaacugucu--5',471-------451,
+5' --uuugacagacugcaacccugc 3',463-------483,0.619
+  3'gaaaacugucugacguuggga--5',481-------461,
+5' --acauuuucaucagauuaucca 3',299-------319,0.619
+  3'aguguaaaaguagucuaauag--5',317-------297,
+5' --uccuccuaauugcagugcugg 3',187-------207,0.619
+  3'ggaggaggauuaacgucacga--5',205-------185,
+5' --ccaaacucucuagcaaaacca 3',102-------122,0.619
+  3'gugguuugagagaucguuuug--5',120-------100,
+5' --uuucuggauaucacauuuuca 3',287-------307,0.618
+  3'aaaaagaccuauaguguaaaa--5',305-------285,
+5' --aguucagaugcggaccagcga 3',11-------31,0.618
+  3'cgucaagucuacgccuggucg--5',29-------9,
+5' --ucccuuuugacagacugcaac 3',458-------478,0.617
+  3'caagggaaaacugucugacgu--5',476-------456,
+5' --augaaggugguguguuuuuuc 3',270-------290,0.616
+  3'uauacuuccaccacacaaaaa--5',288-------268,
+5' --uauacuugguccaccggguuc 3',244-------264,0.614
+  3'ugauaugaaccagguggccca--5',262-------242,
+5' --acuauacuugguccaccgggu 3',242-------262,0.614
+  3'guugauaugaaccagguggcc--5',260-------240,
+5' --uccaccggguucuguauauga 3',253-------273,0.613
+  3'ccagguggcccaagacauaua--5',271-------251,
+5' --uggaagcauagccacucagua 3',496-------516,0.612
+  3'caaccuucguaucggugaguc--5',514-------494,
+5' --gucccgcuuugacuauuucaa 3',417-------437,0.612
+  3'cucagggcgaaacugauaaag--5',435-------415,
+5' --acuugguccaccggguucugu 3',247-------267,0.612
+  3'uaugaaccagguggcccaaga--5',265-------245,
+5' --acugcaacccugcggauccuc 3',471-------491,0.611
+  3'ucugacguugggacgccuagg--5',489-------469,
+5' --accaacagagcagaacacgac 3',521-------541,0.61
+  3'acugguugucucgucuugugc--5',539-------519,
+5' --ugacagacugcaacccugcgg 3',465-------485,0.61
+  3'aaacugucugacguugggacg--5',483-------463,
+5' --uggauaucacauuuucaucag 3',291-------311,0.61
+  3'agaccuauaguguaaaaguag--5',309-------289,
+5' --aacaagaggaaagaaaaccuu 3',57-------77,0.61
+  3'ucuuguucuccuuucuuuugg--5',75-------55,
+5' --uccuccuccuaauugcagugc 3',184-------204,0.609
+  3'cuaggaggaggauuaacguca--5',202-------182,
+5' --caaacucucuagcaaaaccac 3',103-------123,0.609
+  3'ugguuugagagaucguuuugg--5',121-------101,
+5' --agaacacgacaggauagccag 3',532-------552,0.608
+  3'cgucuugugcuguccuaucgg--5',550-------530,
+5' --uuugacuauuucaaagguuuu 3',424-------444,0.607
+  3'cgaaacugauaaaguuuccaa--5',442-------422,
+5' --caucaacagucagggagucau 3',367-------387,0.607
+  3'uuguaguugucagucccucag--5',385-------365,
+5' --aucagauuauccauuuaagcc 3',307-------327,0.606
+  3'aguagucuaauagguaaauuc--5',325-------305,
+5' --auccucugguuggaagcauag 3',486-------506,0.605
+  3'ccuaggagaccaaccuucgua--5',504-------484,
+5' --accaaagguuacuuuccgcac 3',328-------348,0.605
+  3'ggugguuuccaaugaaaggcg--5',346-------326,
+5' --aauaacccuugauccuccucc 3',172-------192,0.604
+  3'cuuuauugggaacuaggagga--5',190-------170,
+5' --ugaaauaacccuugauccucc 3',169-------189,0.603
+  3'cgacuuuauugggaacuagga--5',187-------167,
+5' --caggauagccagacaguggac 3',541-------561,0.602
+  3'cuguccuaucggucugucacc--5',559-------539,
+5' --cauccuuaaagacaacuggag 3',397-------417,0.602
+  3'cuguaggaauuucuguugacc--5',415-------395,
+5' --ggugguguguuuuuucuggau 3',275-------295,0.602
+  3'uuccaccacacaaaaaagacc--5',293-------273,
+5' --uuucaaagguuuugcugucua 3',432-------452,0.601
+  3'auaaaguuuccaaaacgacag--5',450-------430,
+5' --ccaccaaagguuacuuuccgc 3',326-------346,0.6
+  3'ucggugguuuccaaugaaagg--5',344-------324,
+5' --ccgcaccagaaucuaucacug 3',343-------363,0.598
+  3'aaggcguggucuuagauagug--5',361-------341,
+5' --uucuggauaucacauuuucau 3',288-------308,0.597
+  3'aaaagaccuauaguguaaaag--5',306-------286,
+5' --uaugaaggugguguguuuuuu 3',269-------289,0.597
+  3'auauacuuccaccacacaaaa--5',287-------267,
+5' --uauccauuuaagccaccaaag 3',314-------334,0.595
+  3'uaauagguaaauucggugguu--5',332-------312,
+5' --caacuauacuugguccaccgg 3',240-------260,0.595
+  3'uaguugauaugaaccaggugg--5',258-------238,
+5' --auuuucaucagauuauccauu 3',301-------321,0.594
+  3'uguaaaaguagucuaauaggu--5',319-------299,
+5' --uauuuguucccuuuugacaga 3',451-------471,0.593
+  3'agauaaacaagggaaaacugu--5',469-------449,
+5' --caguucagaugcggaccagcg 3',10-------30,0.593
+  3'ccgucaagucuacgccugguc--5',28-------8,
+5' --cagaacacgacaggauagcca 3',531-------551,0.592
+  3'ucgucuugugcuguccuaucg--5',549-------529,
+5' --guauaugaaggugguguguuu 3',266-------286,0.592
+  3'gacauauacuuccaccacaca--5',284-------264,
+5' --ccaccggguucuguauaugaa 3',254-------274,0.591
+  3'cagguggcccaagacauauac--5',272-------252,
+5' --ugauccuccuccuaauugcag 3',181-------201,0.589
+  3'gaacuaggaggaggauuaacg--5',199-------179,
+5' --gaaaaccuucugccacccagc 3',69-------89,0.588
+  3'uucuuuuggaagacggugggu--5',87-------67,
+5' --ggauccucugguuggaagcau 3',484-------504,0.587
+  3'cgccuaggagaccaaccuucg--5',502-------482,
+5' --cuuaaagacaacuggaguccc 3',401-------421,0.587
+  3'aggaauuucuguugaccucag--5',419-------399,
+5' --ucugguuggaagcauagccac 3',490-------510,0.586
+  3'ggagaccaaccuucguaucgg--5',508-------488,
+5' --caccaaagguuacuuuccgca 3',327-------347,0.586
+  3'cggugguuuccaaugaaaggc--5',345-------325,
+5' --aaaggagauaacauuuaugaa 3',212-------232,0.585
+  3'gauuuccucuauuguaaauac--5',230-------210,
+5' --uugauccuccuccuaauugca 3',180-------200,0.584
+  3'ggaacuaggaggaggauuaac--5',198-------178,
+5' --agacccagccgcuccagagcc 3',31-------51,0.584
+  3'gcucugggucggcgaggucuc--5',49-------29,
+5' --gacauccuuaaagacaacugg 3',395-------415,0.583
+  3'accuguaggaauuucuguuga--5',413-------393,
+5' --gaccagcgagacccagccgcu 3',23-------43,0.583
+  3'gccuggucgcucugggucggc--5',41-------21,
+5' --uuacuuuccgcaccagaaucu 3',336-------356,0.582
+  3'ccaaugaaaggcguggucuua--5',354-------334,
+5' --uuuuucuggauaucacauuuu 3',285-------305,0.582
+  3'caaaaaagaccuauaguguaa--5',303-------283,
+5' --uuuaugaauggagaucaacua 3',225-------245,0.582
+  3'guaaauacuuaccucuaguug--5',243-------223,
+5' --aaccuucugccacccagcaga 3',72-------92,0.582
+  3'uuuuggaagacggugggucgu--5',90-------70,
+5' --uggcaguucagaugcggacca 3',7-------27,0.581
+  3'ucaccgucaagucuacgccug--5',25-------5,
+5' --uccuuaaagacaacuggaguc 3',399-------419,0.58
+  3'guaggaauuucuguugaccuc--5',417-------397,
+5' --auuuguucccuuuugacagac 3',452-------472,0.578
+  3'gauaaacaagggaaaacuguc--5',470-------450,
+5' --aaggugguguguuuuuucugg 3',273-------293,0.578
+  3'acuuccaccacacaaaaaaga--5',291-------271,
+5' --ugguguguuuuuucuggauau 3',277-------297,0.576
+  3'ccaccacacaaaaaagaccua--5',295-------275,
+5' --cugaaauaacccuugauccuc 3',168-------188,0.575
+  3'ucgacuuuauugggaacuagg--5',186-------166,
+5' --uauccacuagugcuaaaagaa 3',132-------152,0.574
+  3'caauaggugaucacgauuuuc--5',150-------130,
+5' --ucuggacauccuuaaagacaa 3',391-------411,0.573
+  3'acagaccuguaggaauuucug--5',409-------389,
+5' --uaucacauuuucaucagauua 3',295-------315,0.573
+  3'cuauaguguaaaaguagucua--5',313-------293,
+5' --cacccagcagaagaaaaacac 3',82-------102,0.573
+  3'cggugggucgucuucuuuuug--5',100-------80,
+5' --uauuucaaagguuuugcuguc 3',430-------450,0.572
+  3'ugauaaaguuuccaaaacgac--5',448-------428,
+5' --acuuuccgcaccagaaucuau 3',338-------358,0.571
+  3'aaugaaaggcguggucuuaga--5',356-------336,
+5' --uaaaagaauucagaaggagcu 3',145-------165,0.57
+  3'cgauuuucuuaagucuuccuc--5',163-------143,
+5' --aggugguguguuuuuucugga 3',274-------294,0.566
+  3'cuuccaccacacaaaaaagac--5',292-------272,
+5' --uuuugcugucuauuuguuccc 3',441-------461,0.564
+  3'ccaaaacgacagauaaacaag--5',459-------439,
+5' --uucaucagauuauccauuuaa 3',304-------324,0.564
+  3'aaaaguagucuaauagguaaa--5',322-------302,
+5' --agcgagacccagccgcuccag 3',27-------47,0.564
+  3'ggucgcucugggucggcgagg--5',45-------25,
+5' --ugucuggacauccuuaaagac 3',389-------409,0.562
+  3'agacagaccuguaggaauuuc--5',407-------387,
+5' --agauaacauuuaugaauggag 3',217-------237,0.561
+  3'ccucuauuguaaauacuuacc--5',235-------215,
+5' --uaauugcagugcugggccuaa 3',193-------213,0.56
+  3'ggauuaacgucacgacccgga--5',211-------191,
+5' --cacgacaggauagccagacag 3',536-------556,0.559
+  3'uugugcuguccuaucggucug--5',554-------534,
+5' --ggaaagaaaaccuucugccac 3',64-------84,0.559
+  3'cuccuuucuuuuggaagacgg--5',82-------62,
+5' --auccuccuccuaauugcagug 3',183-------203,0.557
+  3'acuaggaggaggauuaacguc--5',201-------181,
+5' --cauuuucaucagauuauccau 3',300-------320,0.556
+  3'guguaaaaguagucuaauagg--5',318-------298,
+5' --aaagguuacuuuccgcaccag 3',331-------351,0.554
+  3'gguuuccaaugaaaggcgugg--5',349-------329,
+5' --uccuaauugcagugcugggcc 3',190-------210,0.554
+  3'ggaggauuaacgucacgaccc--5',208-------188,
+5' --cgagacccagccgcuccagag 3',29-------49,0.554
+  3'ucgcucugggucggcgagguc--5',47-------27,
+5' --ccauuuaagccaccaaagguu 3',317-------337,0.551
+  3'uagguaaauucggugguuucc--5',335-------315,
+5' --aggaaagaaaaccuucugcca 3',63-------83,0.548
+  3'ucuccuuucuuuuggaagacg--5',81-------61,
+5' --auaacccuugauccuccuccu 3',173-------193,0.545
+  3'uuuauugggaacuaggaggag--5',191-------171,
+5' --ucaacuauacuugguccaccg 3',239-------259,0.543
+  3'cuaguugauaugaaccaggug--5',257-------237,
+5' --aguggcaguucagaugcggac 3',5-------25,0.543
+  3'cgucaccgucaagucuacgcc--5',23-------3,
+5' --ucagggagucaucugucugga 3',376-------396,0.542
+  3'ucagucccucaguagacagac--5',394-------374,
+5' --acauuuaugaauggagaucaa 3',222-------242,0.542
+  3'auuguaaauacuuaccucuag--5',240-------220,
+5' --auaacauuuaugaauggagau 3',219-------239,0.542
+  3'ucuauuguaaauacuuaccuc--5',237-------217,
+5' --cuccuaauugcagugcugggc 3',189-------209,0.539
+  3'aggaggauuaacgucacgacc--5',207-------187,
+5' --ggcaguucagaugcggaccag 3',8-------28,0.536
+  3'caccgucaagucuacgccugg--5',26-------6,
+5' --uaagccaccaaagguuacuuu 3',322-------342,0.534
+  3'aaauucggugguuuccaauga--5',340-------320,
+5' --uacuugguccaccggguucug 3',246-------266,0.533
+  3'auaugaaccagguggcccaag--5',264-------244,
+5' --ugcaacaucaacagucaggga 3',362-------382,0.532
+  3'ugacguuguaguugucagucc--5',380-------360,
+5' --ugcagugcugggccuaaagga 3',197-------217,0.531
+  3'uaacgucacgacccggauuuc--5',215-------195,
+5' --ucagaugcggaccagcgagac 3',14-------34,0.529
+  3'caagucuacgccuggucgcuc--5',32-------12,
+5' --uugaccaacagagcagaacac 3',518-------538,0.528
+  3'uaaacugguugucucgucuug--5',536-------516,
+5' --ugggccuaaaggagauaacau 3',205-------225,0.527
+  3'cgacccggauuuccucuauug--5',223-------203,
+5' --aaccacugcuaaguuauccac 3',118-------138,0.527
+  3'uuuuggugacgauucaauagg--5',136-------116,
+5' --acauccuuaaagacaacugga 3',396-------416,0.525
+  3'ccuguaggaauuucuguugac--5',414-------394,
+5' --uuccgcaccagaaucuaucac 3',341-------361,0.525
+  3'gaaaggcguggucuuagauag--5',359-------339,
+5' --uuuugacagacugcaacccug 3',462-------482,0.524
+  3'ggaaaacugucugacguuggg--5',480-------460,
+5' --uuucaucagauuauccauuua 3',303-------323,0.524
+  3'uaaaaguagucuaauagguaa--5',321-------301,
+5' --uguguuuuuucuggauaucac 3',280-------300,0.523
+  3'ccacacaaaaaagaccuauag--5',298-------278,
+5' --auucagaaggagcuagcugaa 3',152-------172,0.523
+  3'cuuaagucuuccucgaucgac--5',170-------150,
+5' --acagacugcaacccugcggau 3',467-------487,0.522
+  3'acugucugacguugggacgcc--5',485-------465,
+5' --gauagccagacaguggaccaa 3',544-------564,0.521
+  3'uccuaucggucugucaccugg--5',562-------542,
+5' --uguauaugaaggugguguguu 3',265-------285,0.521
+  3'agacauauacuuccaccacac--5',283-------263,
+5' --augcggaccagcgagacccag 3',18-------38,0.52
+  3'ucuacgccuggucgcucuggg--5',36-------16,
+5' --aaacaccaaacucucuagcaa 3',97-------117,0.519
+  3'uuuuugugguuugagagaucg--5',115-------95,
+5' --gacccagccgcuccagagccu 3',32-------52,0.519
+  3'cucugggucggcgaggucucg--5',50-------30,
+5' --aaagacaacuggagucccgcu 3',404-------424,0.518
+  3'aauuucuguugaccucagggc--5',422-------402,
+5' --cuauuuguucccuuuugacag 3',450-------470,0.517
+  3'cagauaaacaagggaaaacug--5',468-------448,
+5' --uugguccaccggguucuguau 3',249-------269,0.517
+  3'ugaaccagguggcccaagaca--5',267-------247,
+5' --agugcugggccuaaaggagau 3',200-------220,0.517
+  3'cgucacgacccggauuuccuc--5',218-------198,
+5' --cuauacuugguccaccggguu 3',243-------263,0.516
+  3'uugauaugaaccagguggccc--5',261-------241,
+5' --aagacaacuggagucccgcuu 3',405-------425,0.515
+  3'auuucuguugaccucagggcg--5',423-------403,
+5' --cagauuauccauuuaagccac 3',309-------329,0.512
+  3'uagucuaauagguaaauucgg--5',327-------307,
+5' --accuucugccacccagcagaa 3',73-------93,0.508
+  3'uuuggaagacggugggucguc--5',91-------71,
+5' --cagggagucaucugucuggac 3',377-------397,0.507
+  3'cagucccucaguagacagacc--5',395-------375,
+5' --guucuguauaugaagguggug 3',261-------281,0.505
+  3'cccaagacauauacuuccacc--5',279-------259,
+5' --uccauuuaagccaccaaaggu 3',316-------336,0.503
+  3'auagguaaauucggugguuuc--5',334-------314,
+5' --aaauaacccuugauccuccuc 3',171-------191,0.503
+  3'acuuuauugggaacuaggagg--5',189-------169,
+5' --uauaugaaggugguguguuuu 3',267-------287,0.502
+  3'acauauacuuccaccacacaa--5',285-------265,
+5' --uucccuuuugacagacugcaa 3',457-------477,0.501
+  3'acaagggaaaacugucugacg--5',475-------455,
+5' --acccagccgcuccagagccug 3',33-------53,0.501
+  3'ucugggucggcgaggucucgg--5',51-------31,
+5' --aacaucaacagucagggaguc 3',365-------385,0.5
+  3'cguuguaguugucagucccuc--5',383-------363,
+5' --gcagugcugggccuaaaggag 3',198-------218,0.499
+  3'aacgucacgacccggauuucc--5',216-------196,
+5' --ugcaacccugcggauccucug 3',473-------493,0.493
+  3'ugacguugggacgccuaggag--5',491-------471,
+5' --uuaagccaccaaagguuacuu 3',321-------341,0.492
+  3'uaaauucggugguuuccaaug--5',339-------319,
+5' --uaacccuugauccuccuccua 3',174-------194,0.487
+  3'uuauugggaacuaggaggagg--5',192-------172,
+5' --ccuaauugcagugcugggccu 3',191-------211,0.485
+  3'gaggauuaacgucacgacccg--5',209-------189,
+5' --ucagauuauccauuuaagcca 3',308-------328,0.483
+  3'guagucuaauagguaaauucg--5',326-------306,
+5' --uuguucccuuuugacagacug 3',454-------474,0.479
+  3'uaaacaagggaaaacugucug--5',472-------452,
+5' --uuaaagacaacuggagucccg 3',402-------422,0.479
+  3'ggaauuucuguugaccucagg--5',420-------400,
+5' --agucaucugucuggacauccu 3',382-------402,0.479
+  3'ccucaguagacagaccuguag--5',400-------380,
+5' --uucuguauaugaagguggugu 3',262-------282,0.479
+  3'ccaagacauauacuuccacca--5',280-------260,
+5' --aaaaccuucugccacccagca 3',70-------90,0.477
+  3'ucuuuuggaagacgguggguc--5',88-------68,
+5' --uuugcugucuauuuguucccu 3',442-------462,0.476
+  3'caaaacgacagauaaacaagg--5',460-------440,
+5' --uaaagacaacuggagucccgc 3',403-------423,0.476
+  3'gaauuucuguugaccucaggg--5',421-------401,
+5' --uugcugucuauuuguucccuu 3',443-------463,0.475
+  3'aaaacgacagauaaacaaggg--5',461-------441,
+5' --aacccugcggauccucugguu 3',476-------496,0.472
+  3'cguugggacgccuaggagacc--5',494-------474,
+5' --uucugccacccagcagaagaa 3',76-------96,0.472
+  3'ggaagacggugggucgucuuc--5',94-------74,
+5' --cuguauaugaagguggugugu 3',264-------284,0.468
+  3'aagacauauacuuccaccaca--5',282-------262,
+5' --ucucuagcaaaaccacugcua 3',108-------128,0.46
+  3'ugagagaucguuuuggugacg--5',126-------106,
+5' --uacuuuccgcaccagaaucua 3',337-------357,0.456
+  3'caaugaaaggcguggucuuag--5',355-------335,
+5' --agaaaaccuucugccacccag 3',68-------88,0.451
+  3'uuucuuuuggaagacgguggg--5',86-------66,
+5' --acuauuucaaagguuuugcug 3',428-------448,0.443
+  3'acugauaaaguuuccaaaacg--5',446-------426,
+5' --cuccuccuaauugcagugcug 3',186-------206,0.443
+  3'aggaggaggauuaacgucacg--5',204-------184,
+5' --gucaucugucuggacauccuu 3',383-------403,0.441
+  3'cucaguagacagaccuguagg--5',401-------381,
+5' --aagaaaaccuucugccaccca 3',67-------87,0.436
+  3'cuuucuuuuggaagacggugg--5',85-------65,
+5' --accagcgagacccagccgcuc 3',24-------44,0.435
+  3'ccuggucgcucugggucggcg--5',42-------22,
+5' --uuauccauuuaagccaccaaa 3',313-------333,0.426
+  3'cuaauagguaaauucgguggu--5',331-------311,
+5' --aaagaaaaccuucugccaccc 3',66-------86,0.418
+  3'ccuuucuuuuggaagacggug--5',84-------64,
+5' --cuaauugcagugcugggccua 3',192-------212,0.411
+  3'aggauuaacgucacgacccgg--5',210-------190,
+5' --ucuguauaugaagguggugug 3',263-------283,0.397
+  3'caagacauauacuuccaccac--5',281-------261,
+5' --aaaccuucugccacccagcag 3',71-------91,0.396
+  3'cuuuuggaagacggugggucg--5',89-------69,
+5' --auuauccauuuaagccaccaa 3',312-------332,0.324
+  3'ucuaauagguaaauucggugg--5',330-------310,
