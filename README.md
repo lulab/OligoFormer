@@ -22,7 +22,7 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 
 ## Model
 
-![OligoFormer_architecture](figures/Figure1.png)
+![OligoFormer_architecture](figures/Figure1.svg)
 
 ## Installation
 
@@ -96,8 +96,6 @@ pos sense siRNA efficacy
 ```
 
 #### 3.2 Inference with off-target
-
-<img src="figures/Figure5.png"  width="400" />
 
 - Dependency of perl
 
