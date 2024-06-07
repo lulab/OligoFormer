@@ -22,7 +22,7 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 
 ## Model
 
-![OligoFormer_architecture](figures/Figure1.svg)
+![OligoFormer_architecture](figures/Figure1.png)
 
 ## Installation
 
