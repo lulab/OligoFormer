@@ -75,7 +75,7 @@ def generate_mismatch_sequences(seq, mismatch_count):
     return list(mismatch_sequences)
 
 model = MismatchModule()
-model.load_state_dict(torch.load('mismatch_model.pth'))
+model.load_state_dict(torch.load('model/mismatch_model.pth'))
 model.eval()
 
 def mismatch(Args):
