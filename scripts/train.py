@@ -11,7 +11,7 @@ import torch.nn.functional as F
 import torch.optim as optim
 from loader import data_process_loader
 from torch.utils.data import DataLoader
-from model import Oligo,Oligo2,Oligo3
+from model import Oligo
 from sklearn.model_selection import (train_test_split, GridSearchCV)
 from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score, roc_auc_score, average_precision_score,roc_curve,auc,precision_recall_curve,matthews_corrcoef
 from metrics import  sensitivity, specificity
@@ -20,6 +20,7 @@ from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 from train_logger import TrainLogger
+from scipy.ndimage import gaussian_filter
 import warnings
 warnings.filterwarnings("ignore")
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
@@ -133,12 +134,9 @@ def val(model, criterion, dataloader):
 		mRNA_FM = data[3].to(device)
 		label = data[4].to(device)
 		td = data[6].to(device)
-		# siRNA_ss = data[7].to(device)	
-		# ss = data[8].to(device)
-		pred,_,_ = model(siRNA,mRNA,siRNA_FM,mRNA_FM,td) #  siRNA_ss,ss
-		loss = criterion(pred[:,1],label.float()) #criterion(pred,label)
-		label = np.array([int(i > 0.7) for i in label])
-		# label = data[5]
+		pred,_,_ = model(siRNA,mRNA,siRNA_FM,mRNA_FM,td) 
+		loss = criterion(pred[:,1],label.float())
+		label = data[5]
 		pred_cls = torch.argmax(pred, dim=-1)
 		pred_prob = F.softmax(pred, dim=-1) # pred_prob = pred #
 		pred_prob, indices = torch.max(pred_prob, dim=-1)
@@ -163,39 +161,31 @@ def val(model, criterion, dataloader):
 	running_loss.reset()
 	return epoch_loss, acc, sen, spe, pre, rec, f1score, rocauc, prauc, mcc, label, pred
 
-def run(Args):
+def train(Args):
 	os.environ["CUDA_VISIBLE_DEVICES"] = str(Args.cuda)
 	random.seed(Args.seed)
 	os.environ['PYTHONHASHSEED']=str(Args.seed)
 	np.random.seed(Args.seed)
 	train_df = pd.read_csv(Args.path + Args.datasets[0] + '.csv', dtype=str)
-	# train_df,valid_df = train_test_split(train_df,test_size=0.2,shuffle=True,random_state=42)
-	# train_df = train_df.reset_index(drop=True)
-	# valid_df = valid_df.reset_index(drop=True)
 	valid_df = pd.read_csv(Args.path + Args.datasets[1] + '.csv',  dtype=str)
 	test_df = pd.read_csv(Args.path + Args.datasets[1] + '.csv', dtype=str)
 	params = {'batch_size': Args.batch_size,
 			'shuffle': True,
 			'num_workers': 0,
 			'drop_last': False}
-	if not os.path.exists('./data/RNAFM'):
-		os.system('bash scripts/RNA-FM-features.sh')
-	train_ds = DataLoader(data_process_loader(train_df.index.values, train_df.label.values,train_df.y.values, train_df, Args.datasets[0]), **params)
-	valid_ds = DataLoader(data_process_loader(valid_df.index.values, valid_df.label.values,valid_df.y.values, valid_df, Args.datasets[1]),**params)
-	test_ds = DataLoader(data_process_loader(test_df.index.values, test_df.label.values,test_df.y.values, test_df, Args.datasets[1]), **params)
-	OFmodel = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers).to(device)
-	# tmp = torch.load("model/best_model.pth")
-	# OFmodel.load_state_dict(tmp)
-	criterion = nn.MSELoss() #nn.BCELoss() # nn.CrossEntropyLoss() # nn.BCEWithLogitsLoss(pos_weight=torch.tensor(1)) #
+	train_ds = DataLoader(data_process_loader(train_df.index.values, train_df.label.values,train_df.y.values, train_df, Args.datasets[0],Args.path), **params)
+	valid_ds = DataLoader(data_process_loader(valid_df.index.values, valid_df.label.values,valid_df.y.values, valid_df, Args.datasets[1],Args.path),**params)
+	test_ds = DataLoader(data_process_loader(test_df.index.values, test_df.label.values,test_df.y.values, test_df, Args.datasets[1],Args.path), **params)
+	OFmodel = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers, lm1 = Args.lm1, lm2 = Args.lm2).to(device)
+	criterion = nn.MSELoss()
 	best_AUC = 0.0
 	best_loss = 1e10
 	best_epoch = 0
 	tolerence_epoch = Args.early_stopping
-	saliency_map = np.zeros((19,5))
 	optimizer = optim.Adam(OFmodel.parameters(), lr=Args.learning_rate)
 	scheduler = torch.optim.lr_scheduler.ExponentialLR(optimizer,gamma = Args.weight_decay)
 	params = dict(
-		data_root="/mnt/inspurfs/user-fs/qhsky1/baiyilan/OligoFormer/data",
+		data_path=Args.path,
 		save_dir="result",
 		dataset=Args.datasets[1],
 		batch_size=Args.batch_size
@@ -208,6 +198,8 @@ def run(Args):
 	print('-----------------Start training!-----------------')
 	running_loss = AverageMeter()
 	for epoch in range(Args.epoch):
+		saliency_map = np.zeros((19,5))
+		attention_map = np.zeros((19,19))
 		for i, data in enumerate(train_ds):
 			siRNA = data[0].to(device)
 			mRNA = data[1].to(device)
@@ -215,36 +207,22 @@ def run(Args):
 			mRNA_FM = data[3].to(device)
 			label = data[4].to(device)
 			td = data[6].to(device)
-			# siRNA_ss = data[7].to(device)	
-			# ss = data[8].to(device)
 			siRNA.requires_grad = True
-			output, siRNA_attention, mRNA_attention = OFmodel(siRNA,mRNA,siRNA_FM,mRNA_FM,td) # siRNA_ss,ss
-			np.save(logger.get_model_dir()+"/attention_"+str(epoch)+"_siRNA.npy",siRNA_attention.detach().cpu().numpy())
-			np.save(logger.get_model_dir()+"/attention_"+str(epoch)+"_mRNA.npy",mRNA_attention.detach().cpu().numpy())
-			loss = criterion(output[:,1],label.float()) # criterion(output, label)
+			output, siRNA_attention, mRNA_attention = OFmodel(siRNA,mRNA,siRNA_FM,mRNA_FM,td)
+			loss = criterion(output[:,1],label.float())
 			optimizer.zero_grad()
 			loss.backward(retain_graph=True)
 			gradients = siRNA.grad.detach().cpu().numpy().squeeze()
-			
 			saliency_map += gradients.sum(axis=0)
+			siRNA_attention = siRNA_attention.detach().cpu().numpy()
+			attention_map += siRNA_attention.sum(axis=0).sum(axis=0) / (siRNA_attention.shape[0] * siRNA_attention.shape[1])
 			running_loss.update(loss, output.shape[0])
 			optimizer.step()
-		# from scipy.ndimage import gaussian_filter
-		# blurred_saliency_map = gaussian_filter(saliency_map.squeeze(), sigma=0.01)
-		# np.save('./grad.npy',blurred_saliency_map)
-		# mpl.rcParams['font.sans-serif'] = ['Arial']  
-		# mpl.rcParams['font.weight'] = 'bold'  
-		# mpl.rcParams['font.size'] = 12
-		# fig = plt.figure()
-		# ax = fig.add_subplot(1, 1, 1)
-		# plt.imshow(blurred_saliency_map.T, cmap="RdYlBu", aspect="equal", interpolation="none")
-		# ax.set_xticks(list(range(19)))
-		# ax.set_yticks(list(range(5)))
-		# ax.set_yticklabels(['A', 'U', 'C', 'G', 'X'], fontsize=12)
-		# print(siRNA[0][0])
-		# ax.set_title('Saliency Map for RNA Sequence', fontweight='bold')
-		# plt.savefig('./mine4.png',dpi=600)
-		# break
+		saliency_map /= train_ds.dataset.df_index.shape[0] / Args.batch_size
+		blurred_saliency_map = saliency_map.squeeze()
+		np.save(logger.log_dir + '/' + str(epoch) + '_grad.npy',blurred_saliency_map)
+		attention_map /= train_ds.dataset.df_index.shape[0] / Args.batch_size
+		np.save(logger.log_dir + '/' + str(epoch) + '_attention_siRNA.npy',attention_map)
 		scheduler.step()
 		epoch_loss = running_loss.get_average()
 		running_loss.reset()
@@ -254,12 +232,10 @@ def run(Args):
 			best_AUC = val_rocauc
 			best_loss = val_loss
 			best_epoch = epoch
-			#msg = "epoch-%d, loss-%.4f, val_acc-%.4f,val_f1-%.4f, val_pre-%.4f, val_rec-%.4f, val_rocauc-%.4f, val_prc-%.4f,val_loss-%.4f ***" % (epoch, epoch_loss, val_acc,val_f1,val_pre, val_rec,val_rocauc,val_prauc,val_loss)
-			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_f1-%.4f ***" % (epoch, epoch_loss, val_loss, val_rocauc,val_f1, test_loss,test_rocauc,test_f1)
+			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_prc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_prc-%.4f,test_f1-%.4f ***" % (epoch, epoch_loss, val_loss, val_rocauc,val_prauc,val_f1, test_loss,test_rocauc,test_prauc,test_f1)
 			torch.save(OFmodel.state_dict(), os.path.join(logger.get_model_dir(), msg+'.pth'))
 		else:
-			#msg = "epoch-%d, loss-%.4f, val_acc-%.4f,val_f1-%.4f, val_pre-%.4f, val_rec-%.4f, val_rocauc-%.4f, val_prc-%.4f,val_loss-%.4f " % (epoch, epoch_loss, val_acc,val_f1,val_pre, val_rec,val_rocauc,val_prauc,val_loss)
-			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_f1-%.4f " % (epoch, epoch_loss, val_loss,val_rocauc,val_f1, test_loss,test_rocauc,test_f1)
+			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_prc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_prc-%.4f,test_f1-%.4f " % (epoch, epoch_loss, val_loss,val_rocauc,val_prauc,val_f1, test_loss,test_rocauc,test_prauc,test_f1)
 			torch.save(OFmodel.state_dict(), os.path.join(logger.get_model_dir(), msg+'.pth'))
 		logger.info(msg)
 		if epoch - best_epoch > tolerence_epoch:
