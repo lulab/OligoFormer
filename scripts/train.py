@@ -236,7 +236,6 @@ def train(Args):
 			torch.save(OFmodel.state_dict(), os.path.join(logger.get_model_dir(), msg+'.pth'))
 		else:
 			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_prc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_prc-%.4f,test_f1-%.4f " % (epoch, epoch_loss, val_loss,val_rocauc,val_prauc,val_f1, test_loss,test_rocauc,test_prauc,test_f1)
-			torch.save(OFmodel.state_dict(), os.path.join(logger.get_model_dir(), msg+'.pth'))
 		logger.info(msg)
 		if epoch - best_epoch > tolerence_epoch:
 			break
