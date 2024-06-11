@@ -56,7 +56,7 @@ def main():
     elif Args.test:
         test_single(Args) if Args.single else test(Args)
     else:
-        train(Args) if Args.single else train(Args)
+        train_single(Args) if Args.single else train(Args)
             
 if __name__ == '__main__':
     main()
