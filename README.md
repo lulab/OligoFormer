@@ -142,6 +142,56 @@ pos,sense,siRNA,efficacy,PITA_Score,Scaled_PITA_Score,PheLiM_Score,Scaled_PheLiM
 # evaluation_score: The evaluation score of siRNA, which is calculated by efficacy and off_target_score
 ```
 
+## User-friendly Docker image
+
+![Docker](https://img.shields.io/badge/Docker-Ready-blue)
+
+The Docker image simplifies the installation and setup process, making it easy for users to get started with OligoFormer without worrying about dependencies and environment configuration.
+
+## Features
+
+- **Easy Setup**: Simplified installation process with Docker.
+- **Pre-configured Environment**: All dependencies are pre-installed and configured.
+- **Cross-Platform**: Run on any platform that supports Docker.
+- **Reproducibility**: Consistent environment for running OligoFOrmer.
+
+## Prerequisites
+
+- [Docker](https://www.docker.com/get-started) installed on your machine.
+
+## Installation
+
+1. **Pull the Docker Image**:
+
+    ```sh
+    docker pull your-dockerhub-username/oligoformer:latest
+    ```
+
+2. **Run the Docker Container**:
+
+    ```sh
+    docker run -it --name oligoformer-container --restart unless-stopped oligoformer:latest && docker exec -it oligoformer-container bash
+    ```
+
+3. **Access the OligoFormer Tool**:
+
+    Once inside the container, you can start using OligoFormer with the following command:
+
+    ```sh
+    oligoformer --help
+    python script/main.py # infer
+    python script/main.py -o # infer with off-target prediction
+    python script/main.py -to # infer with toxicity prediction
+    python script/main.py -o -to # infer with off-target and toxicity prediction
+    python script/main.py -m 2 # mismatch input 19nt siRNA
+    python script/main.py -i 0 -t # test inter-dataset
+    python script/main.py -i 0 -s -t # test intra-dataset
+    # We recommand you to run the following two commands on the patform with GPU.
+    python script/main.py -i 0 # train inter-dataset
+    python script/main.py -i 0 -s # train intra-dataset
+    
+    
+
 ## References
 
 [1] [Zamore, Phillip D., et al. "RNAi: double-stranded RNA directs the ATP-dependent cleavage of mRNA at 21 to 23 nucleotide intervals." *cell* 101.1 (2000): 25-33.](https://www.sciencedirect.com/science/article/pii/S0092867400806200)
