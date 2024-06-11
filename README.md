@@ -148,13 +148,6 @@ pos,sense,siRNA,efficacy,PITA_Score,Scaled_PITA_Score,PheLiM_Score,Scaled_PheLiM
 
 The Docker image simplifies the installation and setup process, making it easy for users to get started with OligoFormer without worrying about dependencies and environment configuration.
 
-## Features
-
-- **Easy Setup**: Simplified installation process with Docker.
-- **Pre-configured Environment**: All dependencies are pre-installed and configured.
-- **Cross-Platform**: Run on any platform that supports Docker.
-- **Reproducibility**: Consistent environment for running OligoFOrmer.
-
 ## Prerequisites
 
 - [Docker](https://www.docker.com/get-started) installed on your machine.
@@ -164,7 +157,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 1. **Pull the Docker Image**:
 
     ```sh
-    docker pull your-dockerhub-username/oligoformer:latest
+    docker pull yilanbai/oligoformer:latest
     ```
 
 2. **Run the Docker Container**:
@@ -190,8 +183,6 @@ The Docker image simplifies the installation and setup process, making it easy f
     python script/main.py -i 0 # train inter-dataset
     python script/main.py -i 0 -s # train intra-dataset
     
-    
-
 ## References
 
 [1] [Zamore, Phillip D., et al. "RNAi: double-stranded RNA directs the ATP-dependent cleavage of mRNA at 21 to 23 nucleotide intervals." *cell* 101.1 (2000): 25-33.](https://www.sciencedirect.com/science/article/pii/S0092867400806200)
