@@ -171,7 +171,7 @@ The Docker image simplifies the installation and setup process, making it easy f
     Once inside the container, you can start using OligoFormer with the following command:
 
     ```sh
-    oligoformer --help
+    oligoformer -h # help
     oligoformer # infer
     oligoformer -o # infer with off-target prediction
     oligoformer -to # infer with toxicity prediction
