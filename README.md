@@ -157,7 +157,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 1. **Pull the Docker Image**:
 
     ```sh
-    docker pull yilanbai/oligoformer:latest
+    docker pull yilanbai/oligoformer:v1.0
     ```
 
 2. **Run the Docker Container**:
@@ -172,16 +172,16 @@ The Docker image simplifies the installation and setup process, making it easy f
 
     ```sh
     oligoformer --help
-    python script/main.py # infer
-    python script/main.py -o # infer with off-target prediction
-    python script/main.py -to # infer with toxicity prediction
-    python script/main.py -o -to # infer with off-target and toxicity prediction
-    python script/main.py -m 2 # mismatch input 19nt siRNA
-    python script/main.py -i 0 -t # test inter-dataset
-    python script/main.py -i 0 -s -t # test intra-dataset
+    oligoformer # infer
+    oligoformer -o # infer with off-target prediction
+    oligoformer -to # infer with toxicity prediction
+    oligoformer -o -to # infer with off-target and toxicity prediction
+    oligoformer -m 2 # mismatch input 19nt siRNA
+    oligoformer -i 0 -t # test inter-dataset
+    oligoformer -i 0 -s -t # test intra-dataset
     # We recommand you to run the following two commands on the patform with GPUs.
-    python script/main.py -i 0 # train inter-dataset
-    python script/main.py -i 0 -s # train intra-dataset
+    oligoformer -i 0 # train inter-dataset
+    oligoformer -i 0 -s # train intra-dataset
     
 ## References
 
