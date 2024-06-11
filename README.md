@@ -163,7 +163,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 2. **Run the Docker Container**:
 
     ```sh
-    docker run -it --name oligoformer-container --restart unless-stopped oligoformer:latest && docker exec -it oligoformer-container bash
+    docker run -it --name oligoformer-container -dt --restart unless-stopped oligoformer:latest && docker exec -it oligoformer-container bash
     ```
 
 3. **Access the OligoFormer Tool**:
