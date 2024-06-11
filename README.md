@@ -179,7 +179,7 @@ The Docker image simplifies the installation and setup process, making it easy f
     python script/main.py -m 2 # mismatch input 19nt siRNA
     python script/main.py -i 0 -t # test inter-dataset
     python script/main.py -i 0 -s -t # test intra-dataset
-    # We recommand you to run the following two commands on the patform with GPU.
+    # We recommand you to run the following two commands on the patform with GPUs.
     python script/main.py -i 0 # train inter-dataset
     python script/main.py -i 0 -s # train intra-dataset
     
