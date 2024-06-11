@@ -133,9 +133,8 @@ def val(model, criterion, dataloader):
 		label = data[4].to(device)
 		td = data[6].to(device)
 		pred,_,_ = model(siRNA,mRNA,siRNA_FM,mRNA_FM,td)
-		loss = criterion(pred[:,1],label.float()) #criterion(pred,label)
-		label = np.array([int(i > 0.7) for i in label])
-		# label = data[5]
+		loss = criterion(pred[:,1],label.float()) 
+		label = data[5]
 		pred_cls = torch.argmax(pred, dim=-1)
 		pred_prob = F.softmax(pred, dim=-1) # pred_prob = pred #
 		pred_prob, indices = torch.max(pred_prob, dim=-1)
