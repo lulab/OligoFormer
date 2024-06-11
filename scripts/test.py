@@ -216,7 +216,6 @@ def test(Args):
 	logger.info(f"Number of val: {valid_df.shape[0]}")
 	logger.info(f"Number of test: {test_df.shape[0]}")
 	print('-----------------Start testing!-----------------')
-	running_loss = AverageMeter()
 	val_loss, val_acc, val_sen, val_spe, val_pre, val_rec, val_f1, val_rocauc, val_prauc, val_mcc, val_label, val_pred,val_efficacy, val_label2 = val(OFmodel, criterion, valid_ds)
 	msg = "val_acc-%.4f,val_f1-%.4f, val_pre-%.4f, val_rec-%.4f, val_rocauc-%.4f, val_prc-%.4f,val_loss-%.4f ***" % (val_acc,val_f1,val_pre, val_rec,val_rocauc,val_prauc,val_loss)
 	logger.info(msg)
