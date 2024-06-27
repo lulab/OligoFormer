@@ -9,7 +9,7 @@ import argparse
 def main():
     parser = argparse.ArgumentParser(description='OligoFormer')
     # Data options
-    parser.add_argument('--datasets', 		type=str, default=['Hu','Mix'], help="[Train,Test]: ['Hu','Mix','Taka']") 
+    parser.add_argument('--datasets', 		type=list, default=['Hu','Mix'], help="[Train,Test]: ['Hu','Mix','Taka']") 
     parser.add_argument('--output_dir',  	type=str, default="./", help='output directory')
     parser.add_argument('--best_model',  	type=str, default="", help='output directory')
     parser.add_argument('--cuda',     		type=int, default=0, help='number of GPU')
