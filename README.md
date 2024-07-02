@@ -158,6 +158,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 
     ```sh
     docker pull yilanbai/oligoformer:v1.0
+    docker pull registry.cn-hangzhou.aliyuncs.com/yilanbai/oligoformer:v1.0 # another source if you fail to pull from the first source
     ```
 
 2. **Run the Docker Container**:
