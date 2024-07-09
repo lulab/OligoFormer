@@ -156,23 +156,26 @@ The Docker image simplifies the installation and setup process, making it easy f
 
 1. **Pull the Docker Image**:
 
+    
+    You just need to choose one source
+    source 1: DockerHub
     ```sh
-    # You just need to choose one source
-    # source 1: DockerHub
     docker pull yilanbai/oligoformer:v1.0
-    # source 2: Aliyun
-    docker pull registry.cn-hangzhou.aliyuncs.com/yilanbai/oligoformer:v1.0
-    # Download image from Tsinghua Cloud
-    [Download Link](https://cloud.tsinghua.edu.cn/f/2cca306e868a4b7897d3/)
     ```
+    source 2: Aliyun
+    ```sh
+    docker pull registry.cn-hangzhou.aliyuncs.com/yilanbai/oligoformer:v1.0
+    ```
+    Download image from Tsinghua Cloud
+    [Download Link](https://cloud.tsinghua.edu.cn/f/2cca306e868a4b7897d3/)
 
-2. **Run the Docker Container**:
+3. **Run the Docker Container**:
 
     ```sh
     docker run -it --name oligoformer-container -dt --restart unless-stopped yilanbai/oligoformer:v1.0 && docker exec -it oligoformer-container bash
     ```
 
-3. **Access the OligoFormer Tool**:
+4. **Access the OligoFormer Tool**:
 
     Once inside the container, you can start using OligoFormer with the following command:
 
