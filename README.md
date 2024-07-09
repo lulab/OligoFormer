@@ -157,7 +157,8 @@ The Docker image simplifies the installation and setup process, making it easy f
 1. **Pull the Docker Image**:
 
     
-    You just need to choose one source
+    You just need to choose one source.
+
     source 1: DockerHub
     ```sh
     docker pull yilanbai/oligoformer:v1.0
