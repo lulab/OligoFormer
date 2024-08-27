@@ -1,4 +1,12 @@
 #!/bin/bash
 
-cd ./PITA || exit 1
-perl pita_prediction.pl -utr "$1" -mir "$2" -upstream "$3" -prefix "$4" 
+cp "$1" "$2" "$3" ./off-target/pita/
+cd ./off-target/pita
+utr=$(basename $1)
+mir=$(basename $2)
+orf=$(basename $3)
+perl pita_prediction.pl -utr "$utr" -mir "$mir" -upstream "$orf" -prefix "$4" 
+perl /Users/baiyilan/Research/Luzhi/docker/test.pl
+rm -rf "$utr" "$mir" "$orf"
+cd ../..
+mv ./off-target/pita/"$4"_pita_results_targets.tab ./data/infer/"$4"/pita.tab

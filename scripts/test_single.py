@@ -1,8 +1,6 @@
 import os
-import sys
 import sklearn
 import random
-import pickle as pkl
 import pandas as pd
 import numpy as np
 import torch
@@ -12,31 +10,14 @@ import torch.optim as optim
 from loader import data_process_loader
 from torch.utils.data import DataLoader
 from model import Oligo
-from sklearn.model_selection import (train_test_split, GridSearchCV)
-from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score, roc_auc_score, average_precision_score,roc_curve,auc,precision_recall_curve,matthews_corrcoef
+from sklearn.metrics import f1_score, precision_score, recall_score, accuracy_score, roc_auc_score, average_precision_score,matthews_corrcoef
 from metrics import  sensitivity, specificity
-from sklearn.model_selection import KFold
 from sklearn.utils import shuffle
-import matplotlib.pyplot as plt
-from train_logger import TrainLogger
+from logger import TrainLogger
 import warnings
 warnings.filterwarnings("ignore")
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
-
-
-def find_metrics_best_for_shuffle(label, prob, cut_spe=0.95):
-    fpr, tpr, _ = roc_curve(label, prob)
-    a = 1 - fpr
-    b = tpr
-    Sensitivity = b
-    Specificity = a
-    Sensitivity_ = Sensitivity[Specificity >= cut_spe]
-    if (len(Sensitivity_) == 1) & (Sensitivity_[0] == 0):
-        Sensitivity_best = ((Sensitivity[1] - Sensitivity[0]) / (Specificity[1] - Specificity[0])) * cut_spe + Sensitivity[1] - ((Sensitivity[1] - Sensitivity[0]) / (Specificity[1] - Specificity[0])) *  Specificity[1]
-    else:
-        Sensitivity_best = np.max(Sensitivity_)
-    return Sensitivity_best, Sensitivity, Specificity
 
 def get_kfold_data_2(i, datasets, k=5, v=1):
     datasets = shuffle_dataset(datasets, 42).reset_index(drop=True)
@@ -69,39 +50,6 @@ def shuffle_dataset(dataset, seed):
     dataset = shuffle(dataset)
     return dataset
 
-def write_pkl(pkl_data,pkl_name):
-	pkl_file = open(pkl_name, "wb")
-	pkl.dump(pkl_data, pkl_file)
-	pkl_file.close()
-
-def plotPRC(model,X,Y,name):
-	plt.figure()
-	plt.plot([0, 1], [0, 1], 'k--')
-	y_pred = model.predict(X)[:,1]
-	precision, recall, threshold = precision_recall_curve(Y[:,1],y_pred)
-	prc = auc(recall, precision)
-	plt.plot(recall, precision,label='OligoFormer (PRC: %s \u00B1 0.001)' % (np.round(prc, 3)))
-	plt.xlabel('Recall')
-	plt.ylabel('Precision')
-	plt.legend(loc='best')
-	plt.savefig(name)
-	Y_TRUE = pd.DataFrame(Y)
-	Y_PRED = pd.DataFrame(model.predict(X)[:,1])
-	with open(name.split('PRC')[0] + 'test_prediction.txt', 'w') as f:
-		for i in range(Y_TRUE.shape[0]):
-			f.write(str(Y_TRUE.iloc[i,1]) + " " + str(Y_PRED.iloc[i,0]) + '\n')
-
-def plotAUC(model,X,Y,name):
-	plt.figure()
-	plt.plot([0, 1], [0, 1], 'k--')
-	y_pred = model.predict(X)[:,1]
-	fpr, tpr, threshold = roc_curve(Y[:,1],y_pred)
-	roc = auc(fpr, tpr)
-	plt.plot(fpr, tpr,label='OligoFormer (AUC: %s \u00B1 0.001)' % (np.round(roc, 3)))
-	plt.xlabel('FPR')
-	plt.ylabel('TPR')
-	plt.legend(loc='best')
-	plt.savefig(name)
 
 class AverageMeter(object):
     """Computes and stores the average and current value"""
@@ -119,6 +67,7 @@ class AverageMeter(object):
     def get_average(self):
         self.avg = self.sum / (self.count + 1e-12)
         return self.avg
+
 def val(model, criterion, dataloader):
 	running_loss = AverageMeter()
 	pred_list = []
@@ -184,8 +133,7 @@ def test_single(Args):
 		valid_ds = DataLoader(data_process_loader(valid_df.index.values, valid_df.label.values,valid_df.y.values, valid_df, Args.datasets[0],Args.path),**params)
 		test_ds = DataLoader(data_process_loader(test_df.index.values, test_df.label.values,test_df.y.values, test_df, Args.datasets[1],Args.path), **params)
 		OFmodel = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers, lm1 = Args.lm1, lm2 = Args.lm2).to(device)
-		tmp = torch.load("model/best_model.pth")
-		OFmodel.load_state_dict(tmp)
+		OFmodel.load_state_dict(torch.load("model/best_model.pth",map_location=device))
 		criterion = nn.MSELoss() 
 		logger.info(f"Number of train: {train_df.shape[0]}")
 		logger.info(f"Number of val: {valid_df.shape[0]}")

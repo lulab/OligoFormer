@@ -7,10 +7,22 @@ from sklearn.preprocessing import LabelEncoder
 import torch
 
 nucleic_char = ['A', 'U', 'C', 'G', 'X'] # 
+structure_char = ['.', '(', ')']
+
+# ACGU 1234
 
 enc_protein = OneHotEncoder().fit(np.array(nucleic_char).reshape(-1, 1))
+enc_structure =  LabelEncoder().fit(np.array(structure_char))
 def sequence_OneHot(x):
     return enc_protein.transform(np.array(x).reshape(-1, 1)).toarray().T
+
+def structure_Label(x):
+    return enc_structure.transform(np.array(x).reshape(-1, 1)).T
+
+def Embed(RNA):
+    nucleotides = 'ACGU' 
+    char_to_int = dict((c, i + 1 ) for i, c in enumerate(nucleotides))
+    return [char_to_int[i] for i in RNA]
 
 
 class data_process_loader(data.Dataset):
@@ -42,7 +54,7 @@ class data_process_loader(data.Dataset):
         return len(self.df_index)
     def __getitem__(self, index):
         index = self.df_index[index]
-        label = np.float(self.labels[index])
+        label = float(self.labels[index])
         y = np.int64(self.y[index])
         # siRNA
         siRNA_seq = self.df.iloc[index]['siRNA']

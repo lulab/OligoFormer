@@ -19,12 +19,11 @@ from sklearn.model_selection import KFold
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 import matplotlib as mpl
-from train_logger import TrainLogger
+from logger import TrainLogger
 from scipy.ndimage import gaussian_filter
 import warnings
 warnings.filterwarnings("ignore")
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-
 
 
 def find_metrics_best_for_shuffle(label, prob, cut_spe=0.95):
@@ -105,6 +104,7 @@ def plotAUC(model,X,Y,name):
 	plt.legend(loc='best')
 	plt.savefig(name)
 
+
 class AverageMeter(object):
     """Computes and stores the average and current value"""
     def __init__(self):
@@ -134,7 +134,7 @@ def val(model, criterion, dataloader):
 		mRNA_FM = data[3].to(device)
 		label = data[4].to(device)
 		td = data[6].to(device)
-		pred,_,_ = model(siRNA,mRNA,siRNA_FM,mRNA_FM,td) 
+		pred,_,_ = model(siRNA,mRNA,siRNA_FM,mRNA_FM,td)
 		loss = criterion(pred[:,1],label.float())
 		label = data[5]
 		pred_cls = torch.argmax(pred, dim=-1)
@@ -198,8 +198,6 @@ def train(Args):
 	print('-----------------Start training!-----------------')
 	running_loss = AverageMeter()
 	for epoch in range(Args.epoch):
-		saliency_map = np.zeros((19,5))
-		attention_map = np.zeros((19,19))
 		for i, data in enumerate(train_ds):
 			siRNA = data[0].to(device)
 			mRNA = data[1].to(device)
@@ -209,20 +207,11 @@ def train(Args):
 			td = data[6].to(device)
 			siRNA.requires_grad = True
 			output, siRNA_attention, mRNA_attention = OFmodel(siRNA,mRNA,siRNA_FM,mRNA_FM,td)
-			loss = criterion(output[:,1],label.float())
+			loss = criterion(output[:,1],label.float()) 
 			optimizer.zero_grad()
 			loss.backward(retain_graph=True)
-			gradients = siRNA.grad.detach().cpu().numpy().squeeze()
-			saliency_map += gradients.sum(axis=0)
-			siRNA_attention = siRNA_attention.detach().cpu().numpy()
-			attention_map += siRNA_attention.sum(axis=0).sum(axis=0) / (siRNA_attention.shape[0] * siRNA_attention.shape[1])
 			running_loss.update(loss, output.shape[0])
 			optimizer.step()
-		saliency_map /= train_ds.dataset.df_index.shape[0] / Args.batch_size
-		blurred_saliency_map = saliency_map.squeeze()
-		np.save(logger.log_dir + '/' + str(epoch) + '_grad.npy',blurred_saliency_map)
-		attention_map /= train_ds.dataset.df_index.shape[0] / Args.batch_size
-		np.save(logger.log_dir + '/' + str(epoch) + '_attention_siRNA.npy',attention_map)
 		scheduler.step()
 		epoch_loss = running_loss.get_average()
 		running_loss.reset()
@@ -232,10 +221,10 @@ def train(Args):
 			best_AUC = val_rocauc
 			best_loss = val_loss
 			best_epoch = epoch
-			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_prc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_prc-%.4f,test_f1-%.4f ***" % (epoch, epoch_loss, val_loss, val_rocauc,val_prauc,val_f1, test_loss,test_rocauc,test_prauc,test_f1)
+			msg = "epoch-%d, loss-%.4f, val_acc-%.4f,val_f1-%.4f, val_pre-%.4f, val_rec-%.4f, val_rocauc-%.4f, val_prc-%.4f,val_f1-%.4f,val_loss-%.4f ***" % (epoch, epoch_loss, val_acc,val_f1,val_pre, val_rec,val_rocauc,val_prauc,val_f1,val_loss)
 			torch.save(OFmodel.state_dict(), os.path.join(logger.get_model_dir(), msg+'.pth'))
 		else:
-			msg = "epoch-%d, loss-%.4f, val_loss-%.4f, val_rocauc-%.4f,val_prc-%.4f,val_f1-%.4f, test_loss-%.4f, test_rocauc-%.4f, test_prc-%.4f,test_f1-%.4f " % (epoch, epoch_loss, val_loss,val_rocauc,val_prauc,val_f1, test_loss,test_rocauc,test_prauc,test_f1)
+			msg = "epoch-%d, loss-%.4f, val_acc-%.4f,val_f1-%.4f, val_pre-%.4f, val_rec-%.4f, val_rocauc-%.4f, val_prc-%.4f,val_f1-%.4f,val_loss-%.4f ***" % (epoch, epoch_loss, val_acc,val_f1,val_pre, val_rec,val_rocauc,val_prauc,val_f1,val_loss)
 		logger.info(msg)
 		if epoch - best_epoch > tolerence_epoch:
 			break
