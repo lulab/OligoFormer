@@ -190,6 +190,8 @@ def infer(Args):
 				_cRNA.append('X' * max(0, 19-i) + _mRNA[max(0,i-19):(i+38)] + 'X' * max(0,i+38-len(_mRNA)))
 			_infer_df['mRNA'] = _cRNA
 			_infer_df = calculate_td(_infer_df)
+			if not os.path.exists('./data/infer'):
+				os.mkdir('./data/infer')
 			os.system('rm -rf ./data/infer/' + _name)
 			os.system('mkdir ./data/infer/' + _name)
 			for i in range(_infer_df.shape[0]):
@@ -199,7 +201,7 @@ def infer(Args):
 				with open('./data/infer/' + _name + '/mRNA.fa','a') as f:
 					f.write('>RNA' + str(i) + '\n')
 					f.write(_infer_df['mRNA'][i] + '\n')
-			os.system('sh script/RNA-FM.sh ../../data/infer/' + _name)
+			os.system('sh scripts/RNA-FM.sh ../../data/infer/' + _name)
 			params = {'batch_size': 1,
 				'shuffle': False,
 				'num_workers': 0,
@@ -226,8 +228,8 @@ def infer(Args):
 				RESULT['func_filter'] = func_filter(_siRNA)
 			if Args.off_target:
 				siRNA_file = './data/infer/' + _name + '/siRNA.fa'
-				os.system(f'bash script/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
-				os.system(f'bash script/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
+				os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
+				os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
 				pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
 				pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
 				RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + x)
@@ -290,6 +292,8 @@ def infer(Args):
 			_cRNA.append('X' * max(0, 19-i) + _mRNA[max(0,i-19):(i+38)] + 'X' * max(0,i+38-len(_mRNA)))
 		_infer_df['mRNA'] = _cRNA
 		_infer_df = calculate_td(_infer_df)
+		if not os.path.exists('./data/infer'):
+				os.mkdir('./data/infer')
 		os.system('rm -rf ./data/infer/' + _name)
 		os.system('mkdir ./data/infer/' + _name)
 		for i in range(_infer_df.shape[0]):
@@ -299,7 +303,7 @@ def infer(Args):
 			with open('./data/infer/' + _name + '/mRNA.fa','a') as f:
 				f.write('>RNA' + str(i) + '\n')
 				f.write(_infer_df['mRNA'][i] + '\n')
-		os.system('sh script/RNA-FM.sh ../../data/infer/' + _name)
+		os.system('sh scripts/RNA-FM.sh ../../data/infer/' + _name)
 		params = {'batch_size': 1,
 			'shuffle': False,
 			'num_workers': 0,
@@ -326,8 +330,8 @@ def infer(Args):
 			RESULT['func_filter'] = func_filter(_siRNA)
 		if Args.off_target:
 			siRNA_file = './data/infer/' + _name + '/siRNA.fa'
-			os.system(f'bash script/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
-			os.system(f'bash script/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
+			os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
+			os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
 			pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
 			pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
 			RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + x)

@@ -5,6 +5,7 @@ from train import train
 from infer import infer
 from mismatch import mismatch
 import argparse
+import os
 
 def main():
     parser = argparse.ArgumentParser(description='OligoFormer')
@@ -62,6 +63,9 @@ def main():
     parser.add_argument('-m','--mismatch', type=int, default=0, help='0: None; 1: compare two RNAs; 2: tranverse with 1,2 mismatches; 3: tranverse with 1,2,3 mismatches')
 
     Args = parser.parse_args()
+    if not os.path.exists('./result'):
+        os.mkdir('./result')
+
     if Args.mismatch > 0:
         mismatch(Args)
     elif Args.infer > 0:
