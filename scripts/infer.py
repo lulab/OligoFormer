@@ -175,19 +175,34 @@ def infer(Args):
 					seq_name = line[1:]
 					fa_dict[seq_name] = ''
 				else:
-					fa_dict[seq_name] += line.replace('\n','')
+					fa_dict[seq_name] += line.replace('\n','').upper().replace('T','U')
+		total_siRNA = list()
+		with open(Args.infer_siRNA_fasta) as fa_siRNA:
+			for line in fa_siRNA:
+				line = line.replace('\n','')
+				if not line.startswith('>'):
+					if len(line.replace('\n','')) != 19:
+						raise Exception("The length of some siRNA is not 19 nt!")
+					total_siRNA.append(line.replace('\n',''))
 		for _name, _mRNA in fa_dict.items():
 			print(_name)
 			if len(_mRNA) < 19:
 				raise Exception("The length of mRNA is less than 19 nt!")
 			_infer_df = pd.DataFrame(columns=['siRNA','mRNA'])
 			_siRNA = list()
-			for i in range(len(_mRNA) - 19 + 1): 
-				_siRNA.append(antiRNA(_mRNA[i:i+19]))
-			_infer_df['siRNA'] = _siRNA
 			_cRNA = list()
-			for i in range(len(_mRNA) - 19 + 1):
-				_cRNA.append('X' * max(0, 19-i) + _mRNA[max(0,i-19):(i+38)] + 'X' * max(0,i+38-len(_mRNA)))
+			if Args.infer_siRNA_fasta is None:
+				for i in range(len(_mRNA) - 19 + 1): 
+					_siRNA.append(antiRNA(_mRNA[i:i+19]))
+				for i in range(len(_mRNA) - 19 + 1):
+					_cRNA.append('X' * max(0, 19-i) + _mRNA[max(0,i-19):(i+38)] + 'X' * max(0,i+38-len(_mRNA)))
+			else:
+				for k in range(len(total_siRNA)):
+					if re.search(antiRNA(total_siRNA[k]),_mRNA) is not None:
+						_left = re.search(antiRNA(total_siRNA[k]),_mRNA).span()[0]
+						_siRNA.append(total_siRNA[k])
+						_cRNA.append('X' * max(0, 19-_left) + _mRNA[max(0,_left-19):(_left+38)] + 'X' * max(0,_left+38-len(_mRNA)))
+			_infer_df['siRNA'] = _siRNA
 			_infer_df['mRNA'] = _cRNA
 			_infer_df = calculate_td(_infer_df)
 			if not os.path.exists('./data/infer'):
@@ -275,7 +290,7 @@ def infer(Args):
 			RESULT.to_csv(Args.infer_output + str(_name) + '.txt',sep='\t',index = None,header=True)
 			RESULT_ranked.to_csv(Args.infer_output + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
 	elif Args.infer == 2:
-		_mRNA = input("please input target mRNA: \n").upper()
+		_mRNA = input("please input target mRNA: \n").upper().replace('T','U')
 		if len(_mRNA) < 19:
 			raise Exception("The length of mRNA is less than 19 nt!")
 		_name = 'RNA0'

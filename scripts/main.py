@@ -42,21 +42,23 @@ def main():
 
     # Infer module
     parser.add_argument('-i','--infer', type=int, default=0, help='0: None; 1: infer by fasta; 2: infer manually')
-    parser.add_argument('--infer_fasta', type=str, default='./data/example.fa', help='fasta file to infer')
-    parser.add_argument('--infer_output', type=str, default='./result/', help='output path')
+    parser.add_argument('-i1','--infer_fasta', type=str, default='./data/example.fa', help='fasta file to infer')
+    parser.add_argument('-i2','--infer_siRNA_fasta', type=str, default='./data/example_siRNA.fa', help='siRNA fasta file to infer')
+    parser.add_argument('-io','--infer_output', type=str, default='./result/', help='output path')
     
     # Functionality module
     parser.add_argument('-nf', '--no_func', action='store_true', help='not use filter based on known criteria determinant to functionality')
     
     # Off-target module
-    parser.add_argument('-o','--off_target', action='store_true', help='evaluate off-target')
+    parser.add_argument('-off','--off_target', action='store_true', help='evaluate off-target')
+    parser.add_argument('-a','--all_human', action='store_true', help='scan all human UTR and ORF')
     parser.add_argument('--utr', type=str, default='./off-target/ref/100_human_UTR.txt', help='reference UTR sequence')
     parser.add_argument('--orf', type=str, default='./off-target/ref/100_human_ORF.txt', help='reference ORF sequence')
     parser.add_argument('--pita_threshold', type=float, default=-10, help='pita filter threshold')
     parser.add_argument('--targetscan_threshold', type=float, default=1, help='targetscan filter threshold')
     
     # Toxicity module
-    parser.add_argument('-to','--toxicity', action='store_true', help='evaluate toxicity')
+    parser.add_argument('-tox','--toxicity', action='store_true', help='evaluate toxicity')
     parser.add_argument('--toxicity_threshold', type=float, default=50.0, help='toxicity filter threshold')
     
     # Mismatch module
