@@ -29,11 +29,11 @@ CURR_DIR = $(shell pwd)
 
 install:
 	$(foreach file, $(FILES), \
-		sed -i "" 's@EXE_BASE_DIR@$(CURR_DIR)@g' $(file); \
+		sed -i 's@EXE_BASE_DIR@$(CURR_DIR)@g' $(file); \
 	)
 	chmod -R 755 lib Bin pita_prediction.pl; \
 
 clean:
 	$(foreach file, $(FILES), \
-		sed -i "" 's@$(CURR_DIR)@EXE_BASE_DIR@g' $(file); \
+		sed -i 's@$(CURR_DIR)@EXE_BASE_DIR@g' $(file); \
 	)
