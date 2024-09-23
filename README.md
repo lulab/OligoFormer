@@ -109,8 +109,6 @@ cpan Bio::TreeIO
 - Command
 
 ```
-cd ./PITA && make
-cd ..
 python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ -off -tox
 ```
 
