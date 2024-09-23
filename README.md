@@ -111,7 +111,7 @@ cpan Bio::TreeIO
 ```
 cd ./PITA && make
 cd ..
-python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ --offtarget True --ORF_fasta ./data/ORF_example.fa --UTR_fasta ./data/UTR_example.fa
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ --off --tox
 ```
 
 - Example output
