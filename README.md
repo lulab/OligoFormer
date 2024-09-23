@@ -154,7 +154,7 @@ The Docker image simplifies the installation and setup process, making it easy f
     ```sh
     oligoformer -h # help
     oligoformer # infer
-    oligoformer -i 1 -i1 example.fa -i2 example_siRNA.fa # infer only interested siRNA(faster)
+    oligoformer -i 1 -i1 data/example.fa -i2 data/example_siRNA.fa # infer only interested siRNA(faster)
     oligoformer -off # infer with off-target prediction
     oligoformer -tox # infer with toxicity prediction
     oligoformer -off -tox # infer with off-target and toxicity prediction
