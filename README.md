@@ -62,8 +62,8 @@ You should have at least an NVIDIA GPU and a driver on your system to run the tr
 ### 2.Model training
 
 ```
-#The following command take ~30 min on a V100 GPU
-python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 100 --early_stopping 30
+#The following command take ~60 min on a V100 GPU
+python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 200 --early_stopping 30
 ```
 
 ### 3.Model inference
