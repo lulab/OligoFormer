@@ -38,7 +38,7 @@ cd ./OligoFormer
 conda env create -n oligoformer -f environment.yml
 ```
 
-### RNA-FM environment
+### RNA-FM environment [5]
 
 Download the repository and create the environment of RNA-FM.
 ```
@@ -174,6 +174,8 @@ The Docker image simplifies the installation and setup process, making it easy f
 [3] [Zhao, Weihao, et al. "POSTAR3: an updated platform for exploring post-transcriptional regulation coordinated by RNA-binding proteins." *Nucleic Acids Research* 50.D1 (2022): D287-D294.](https://academic.oup.com/nar/article/50/D1/D287/6353804)
 
 [4] [Huesken, D., Lange, J., Mickanin, C. *et al.* Design of a genome-wide siRNA library using an artificial neural network. *Nat Biotechnol* **23**, 995–1001 (2005).](https://www.nature.com/articles/nbt1118#Abs1)
+
+[5] [Chen, Jiayang, et al. "Interpretable RNA foundation model from unannotated data for highly accurate RNA structure and function predictions." arXiv preprint arXiv:2204.00300 (2022).](https://arxiv.org/abs/2204.00300)
 
 ## License and Disclaimer
 This tool is for research purpose and not approved for clinical use. The tool shall not be used for commercial purposes without permission.
