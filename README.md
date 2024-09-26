@@ -40,13 +40,14 @@ conda env create -n oligoformer -f environment.yml
 
 ### RNA-FM environment
 
-**option 1:**  Download the packaged RNA-FM[[4]](#ref4).
+source 1:  Download the packaged RNA-FM[[4]](#ref4).
 
 ```bash
 wget https://cloud.tsinghua.edu.cn/f/46d71884ee8848b3a958/?dl=1 -O RNA-FM.tar.gz
 tar -zxvf RNA-FM.tar.gz
 ```
-**option 2:**  Create the environment of RNA-FM.
+
+source 2:  Create the environment of RNA-FM.
 
 ```bash
 git clone https://github.com/ml4bio/RNA-FM.git
@@ -79,19 +80,20 @@ python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch
 #### 3.1 Inference without off-target
 
 
-**Option 1:**  Input the fasta file of mRNA sequence (Traverse mRNA with 19nt window size).
+Option 1:  Input the fasta file of mRNA sequence (Traverse mRNA with 19nt window size).
 
 ```bash
 python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
 ```
 
-**Option 2:**  Input the fasta files of the mRNA and specific siRNAs (only predict these specific siRNAs).
+Option 2:  Input the fasta files of the mRNA and specific siRNAs (only predict these specific siRNAs).
 
 ```bash
 python scripts/main.py --infer 1 -i1 data/example.fa -i2 data/example_siRNA.fa
 ```
 
-**Option 3:**  Input the mRNA sequence manually.
+Option 3:  Input the mRNA sequence manually.
+
 ```bash
 python scripts/main.py --infer 2
 ```
@@ -99,13 +101,30 @@ python scripts/main.py --infer 2
 
 #### 3.2 Inference with off-target
 
+![Off-target pipeline](figures/Figure5.png)
+
 - Dependency of perl
+
+source 1: CPAN
 
 ```bash
 cpan Statistics::Lite
 cpan Bio::TreeIO
 # You also need install Vienarna package and export the PATH, and adjust the perl5lib to your own path.
 # You need provide the ORF and UTR fatsa of mRNA to predict the off-target effects. The order of the sequence needs to be consistent across both files. Refer to the example data.
+```
+
+source 2: Download
+
+```bash
+wget https://cloud.tsinghua.edu.cn/f/cab2afdf951140a48fec/?dl=1 -O PerlLib.zip
+unzip PerlLib.zip
+export PERL5LIB=$(pwd)/PerlLib:$PERL5LIB
+```
+
+- Replace path
+```bash
+cd off-target/pita && make install && cd ../../
 ```
 
 - Command
