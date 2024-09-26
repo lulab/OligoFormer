@@ -35,7 +35,7 @@ Download the repository and create the environment of RNA-FM.
 git clone https://github.com/lulab/OligoFormer.git
 cd ./OligoFormer
 #Install the required dependencies
-conda env create -n oligoformer -f environment.yml
+conda create -n oligoformer python=3.8*
 ```
 
 ### RNA-FM environment
@@ -52,7 +52,7 @@ source 2:  Create the environment of RNA-FM.
 ```bash
 git clone https://github.com/ml4bio/RNA-FM.git
 cd ./RNA-FM
-conda env create --name RNA-FM python=3.8*
+conda env create --name RNA-FM -f environment.yml
 ```
 Download pre-trained models from [this gdrive link](https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J?usp=share_link) and place the pth files into the `pretrained` folder.
 
