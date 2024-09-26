@@ -40,13 +40,18 @@ conda env create -n oligoformer -f environment.yml
 
 ### RNA-FM environment
 
+**option 1**
+```
+wget https://cloud.tsinghua.edu.cn/f/46d71884ee8848b3a958/?dl=1 -O RNA-FM.tar.gz
+tar -zxvf RNA-FM.tar.gz
+```
+**option 2**
 Download the repository and create the environment of RNA-FM[[4]](#ref4).
 ```
 git clone https://github.com/ml4bio/RNA-FM.git
 cd ./RNA-FM
 conda env create --name RNA-FM -f environment.yml
 ```
-
 Download pre-trained models from [this gdrive link](https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J?usp=share_link) and place the pth files into the `pretrained` folder.
 
 
@@ -57,7 +62,9 @@ You should have at least an NVIDIA GPU and a driver on your system to run the tr
 
 ### 1.Activate the created conda environment
 
-```source activate oligoformer```
+```source activate oligoformer
+pip install -r requirements.txt
+```
 
 ### 2.Model training
 
