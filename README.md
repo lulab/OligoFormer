@@ -40,20 +40,20 @@ conda env create -n oligoformer -f environment.yml
 
 ### RNA-FM environment
 
-**option 1**
+**option 1:**  Download the packaged RNA-FM[[4]](#ref4).
+
 ```
 wget https://cloud.tsinghua.edu.cn/f/46d71884ee8848b3a958/?dl=1 -O RNA-FM.tar.gz
 tar -zxvf RNA-FM.tar.gz
 ```
-**option 2**
-Download the repository and create the environment of RNA-FM[[4]](#ref4).
+**option 2:**  Create the environment of RNA-FM.
+
 ```
 git clone https://github.com/ml4bio/RNA-FM.git
 cd ./RNA-FM
 conda env create --name RNA-FM -f environment.yml
 ```
 Download pre-trained models from [this gdrive link](https://drive.google.com/drive/folders/1VGye74GnNXbUMKx6QYYectZrY7G2pQ_J?usp=share_link) and place the pth files into the `pretrained` folder.
-
 
 
 ## Usage
@@ -77,30 +77,23 @@ python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch
 
 #### 3.1 Inference without off-target
 
+
+**Option 1:**  Input the fasta file of mRNA sequence (Traverse mRNA with 19nt window size).
+
 ```
 python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
 ```
+**Option 2:**  Input the fasta files of the mRNA and specific siRNAs (only predict these specific siRNAs).
 
-- Example output
-
-```text
-pos sense siRNA efficacy
-0 UGAAUUUUUGUCAGAUAAA UUUAUCUGACAAAAAUUCA 0.9139741711020469
-1 GAAUUUUUGUCAGAUAAAU AUUUAUCUGACAAAAAUUC 0.8864658409953117
-2 AAUUUUUGUCAGAUAAAUA UAUUUAUCUGACAAAAAUU 0.815981000483036
-3 AUUUUUGUCAGAUAAAUAA UUAUUUAUCUGACAAAAAU 0.8179122650027275
-4 UUUUUGUCAGAUAAAUAAA UUUAUUUAUCUGACAAAAA 0.7880132337212562
-5 UUUUGUCAGAUAAAUAAAA UUUUAUUUAUCUGACAAAA 0.7990648913383483
-6 UUUGUCAGAUAAAUAAAAU AUUUUAUUUAUCUGACAAA 0.7055106237530708
-7 UUGUCAGAUAAAUAAAAUA UAUUUUAUUUAUCUGACAA 0.7850472775697708
-8 UGUCAGAUAAAUAAAAUAA UUAUUUUAUUUAUCUGACA 0.8157202693819999
-9 GUCAGAUAAAUAAAAUAAA UUUAUUUUAUUUAUCUGAC 0.8842068641781807
-
-# pos: start position of siRNA at mRNA
-# sense: sense strand sequence, complimentary to siRNA
-# siRNA: siRNA sequence
-# efficacy: The predicted efficacy of siRNA
 ```
+python scripts/main.py --infer 1 -i1 data/example.fa -i2 data/example_siRNA.fa
+```
+**Option 3:**  Input the mRNA sequence manually.
+```
+python scripts/main.py --infer 2
+```
+
+
 
 #### 3.2 Inference with off-target
 
