@@ -40,14 +40,14 @@ conda create -n oligoformer python=3.8*
 
 ### RNA-FM environment
 
-source 1:  Download the packaged RNA-FM[[4]](#ref4).
+source 1:  Download the packaged RNA-FM.
 
 ```bash
 wget https://cloud.tsinghua.edu.cn/f/46d71884ee8848b3a958/?dl=1 -O RNA-FM.tar.gz
 tar -zxvf RNA-FM.tar.gz
 ```
 
-source 2:  Create the environment of RNA-FM.
+source 2:  Create the environment of RNA-FM[[4]](#ref4).
 
 ```bash
 git clone https://github.com/ml4bio/RNA-FM.git
