@@ -101,7 +101,7 @@ python scripts/main.py --infer 2
 
 #### 3.2 Inference with off-target
 
-<img src="figures/Figure5.jpg" alt="Off-target pipeline" width="300"/>
+<img src="figures/Figure5.jpg" alt="Off-target pipeline" width="400"/>
 
 
 - Dependency of perl
