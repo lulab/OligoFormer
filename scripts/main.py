@@ -6,7 +6,8 @@ from infer import infer
 from mismatch import mismatch
 import argparse
 import os
-
+import warnings
+warnings.filterwarnings("ignore")
 def main():
     parser = argparse.ArgumentParser(description='OligoFormer')
     # Data options
@@ -32,9 +33,9 @@ def main():
     parser.add_argument('--n_head', type=int, default=8, help='the number of heads')
     parser.add_argument('--n_layers', type=int, default=1, help='the number of encoder layers')
     parser.add_argument('--dropout', type=float, default=0.5, help='dropout rate')
-    parser.add_argument('--lm', type=int, default=19, help='dropout rate')
-    parser.add_argument('--lm1', type=int, default=19, help='dropout rate')
-    parser.add_argument('--lm2', type=int, default=19, help='dropout rate')
+    parser.add_argument('--lm', type=int, default=19, help='flanking length')
+    parser.add_argument('--lm1', type=int, default=19, help='left length')
+    parser.add_argument('--lm2', type=int, default=19, help='right length')
 
     # option parameter
     parser.add_argument('-t','--test',action='store_true', help='test mode')
@@ -43,7 +44,7 @@ def main():
     # Infer module
     parser.add_argument('-i','--infer', type=int, default=0, help='0: None; 1: infer by fasta; 2: infer manually')
     parser.add_argument('-i1','--infer_fasta', type=str, default='./data/example.fa', help='fasta file to infer')
-    parser.add_argument('-i2','--infer_siRNA_fasta', type=str, default='./data/example_siRNA.fa', help='siRNA fasta file to infer')
+    parser.add_argument('-i2','--infer_siRNA_fasta', nargs='?', const=False, help='siRNA fasta file to infer')
     parser.add_argument('-io','--infer_output', type=str, default='./result/', help='output path')
     
     # Functionality module
@@ -79,3 +80,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

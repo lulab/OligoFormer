@@ -169,29 +169,42 @@ def infer(Args):
 	if Args.infer == 1:
 		with open(Args.infer_fasta) as fa:
 			fa_dict = {}
+			seq_name = None
+			seq_data = ''
+			_First = True
 			for line in fa:
-				line = line.replace('\n','')
+				line = line.strip()
 				if line.startswith('>'):
-					seq_name = line[1:]
-					fa_dict[seq_name] = ''
+					if _First:
+						seq_name = line[1:]
+						_First = False
+					else:
+						fa_dict[seq_name] = ''.join(seq_data)
+						seq_name = line[1:]
+						seq_data = []
 				else:
-					fa_dict[seq_name] += line.replace('\n','').upper().replace('T','U')
-		total_siRNA = list()
-		with open(Args.infer_siRNA_fasta) as fa_siRNA:
-			for line in fa_siRNA:
-				line = line.replace('\n','')
-				if not line.startswith('>'):
-					if len(line.replace('\n','')) != 19:
-						raise Exception("The length of some siRNA is not 19 nt!")
-					total_siRNA.append(line.replace('\n',''))
+					seq_data += line.upper().replace('T','U')
+			if seq_name:
+				fa_dict[seq_name] = ''.join(seq_data)
+			print(fa_dict)
+		if Args.infer_siRNA_fasta:
+			total_siRNA = list()
+			with open(Args.infer_siRNA_fasta) as fa_siRNA:
+				for line in fa_siRNA:
+					line = line.replace('\n','')
+					if not line.startswith('>'):
+						if len(line.replace('\n','')) != 19:
+							raise Exception("The length of some siRNA is not 19 nt!")
+						total_siRNA.append(line.replace('\n',''))
 		for _name, _mRNA in fa_dict.items():
 			print(_name)
+			_name = _name.replace(' ','_@_')
 			if len(_mRNA) < 19:
 				raise Exception("The length of mRNA is less than 19 nt!")
 			_infer_df = pd.DataFrame(columns=['siRNA','mRNA'])
 			_siRNA = list()
 			_cRNA = list()
-			if Args.infer_siRNA_fasta is None:
+			if not Args.infer_siRNA_fasta:
 				for i in range(len(_mRNA) - 19 + 1): 
 					_siRNA.append(antiRNA(_mRNA[i:i+19]))
 				for i in range(len(_mRNA) - 19 + 1):
@@ -202,6 +215,7 @@ def infer(Args):
 						_left = re.search(antiRNA(total_siRNA[k]),_mRNA).span()[0]
 						_siRNA.append(total_siRNA[k])
 						_cRNA.append('X' * max(0, 19-_left) + _mRNA[max(0,_left-19):(_left+38)] + 'X' * max(0,_left+38-len(_mRNA)))
+				print('HERE',_cRNA)
 			_infer_df['siRNA'] = _siRNA
 			_infer_df['mRNA'] = _cRNA
 			_infer_df = calculate_td(_infer_df)
@@ -287,8 +301,8 @@ def infer(Args):
 			RESULT_ranked = RESULT[RESULT['filter'] == 0].sort_values(by='efficacy', ascending=False)
 			RESULT = RESULT.drop(columns=['filter'])
 			RESULT_ranked = RESULT_ranked.drop(columns=['filter'])
-			RESULT.to_csv(Args.infer_output + str(_name) + '.txt',sep='\t',index = None,header=True)
-			RESULT_ranked.to_csv(Args.infer_output + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
+			RESULT.to_csv(Args.infer_output + str(_name.replace('_@_',' ')) + '.txt',sep='\t',index = None,header=True)
+			RESULT_ranked.to_csv(Args.infer_output + str(_name.replace('_@_',' ')) + '_ranked.txt',sep='\t',index = None,header=True)
 	elif Args.infer == 2:
 		_mRNA = input("please input target mRNA: \n").upper().replace('T','U')
 		if len(_mRNA) < 19:
