@@ -42,13 +42,13 @@ conda env create -n oligoformer -f environment.yml
 
 **option 1:**  Download the packaged RNA-FM[[4]](#ref4).
 
-```
+```bash
 wget https://cloud.tsinghua.edu.cn/f/46d71884ee8848b3a958/?dl=1 -O RNA-FM.tar.gz
 tar -zxvf RNA-FM.tar.gz
 ```
 **option 2:**  Create the environment of RNA-FM.
 
-```
+```bash
 git clone https://github.com/ml4bio/RNA-FM.git
 cd ./RNA-FM
 conda env create --name RNA-FM -f environment.yml
@@ -62,13 +62,14 @@ You should have at least an NVIDIA GPU and a driver on your system to run the tr
 
 ### 1.Activate the created conda environment
 
-```source activate oligoformer
+```bash
+source activate oligoformer
 pip install -r requirements.txt
 ```
 
 ### 2.Model training
 
-```
+```bash
 #The following command take ~60 min on a V100 GPU
 python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch_size 16 --epoch 200 --early_stopping 30
 ```
@@ -80,26 +81,27 @@ python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch
 
 **Option 1:**  Input the fasta file of mRNA sequence (Traverse mRNA with 19nt window size).
 
-```
+```bash
 python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
 ```
+
 **Option 2:**  Input the fasta files of the mRNA and specific siRNAs (only predict these specific siRNAs).
 
-```
+```bash
 python scripts/main.py --infer 1 -i1 data/example.fa -i2 data/example_siRNA.fa
 ```
+
 **Option 3:**  Input the mRNA sequence manually.
-```
+```bash
 python scripts/main.py --infer 2
 ```
-
 
 
 #### 3.2 Inference with off-target
 
 - Dependency of perl
 
-```
+```bash
 cpan Statistics::Lite
 cpan Bio::TreeIO
 # You also need install Vienarna package and export the PATH, and adjust the perl5lib to your own path.
@@ -108,7 +110,7 @@ cpan Bio::TreeIO
 
 - Command
 
-```
+```bash
 python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ -off -tox
 ```
 
@@ -130,11 +132,11 @@ The Docker image simplifies the installation and setup process, making it easy f
     You just need to choose one source.
 
     source 1: DockerHub
-    ```sh
+    ```bash
     docker pull yilanbai/oligoformer:v1.0
     ```
     source 2: Aliyun
-    ```sh
+    ```bash
     docker pull registry.cn-hangzhou.aliyuncs.com/yilanbai/oligoformer:v1.0
     ```
     source 3: Tsinghua Cloud
@@ -143,7 +145,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 
 3. **Run the Docker Container**:
 
-    ```sh
+    ```bash
     docker run -it --name oligoformer-container -dt --restart unless-stopped yilanbai/oligoformer:v1.0 && docker exec -it oligoformer-container bash
     ```
 
@@ -151,7 +153,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 
     Once inside the container, you can start using OligoFormer with the following command:
 
-    ```sh
+    ```bash
     oligoformer -h # help
     oligoformer # infer
     oligoformer -i 1 -i1 data/example.fa -i2 data/example_siRNA.fa # infer only interested siRNA(faster)
