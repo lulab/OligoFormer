@@ -248,7 +248,7 @@ def infer(Args):
 			Y_PRED = [i*1.341 for i in Y_PRED]
 			Y_PRED = pd.DataFrame(Y_PRED)
 			RESULT = pd.DataFrame()
-			RESULT['pos'] = list(range(_infer_df.shape[0]))
+			RESULT['pos'] = list(range(1,_infer_df.shape[0] + 1))
 			RESULT['sense'] = [antiRNA(_infer_df.iloc[i,0]) for i in range(_infer_df.shape[0])]
 			RESULT['siRNA'] = _infer_df['siRNA']
 			print(Y_PRED)
@@ -350,7 +350,7 @@ def infer(Args):
 		Y_PRED = [i*1.341 for i in Y_PRED]
 		Y_PRED = pd.DataFrame(Y_PRED)
 		RESULT = pd.DataFrame()
-		RESULT['pos'] = list(range(_infer_df.shape[0]))
+		RESULT['pos'] = list(range(1,_infer_df.shape[0] + 1))
 		RESULT['sense'] = [antiRNA(_infer_df.iloc[i,0]) for i in range(_infer_df.shape[0])]
 		RESULT['siRNA'] = _infer_df['siRNA']
 		print(Y_PRED)
