@@ -6,7 +6,6 @@ utr=$(basename $1)
 mir=$(basename $2)
 orf=$(basename $3)
 perl pita_prediction.pl -utr "$utr" -mir "$mir" -upstream "$orf" -prefix "$4" 
-perl /Users/baiyilan/Research/Luzhi/docker/test.pl
 rm -rf "$utr" "$mir" "$orf"
 cd ../..
 mv ./off-target/pita/"$4"_pita_results_targets.tab ./data/infer/"$4"/pita.tab
