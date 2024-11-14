@@ -26,9 +26,10 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 
 ## Installation
 
-==Implementation manual==
+**Implementation manual**
 
 [English version](https://docs.qq.com/doc/DQm9GeUdSS0FBcUFY)
+
 [Chinese version](https://docs.qq.com/doc/DQlJneHVvRkJIbE1Z)
 
 
