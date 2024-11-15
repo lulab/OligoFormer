@@ -12,6 +12,8 @@ import warnings
 warnings.filterwarnings("ignore")
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 
+from datetime import datetime
+import time
 
 DeltaG = {'AA': -0.93, 'UU': -0.93, 'AU': -1.10, 'UA': -1.33, 'CU': -2.08, 'AG': -2.08, 'CA': -2.11, 'UG': -2.11, 'GU': -2.24,  'AC': -2.24, 'GA': -2.35,  'UC': -2.35, 'CG': -2.36, 'GG': -3.26, 'CC': -3.26, 'GC': -3.42, 'init': 4.09, 'endAU': 0.45, 'sym': 0.43}
 DeltaH = {'AA': -6.82, 'UU': -6.82, 'AU': -9.38, 'UA': -7.69, 'CU': -10.48, 'AG': -10.48, 'CA': -10.44, 'UG': -10.44, 'GU': -11.40,  'AC': -11.40, 'GA': -12.44,  'UC': -12.44, 'CG': -10.64, 'GG': -13.39, 'CC': -13.39, 'GC': -14.88, 'init': 3.61, 'endAU': 3.72, 'sym': 0}
@@ -166,6 +168,7 @@ def infer(Args):
 	best_model = Oligo(vocab_size = Args.vocab_size, embedding_dim = Args.embedding_dim, lstm_dim = Args.lstm_dim,  n_head = Args.n_head, n_layers = Args.n_layers, lm1 = Args.lm1, lm2 = Args.lm2).to(device)
 	best_model.load_state_dict(torch.load("model/best_model.pth",map_location=device))
 	print('-----------------Start inferring!-----------------')
+	a = datetime.now() #获得当前时间
 	if Args.infer == 1:
 		with open(Args.infer_fasta) as fa:
 			fa_dict = {}
@@ -254,20 +257,51 @@ def infer(Args):
 			if not Args.no_func:
 				RESULT['func_filter'] = func_filter(_siRNA)
 			if Args.off_target:
-				siRNA_file = './data/infer/' + _name + '/siRNA.fa'
-				os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
-				os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
-				pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
-				pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
-				RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + x)
-				RESULT = pd.merge(RESULT, pita, left_on='tmp', right_on='microRNA', how='left')
-				RESULT['pita_filter'] = [1 if i < Args.pita_threshold else 0 for i in RESULT['pita_score']]
-				targetscan = pd.read_csv('./data/infer/' + _name + '/targetscan.tab', sep='\t', header=None, names=['refseq', 'siRNA', 'targetscan_score'])
-				targetscan = targetscan.groupby('siRNA').agg({'targetscan_score': 'max'})
-				RESULT = pd.merge(RESULT, targetscan, left_on='tmp', right_on='siRNA', how='left')
-				RESULT['targetscan_filter'] = [1 if i > Args.targetscan_threshold else 0 for i in RESULT['targetscan_score']]
-				RESULT['off_target_filter'] = [1 if i == 1 or j == 1 else 0 for i,j in zip(RESULT['pita_filter'], RESULT['targetscan_filter'])]
-				RESULT = RESULT.drop(columns=['tmp','pita_filter', 'targetscan_filter'])
+				if Args.top_n == -1:
+					siRNA_file = './data/infer/' + _name + '/siRNA.fa'
+					os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
+					os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
+					pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
+					pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
+					RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + str(int(x) - 1))
+					RESULT = pd.merge(RESULT, pita, left_on='tmp', right_on='microRNA', how='left')
+					RESULT['pita_filter'] = [1 if i < Args.pita_threshold else 0 for i in RESULT['pita_score']]
+					targetscan = pd.read_csv('./data/infer/' + _name + '/targetscan.tab', sep='\t', header=None, names=['refseq', 'siRNA', 'targetscan_score'])
+					targetscan = targetscan.groupby('siRNA').agg({'targetscan_score': 'max'})
+					for i in list(set(pita.index) - set(targetscan.index)):
+						targetscan.loc[i] = 0
+					RESULT = pd.merge(RESULT, targetscan, left_on='tmp', right_on='siRNA', how='left')
+					RESULT['targetscan_filter'] = [1 if i > Args.targetscan_threshold else 0 for i in RESULT['targetscan_score']]
+					RESULT['off_target_filter'] = [1 if i == 1 or j == 1 else 0 for i,j in zip(RESULT['pita_filter'], RESULT['targetscan_filter'])]
+					RESULT = RESULT.drop(columns=['tmp','pita_filter', 'targetscan_filter'])
+				else:
+					RESULT_ranked = RESULT.sort_values(by='efficacy', ascending=False)
+					for i in range(Args.top_n):
+						with open('./data/infer/' + _name + '/top_n_siRNA.fa','a') as f:
+							f.write('>RNA' + str(RESULT_ranked.index[i]) + '\n')
+							f.write(RESULT_ranked['siRNA'][i] + '\n')
+					siRNA_file = './data/infer/' + _name + '/top_n_siRNA.fa'
+					os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
+					os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
+					pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
+					pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
+					RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + str(int(x) - 1))
+					RESULT = pd.merge(RESULT, pita, left_on='tmp', right_on='microRNA', how='left')
+					RESULT['pita_filter'] = [1 if i < Args.pita_threshold else 0 for i in RESULT['pita_score']]
+					for i in range(RESULT.shape[0]):
+						if np.isnan(RESULT.iloc[i,-2]):
+							RESULT['pita_filter'][i] = -1
+					targetscan = pd.read_csv('./data/infer/' + _name + '/targetscan.tab', sep='\t', header=None, names=['refseq', 'siRNA', 'targetscan_score'])
+					targetscan = targetscan.groupby('siRNA').agg({'targetscan_score': 'max'})
+					for i in list(set(pita.index) - set(targetscan.index)):
+						targetscan.loc[i] = 0
+					RESULT = pd.merge(RESULT, targetscan, left_on='tmp', right_on='siRNA', how='left')
+					RESULT['targetscan_filter'] = [1 if i > Args.targetscan_threshold else 0 for i in RESULT['targetscan_score']]
+					for i in range(RESULT.shape[0]):
+						if np.isnan(RESULT.iloc[i,-2]):
+							RESULT['targetscan_filter'][i] = -1
+					RESULT['off_target_filter'] = [-5 if i == -1 or j == -1 else 1 if i == 1 or j == 1 else 0 for i,j in zip(RESULT['pita_filter'], RESULT['targetscan_filter'])]
+					RESULT = RESULT.drop(columns=['tmp','pita_filter', 'targetscan_filter'])
 			if Args.toxicity:
 				toxicity = pd.read_csv('./toxicity/cell_viability.txt', sep='\t')
 				RESULT['seed'] = RESULT['siRNA'].str.slice(1,7)
@@ -296,11 +330,11 @@ def infer(Args):
 						RESULT['filter'] = RESULT['toxicity_filter']
 					else:
 						RESULT['filter'] = [0] * RESULT.shape[0]				
-			RESULT_ranked = RESULT[RESULT['filter'] == 0].sort_values(by='efficacy', ascending=False)
-			RESULT = RESULT.drop(columns=['filter'])
-			RESULT_ranked = RESULT_ranked.drop(columns=['filter'])
-			RESULT.to_csv(Args.output_dir + str(_name.replace('_@_',' ')) + '.txt',sep='\t',index = None,header=True)
-			RESULT_ranked.to_csv(Args.output_dir + str(_name.replace('_@_',' ')) + '_ranked.txt',sep='\t',index = None,header=True)
+			RESULT_ranked = RESULT.sort_values(by='efficacy', ascending=False)
+			RESULT_ranked_filtered = RESULT[RESULT['filter'] == 0].sort_values(by='efficacy', ascending=False)
+			RESULT.to_csv(Args.output_dir + str(_name) + '.txt',sep='\t',index = None,header=True)
+			RESULT_ranked.to_csv(Args.output_dir + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
+			RESULT_ranked_filtered.to_csv(Args.output_dir + str(_name) + '_ranked_filtered.txt',sep='\t',index = None,header=True)
 	elif Args.infer == 2:
 		_mRNA = input("please input target mRNA: \n").upper().replace('T','U')
 		if len(_mRNA) < 19:
@@ -356,20 +390,51 @@ def infer(Args):
 		if not Args.no_func:
 			RESULT['func_filter'] = func_filter(_siRNA)
 		if Args.off_target:
-			siRNA_file = './data/infer/' + _name + '/siRNA.fa'
-			os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
-			os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
-			pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
-			pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
-			RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + x)
-			RESULT = pd.merge(RESULT, pita, left_on='tmp', right_on='microRNA', how='left')
-			RESULT['pita_filter'] = [1 if i < Args.pita_threshold else 0 for i in RESULT['pita_score']]
-			targetscan = pd.read_csv('./data/infer/' + _name + '/targetscan.tab', sep='\t', header=None, names=['refseq', 'siRNA', 'targetscan_score'])
-			targetscan = targetscan.groupby('siRNA').agg({'targetscan_score': 'max'})
-			RESULT = pd.merge(RESULT, targetscan, left_on='tmp', right_on='siRNA', how='left')
-			RESULT['targetscan_filter'] = [1 if i > Args.targetscan_threshold else 0 for i in RESULT['targetscan_score']]
-			RESULT['off_target_filter'] = [1 if i == 1 or j == 1 else 0 for i,j in zip(RESULT['pita_filter'], RESULT['targetscan_filter'])]
-			RESULT = RESULT.drop(columns=['tmp','pita_filter', 'targetscan_filter'])
+			if Args.top_n == -1:
+				siRNA_file = './data/infer/' + _name + '/siRNA.fa'
+				os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
+				os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
+				pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
+				pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
+				RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + str(int(x) - 1))
+				RESULT = pd.merge(RESULT, pita, left_on='tmp', right_on='microRNA', how='left')
+				RESULT['pita_filter'] = [1 if i < Args.pita_threshold else 0 for i in RESULT['pita_score']]
+				targetscan = pd.read_csv('./data/infer/' + _name + '/targetscan.tab', sep='\t', header=None, names=['refseq', 'siRNA', 'targetscan_score'])
+				targetscan = targetscan.groupby('siRNA').agg({'targetscan_score': 'max'})
+				for i in list(set(pita.index) - set(targetscan.index)):
+					targetscan.loc[i] = 0
+				RESULT = pd.merge(RESULT, targetscan, left_on='tmp', right_on='siRNA', how='left')
+				RESULT['targetscan_filter'] = [1 if i > Args.targetscan_threshold else 0 for i in RESULT['targetscan_score']]
+				RESULT['off_target_filter'] = [1 if i == 1 or j == 1 else 0 for i,j in zip(RESULT['pita_filter'], RESULT['targetscan_filter'])]
+				RESULT = RESULT.drop(columns=['tmp','pita_filter', 'targetscan_filter'])
+			else:
+				RESULT_ranked = RESULT.sort_values(by='efficacy', ascending=False)
+				for i in range(Args.top_n):
+					with open('./data/infer/' + _name + '/top_n_siRNA.fa','a') as f:
+						f.write('>RNA' + str(RESULT_ranked.index[i]) + '\n')
+						f.write(RESULT_ranked['siRNA'][i] + '\n')
+				siRNA_file = './data/infer/' + _name + '/top_n_siRNA.fa'
+				os.system(f'bash scripts/pita.sh {Args.utr} {siRNA_file} {Args.orf} {_name}')
+				os.system(f'bash scripts/targetscan.sh {siRNA_file} {Args.utr} {Args.orf} {_name}')
+				pita = pd.read_csv('./data/infer/' + _name + '/pita.tab', sep='\t')
+				pita = pita.groupby('microRNA').agg({'Score': 'min'}).rename(columns={'Score': 'pita_score'})
+				RESULT['tmp'] = RESULT['pos'].astype(str).apply(lambda x: 'RNA' + str(int(x) - 1))
+				RESULT = pd.merge(RESULT, pita, left_on='tmp', right_on='microRNA', how='left')
+				RESULT['pita_filter'] = [1 if i < Args.pita_threshold else 0 for i in RESULT['pita_score']]
+				for i in range(RESULT.shape[0]):
+					if np.isnan(RESULT.iloc[i,-2]):
+						RESULT['pita_filter'][i] = -1
+				targetscan = pd.read_csv('./data/infer/' + _name + '/targetscan.tab', sep='\t', header=None, names=['refseq', 'siRNA', 'targetscan_score'])
+				targetscan = targetscan.groupby('siRNA').agg({'targetscan_score': 'max'})
+				for i in list(set(pita.index) - set(targetscan.index)):
+					targetscan.loc[i] = 0
+				RESULT = pd.merge(RESULT, targetscan, left_on='tmp', right_on='siRNA', how='left')
+				RESULT['targetscan_filter'] = [1 if i > Args.targetscan_threshold else 0 for i in RESULT['targetscan_score']]
+				for i in range(RESULT.shape[0]):
+					if np.isnan(RESULT.iloc[i,-2]):
+						RESULT['targetscan_filter'][i] = -1
+				RESULT['off_target_filter'] = [-5 if i == -1 or j == -1 else 1 if i == 1 or j == 1 else 0 for i,j in zip(RESULT['pita_filter'], RESULT['targetscan_filter'])]
+				RESULT = RESULT.drop(columns=['tmp','pita_filter', 'targetscan_filter'])
 		if Args.toxicity:
 			toxicity = pd.read_csv('./toxicity/cell_viability.txt', sep='\t')
 			RESULT['seed'] = RESULT['siRNA'].str.slice(1,7)
@@ -398,11 +463,16 @@ def infer(Args):
 					RESULT['filter'] = RESULT['toxicity_filter']
 				else:
 					RESULT['filter'] = [0] * RESULT.shape[0]
-		RESULT_ranked = RESULT[RESULT['filter'] == 0].sort_values(by='efficacy', ascending=False)
-		RESULT = RESULT.drop(columns=['filter'])
-		RESULT_ranked = RESULT_ranked.drop(columns=['filter'])
+		RESULT_ranked = RESULT.sort_values(by='efficacy', ascending=False)
+		RESULT_ranked_filtered = RESULT[RESULT['filter'] == 0].sort_values(by='efficacy', ascending=False)
 		RESULT.to_csv(Args.output_dir + str(_name) + '.txt',sep='\t',index = None,header=True)
 		RESULT_ranked.to_csv(Args.output_dir + str(_name) + '_ranked.txt',sep='\t',index = None,header=True)
+		RESULT_ranked_filtered.to_csv(Args.output_dir + str(_name) + '_ranked_filtered.txt',sep='\t',index = None,header=True)
+	b = datetime.now()
+	durn = (b-a).seconds
+	print(durn, 'seconds', durn / 60, 'minutes')
+
+
 
 
 

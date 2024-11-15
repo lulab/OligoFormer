@@ -45,6 +45,7 @@ def main():
 
     # Infer module
     parser.add_argument('-i','--infer', type=int, default=0, help='0: None; 1: infer by fasta; 2: infer manually')
+    parser.add_argument('-top','--top_n', type=int, default=-1, help='-1: all siRNAs; n: only calculate top n siRNAs')
     parser.add_argument('-i1','--infer_fasta', type=str, default='./data/example.fa', help='fasta file to infer')
     parser.add_argument('-i2','--infer_siRNA_fasta', nargs='?', const=False, help='siRNA fasta file to infer')
     
