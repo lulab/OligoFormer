@@ -1,4 +1,4 @@
-# OligoFormer
+![image](https://github.com/user-attachments/assets/17225a2d-1077-473a-bfce-a39c2c6d4333)# OligoFormer
 
 [![python >3.8.20](https://img.shields.io/badge/python-3.8.20-brightgreen)](https://www.python.org/) 
 
@@ -90,7 +90,7 @@ python scripts/main.py --datasets Hu Mix --cuda 0 --learning_rate 0.0001 --batch
 Option 1:  Input the fasta file of mRNA sequence (Traverse mRNA with 19nt window size).
 
 ```bash
-python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/
+python scripts/main.py --infer 1 -i1 data/example.fa
 ```
 
 Option 2:  Input the fasta files of the mRNA and specific siRNAs (only predict these specific siRNAs).
@@ -138,7 +138,7 @@ cd off-target/pita && make install && cd ../../
 - Command
 
 ```bash
-python scripts/main.py --infer 1 --infer_fasta ./data/example.fa --infer_output ./result/ -off -tox
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa -off -tox
 ```
 
 ## User-friendly Docker image
