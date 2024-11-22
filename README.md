@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/17225a2d-1077-473a-bfce-a39c2c6d4333)# OligoFormer
+# OligoFormer
 
 [![python >3.8.20](https://img.shields.io/badge/python-3.8.20-brightgreen)](https://www.python.org/) 
 
