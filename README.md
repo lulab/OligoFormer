@@ -14,7 +14,7 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 | [Reynolds](https://www.nature.com/articles/nbt936)           | 240          | HEK293                  | 
 | [Vickers](https://www.jbc.org/article/S0021-9258(19)32641-9/fulltext) | 76           | T24                     | 
 | [Haborth](https://www.liebertpub.com/doi/10.1089/108729003321629638) | 44           | HeLa                    |     
-| [Ui-](https://academic.oup.com/nar/article/32/3/936/2904484?login=false)[Tei](https://academic.oup.com/nar/article/32/3/936/2904484?login=false) | 62           |             HeLa                           |
+| [Ui-Tei](https://academic.oup.com/nar/article/32/3/936/2904484?login=false) | 62           |             HeLa                           |
 | [Khvorova](https://www.nature.com/articles/nbt936)           | 14           | HEK293                  | 
 | [Hiesh](https://academic.oup.com/nar/article/32/3/893/2904476) | 108          | HEK293T                 | 
 | [Amarzguioui](https://pubmed.ncbi.nlm.nih.gov/12527766/)     | 46           | Cos-1,  HaCaT           |
