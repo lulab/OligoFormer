@@ -138,7 +138,8 @@ cd off-target/pita && make install && cd ../../
 - Command
 
 ```bash
-python scripts/main.py --infer 1 --infer_fasta ./data/example.fa -off -tox
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa -off -tox -a
+python scripts/main.py --infer 1 --infer_fasta ./data/example.fa -off -tox -a -top 100 # only calculate off-target effects of top 100(customed) effective siRNAs
 ```
 
 ## User-friendly Docker image
