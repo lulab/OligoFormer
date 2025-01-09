@@ -55,8 +55,8 @@ def main():
     # Off-target module
     parser.add_argument('-off','--off_target', action='store_true', help='evaluate off-target')
     parser.add_argument('-a','--all_human', action='store_true', help='scan all human UTR and ORF')
-    parser.add_argument('--utr', type=str, default='./off-target/ref/human_UTR.txt', help='reference UTR sequence')
-    parser.add_argument('--orf', type=str, default='./off-target/ref/human_ORF.txt', help='reference ORF sequence')
+    parser.add_argument('--utr', type=str, default='./off-target/ref/100_human_UTR.txt', help='reference UTR sequence')
+    parser.add_argument('--orf', type=str, default='./off-target/ref/100_human_ORF.txt', help='reference ORF sequence')
     parser.add_argument('--pita_threshold', type=float, default=-10, help='pita filter threshold')
     parser.add_argument('--targetscan_threshold', type=float, default=1, help='targetscan filter threshold')
     
