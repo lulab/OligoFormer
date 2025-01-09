@@ -169,6 +169,9 @@ def infer(Args):
 	best_model.load_state_dict(torch.load("model/best_model.pth",map_location=device))
 	print('-----------------Start inferring!-----------------')
 	a = datetime.now() #获得当前时间
+	if Args.all_human:
+		Args.utr = './off-target/ref/human_UTR.txt'
+		Args.orf = './off-target/ref/human_UTR.txt'
 	if Args.infer == 1:
 		with open(Args.infer_fasta) as fa:
 			fa_dict = {}
