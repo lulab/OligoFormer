@@ -208,6 +208,7 @@ The Docker image simplifies the installation and setup process, making it easy f
 ## Citations
 If you find the models useful in your research, we ask that you cite the relevant paper:
 
+```bibtex
 @article{bai2024oligoformer,
   title={OligoFormer: an accurate and robust prediction method for siRNA design},
   author={Bai, Yilan and Zhong, Haochen and Wang, Taiwei and Lu, Zhi John},
@@ -216,6 +217,7 @@ If you find the models useful in your research, we ask that you cite the relevan
   year={2024},
   publisher={Cold Spring Harbor Laboratory}
 }
+```
 
 ## License and Disclaimer
 This tool is for research purpose and not approved for clinical use. The tool shall not be used for commercial purposes without permission.
