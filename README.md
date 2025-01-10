@@ -205,6 +205,18 @@ The Docker image simplifies the installation and setup process, making it easy f
 
 [4]<a name="ref4"></a> [Chen, Jiayang, et al. "Interpretable RNA foundation model from unannotated data for highly accurate RNA structure and function predictions." arXiv preprint arXiv:2204.00300 (2022).](https://arxiv.org/abs/2204.00300)
 
+## Citations
+If you find the models useful in your research, we ask that you cite the relevant paper:
+
+@article{bai2024oligoformer,
+  title={OligoFormer: an accurate and robust prediction method for siRNA design},
+  author={Bai, Yilan and Zhong, Haochen and Wang, Taiwei and Lu, Zhi John},
+  journal={bioRxiv},
+  pages={2024--02},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
 ## License and Disclaimer
 This tool is for research purpose and not approved for clinical use. The tool shall not be used for commercial purposes without permission.
 
