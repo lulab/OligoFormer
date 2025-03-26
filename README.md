@@ -220,5 +220,14 @@ If you find the models useful in your research, we ask that you cite the relevan
 ```
 
 ## License and Disclaimer
-This tool is for research purpose and not approved for clinical use. The tool shall not be used for commercial purposes without permission.
+
+Non-Commercial Use:
+
+This tool may be used freely for academic research, non-profit projects, and personal use, provided all copyright notices are retained.
+
+Commercial Use:
+
+Any use for commercial purposes (including but not limited to commercial research, product development, or internal business operations) requires prior written authorization from Tsinghua University. Contact: [ott@tsinghua.edu.cn].
+
+For full terms, see the [LICENSE](./LICENSE) file.
 
