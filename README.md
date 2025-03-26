@@ -227,7 +227,7 @@ This tool may be used freely for academic research, non-profit projects, and per
 
 Commercial Use:
 
-Any use for commercial purposes (including but not limited to commercial research, product development, or internal business operations) requires prior written authorization from Tsinghua University. Contact: [ott@tsinghua.edu.cn].
+Any use for commercial purposes (including but not limited to commercial research, product development, or internal business operations) requires prior written authorization from Tsinghua University. Contact: ott@tsinghua.edu.cn.
 
 For full terms, see the [LICENSE](./LICENSE) file.
 
