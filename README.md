@@ -20,6 +20,8 @@ OligoFormer was trained on a dataset of mRNA and siRNA pairs with experimentally
 | [Amarzguioui](https://pubmed.ncbi.nlm.nih.gov/12527766/)     | 46           | Cos-1,  HaCaT           |
 | [Takayuki](https://academic.oup.com/nar/article/35/4/e27/1079934) | 702          | HeLa                    | 
 
+Dataset Update: Corrected siRNA/passenger strand labeling error in Takayuki dataset. Special thanks to [Manuel Ayllon Gavilan](https://github.com/manuayllon00) for identifying this issue.
+
 ## Model
 
 ![OligoFormer_architecture](figures/Figure1.png)
